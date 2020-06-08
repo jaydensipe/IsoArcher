@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3001d631-6566-4ee0-b3f9-500bef3efcfe" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1d314kJrEOCcpA6Pt1Bsy6Na5rg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager" selected="Mono Remote.Attach to Player">
+    <configuration name="Attach to Player" type="ConnectRemote" factoryName="Mono Remote" show_console_on_std_err="false" show_console_on_std_out="false" port="23685" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Start and Debug" type="GODOT_DEBUG_RUN_CONFIGURATION" factoryName="Start and Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="godotPath" value="" />
+      <option name="listenPortForConnections" value="true" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Profile Player" type="RunExe" factoryName=".NET Executable">
+      <option name="EXE_PATH" value="J:\Games &amp; Stuff\Godot\Godot.exe" />
+      <option name="PROGRAM_PARAMETERS" value="--path &quot;$PROJECT_DIR$&quot;" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="1" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build Solution" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Run Player" type="RunNativeExe" factoryName="Native Executable">
+      <option name="EXE_PATH" value="J:\Games &amp; Stuff\Godot\Godot.exe" />
+      <option name="PROGRAM_PARAMETERS" value="--path &quot;$PROJECT_DIR$&quot;" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2">
+        <option name="Build Solution" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3001d631-6566-4ee0-b3f9-500bef3efcfe" name="Default Changelist" comment="" />
+      <created>1591638774145</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591638774145</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>
