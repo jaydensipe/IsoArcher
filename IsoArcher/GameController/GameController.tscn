@@ -1,3 +1,38 @@
-[gd_scene format=2]
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://IsoArcher/Worlds/World1/World1.tscn" type="PackedScene" id=1]
+[ext_resource path="res://IsoArcher/PlayerController/Player.tscn" type="PackedScene" id=2]
+
+[sub_resource type="ProceduralSky" id=1]
+sky_top_color = Color( 0.745098, 0.854902, 0.913725, 1 )
+sky_energy = 1.5
+ground_bottom_color = Color( 0.113725, 0.709804, 0.768627, 1 )
+ground_horizon_color = Color( 1, 1, 1, 1 )
+ground_curve = 0.062767
+ground_energy = 2.0
+
+[sub_resource type="Environment" id=2]
+background_mode = 2
+background_sky = SubResource( 1 )
+background_sky_custom_fov = 55.0
+background_color = Color( 0, 0.909804, 0.803922, 1 )
+ambient_light_color = Color( 1, 1, 1, 1 )
+ssao_intensity = 9.4
+ssao_intensity2 = 0.0
+ssao_bias = 0.001
+ssao_quality = 2
+dof_blur_far_distance = 28.76
+dof_blur_far_quality = 2
+dof_blur_near_distance = 19.68
+glow_enabled = true
+adjustment_enabled = true
 
 [node name="GameController" type="Node"]
+
+[node name="MainWorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 2 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+transform = Transform( 0.22, 0, 0, 0, 0.22, 0, 0, 0, 0.22, 0, 2.7, 0 )
+
+[node name="World1" parent="." instance=ExtResource( 1 )]
