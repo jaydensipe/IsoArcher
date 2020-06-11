@@ -7,6 +7,14 @@
       <e p=".mono\temp\bin" t="ExcludeRecursive" />
       <e p=".mono\temp\obj" t="ExcludeRecursive" />
       <e p="IsoArcher" t="Include">
+        <e p="Arrows" t="Include">
+          <e p="WoodArrow" t="Include">
+            <e p="WoodArrow.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Bows" t="Include">
+          <e p="BowBaseClass.cs" t="Include" />
+        </e>
         <e p="PlayerController" t="Include">
           <e p="Scripts" t="Include">
             <e p="Player.cs" t="Include" />

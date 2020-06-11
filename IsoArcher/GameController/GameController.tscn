@@ -12,11 +12,11 @@ ground_curve = 0.062767
 ground_energy = 2.0
 
 [sub_resource type="Environment" id=2]
-background_mode = 2
+background_mode = 1
 background_sky = SubResource( 1 )
 background_sky_custom_fov = 55.0
-background_color = Color( 0, 0.909804, 0.803922, 1 )
-ambient_light_color = Color( 1, 1, 1, 1 )
+background_color = Color( 0.0705882, 0.847059, 0.756863, 1 )
+ambient_light_color = Color( 0.552941, 0.552941, 0.552941, 1 )
 ssao_intensity = 9.4
 ssao_intensity2 = 0.0
 ssao_bias = 0.001
@@ -25,14 +25,21 @@ dof_blur_far_distance = 28.76
 dof_blur_far_quality = 2
 dof_blur_near_distance = 19.68
 glow_enabled = true
-adjustment_enabled = true
 
 [node name="GameController" type="Node"]
 
 [node name="MainWorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource( 2 )
 
+[node name="DirectionalLight" type="DirectionalLight" parent="MainWorldEnvironment"]
+transform = Transform( 1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 11, 18 )
+
+[node name="MainCamera" type="Camera" parent="."]
+transform = Transform( 0.707107, -0.353553, 0.612373, 0, 0.866025, 0.5, -0.707107, -0.353553, 0.612372, 28.2868, 22.4, 29.2868 )
+current = true
+fov = 50.0
+
 [node name="Player" parent="." instance=ExtResource( 2 )]
-transform = Transform( 0.22, 0, 0, 0, 0.22, 0, 0, 0, 0.22, 0, 2.7, 0 )
+transform = Transform( 0.275, 0, 0, 0, 0.275, 0, 0, 0, 0.275, 0, 2.7, 0 )
 
 [node name="World1" parent="." instance=ExtResource( 1 )]
