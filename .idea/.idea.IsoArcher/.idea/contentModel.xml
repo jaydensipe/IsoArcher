@@ -15,6 +15,14 @@
         <e p="Bows" t="Include">
           <e p="BowBaseClass.cs" t="Include" />
         </e>
+        <e p="Enemies" t="Include">
+          <e p="EnemyBaseClass.cs" t="Include" />
+        </e>
+        <e p="GameController" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="GameController.cs" t="Include" />
+          </e>
+        </e>
         <e p="PlayerController" t="Include">
           <e p="Scripts" t="Include">
             <e p="Player.cs" t="Include" />

@@ -34,7 +34,7 @@ public class Player : Spatial
   
 
 // Update method for moving
-  public override void _Process(float delta)
+  public override void _PhysicsProcess(float delta)
   {
     Movement();
   }

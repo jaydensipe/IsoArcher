@@ -8,14 +8,30 @@ albedo_color = Color( 0.996078, 1, 0.517647, 1 )
 
 [node name="World1" type="Spatial"]
 
-[node name="CSGBox" type="CSGBox" parent="."]
+[node name="Geometry" type="Spatial" parent="."]
+
+[node name="CSGBox" type="CSGBox" parent="Geometry"]
 transform = Transform( 16.2, 0, 0, 0, 1.35, 0, 0, 0, 16.2, 0, 0, 0 )
 material = SubResource( 1 )
 
-[node name="CSGBox3" type="CSGBox" parent="."]
+[node name="CSGBox3" type="CSGBox" parent="Geometry"]
 transform = Transform( -8.39259e-07, 0, -1.2, 0, 1, 0, 19.2, 0, -5.24537e-08, 0, 0.9, 0 )
 material = SubResource( 2 )
 
-[node name="CSGBox4" type="CSGBox" parent="."]
+[node name="CSGBox4" type="CSGBox" parent="Geometry"]
 transform = Transform( -19.2, 0, 1.81195e-07, 0, 1, 0, -2.89912e-06, 0, -1.2, 0, 0.9, 0 )
 material = SubResource( 2 )
+
+[node name="EnemySpawnPositions" type="Spatial" parent="."]
+
+[node name="Position3D" type="Position3D" parent="EnemySpawnPositions"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 3, 0 )
+
+[node name="Position3D3" type="Position3D" parent="EnemySpawnPositions"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 3, 0 )
+
+[node name="Position3D2" type="Position3D" parent="EnemySpawnPositions"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 18 )
+
+[node name="Position3D4" type="Position3D" parent="EnemySpawnPositions"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, -18 )
