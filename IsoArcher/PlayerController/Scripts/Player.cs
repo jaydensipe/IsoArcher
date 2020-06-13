@@ -31,7 +31,12 @@ public class Player : Spatial
       playerKinematicBody.RotationDegrees = new Vector3(0, 360, 0);
     }
   }
-  
+
+  // Logic for determining what happens when a player takes damage
+  void _on_PlayerArea_area_entered(Area area)
+  {
+    GetTree().ReloadCurrentScene();
+  }
 
 // Update method for moving 
   public override void _PhysicsProcess(float delta)

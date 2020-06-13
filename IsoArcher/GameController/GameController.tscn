@@ -49,5 +49,6 @@ transform = Transform( 0.275, 0, 0, 0, 0.275, 0, 0, 0, 0.275, 0, 2.7, 0 )
 [node name="Timers" type="Node" parent="."]
 
 [node name="EnemySpawnTimer" type="Timer" parent="Timers"]
+wait_time = 0.5
 autostart = true
 [connection signal="timeout" from="Timers/EnemySpawnTimer" to="." method="_on_EnemySpawnTimer_timeout"]

@@ -20,38 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3001d631-6566-4ee0-b3f9-500bef3efcfe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoArcher.dir/.idea/.idea.IsoArcher.dir.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoArcher.dir/.idea/.idea.IsoArcher.dir.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoArcher.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoArcher.dir/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoArcher.dir/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoArcher.dir/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoArcher.dir/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoArcher.dir/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoArcher.dir/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoArcher.dir/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoArcher.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoArcher.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoArcher.dir/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoArcher.dir/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/.idea.IsoArcher.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/.idea.IsoArcher.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoArcher/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoArcher/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Bows/BowBaseClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Bows/BowBaseClass.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Enemies/TestEnemy/TestEnemy.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Enemies/TestEnemy/TestEnemy.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/GameController/GameController.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/GameController/GameController.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/PlayerController/Player.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/PlayerController/Player.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/.idea/.idea.Properties.dir/.idea/.idea.Properties.dir.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/.idea/.idea.Properties.dir/.idea/.idea.Properties.dir.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/.idea/.idea.Properties.dir/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/.idea/.idea.Properties.dir/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/.idea/.idea.Properties.dir/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/.idea/.idea.Properties.dir/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/.idea/.idea.Properties.dir/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/.idea/.idea.Properties.dir/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/.idea/.idea.Properties.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/.idea/.idea.Properties.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Properties/.idea/.idea.Properties.dir/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Properties/.idea/.idea.Properties.dir/riderModule.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,12 +48,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/IsoArcher/Bows/StandardBow/StandardBow.cs" />
-        <option value="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Bows/CurrentBowStatsManager.cs" />
-        <option value="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Bows/BowBaseClass.cs" />
-        <option value="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" />
       </list>
     </option>
   </component>
@@ -166,7 +141,8 @@
       <workItem from="1591968330510" duration="1152000" />
       <workItem from="1592062824764" duration="3175000" />
       <workItem from="1592066069225" duration="330000" />
-      <workItem from="1592066424287" duration="17000" />
+      <workItem from="1592066424287" duration="674000" />
+      <workItem from="1592079707773" duration="445000" />
     </task>
     <servers />
   </component>

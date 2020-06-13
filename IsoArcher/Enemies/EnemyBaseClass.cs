@@ -27,11 +27,15 @@ public class EnemyBaseClass : KinematicBody
     // Logic for when an enemy is hit by an arrow
     void _on_Area_area_entered(Area area)
     {
-        enemyHealth -= CurrentBowStatsManager.currentBowDamage;
-        if (enemyHealth <= 0)
+        if (area.IsInGroup("Arrows"))
         {
-            QueueFree();
+            enemyHealth -= CurrentBowStatsManager.currentBowDamage;
+            if (enemyHealth <= 0)
+            {
+                QueueFree();
+            }
         }
+        
     }
     
 }
