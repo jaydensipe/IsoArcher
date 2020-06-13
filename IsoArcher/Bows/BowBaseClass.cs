@@ -4,10 +4,10 @@ using System;
 public class BowBaseClass : Spatial
 {
     // Bow variables
-    [Export] public int bowDamage = 0;
-    [Export] public string bowName = "";
-    [Export] public string bowAnimationName = "";
-    [Export] public string bowModelName = "";
+    [Export] private int bowDamage = 0;
+    [Export] private string bowName = "";
+    [Export] private string bowAnimationName = "";
+    [Export] private string bowModelName = "";
     private PackedScene arrow = new PackedScene();
 
 
@@ -32,16 +32,25 @@ public class BowBaseClass : Spatial
         }
     }
     
-    // Fires ability of current Bow
-    public void FireAbility()
-    {
-        
-    }
-    
     // Update method for shooting
     public override void _PhysicsProcess(float delta)
     {
         FireWeapon();
     }
 
+    
+    // Fires ability of current Bow
+    private void FireAbility()
+    {
+        
+    }
+    
+    public override void _Ready()
+    {
+        // Initializes bow as current bow
+        CurrentBowStatsManager.currentBowDamage = this.bowDamage;
+        CurrentBowStatsManager.currentBowName = this.bowName;
+        CurrentBowStatsManager.currentBowAnimationName = this.bowAnimationName;
+        CurrentBowStatsManager.currentBowModelName = this.bowModelName;
+    }
 }

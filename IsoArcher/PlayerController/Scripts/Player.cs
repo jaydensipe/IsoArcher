@@ -4,7 +4,7 @@ using System;
 public class Player : Spatial
 {
 
-  // Player Movement Script
+  // Player Movement Script 
   private void Movement()
   {
 
@@ -33,7 +33,7 @@ public class Player : Spatial
   }
   
 
-// Update method for moving
+// Update method for moving 
   public override void _PhysicsProcess(float delta)
   {
     Movement();

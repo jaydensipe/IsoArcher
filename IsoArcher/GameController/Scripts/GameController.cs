@@ -6,7 +6,7 @@ using Godot.Collections;
 // All of Game Logic for IsoArcher
 public class GameController : Node
 {
-    
+    // Logic for picking 1 of 4 locations for an enemy to spawn
     private PackedScene testEnemy = new PackedScene();
     private readonly Random rng = new Random();
     private readonly Array<Position3D> positionArray = new Array<Position3D>();
