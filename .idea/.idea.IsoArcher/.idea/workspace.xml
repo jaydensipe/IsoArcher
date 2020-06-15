@@ -21,12 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="3001d631-6566-4ee0-b3f9-500bef3efcfe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/GameController/GameController.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/GameController/GameController.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/PlayerController/Player.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/PlayerController/Player.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/icon.png.import" beforeDir="false" afterPath="$PROJECT_DIR$/icon.png.import" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,10 +48,10 @@
         <option value="$PROJECT_DIR$/IsoArcher/Bows/StandardBow/StandardBow.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Bows/CurrentBowStatsManager.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Bows/BowBaseClass.cs" />
-        <option value="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" />
       </list>
     </option>
   </component>
@@ -143,6 +141,11 @@
       <workItem from="1592066069225" duration="330000" />
       <workItem from="1592066424287" duration="674000" />
       <workItem from="1592079707773" duration="445000" />
+      <workItem from="1592099999160" duration="15000" />
+      <workItem from="1592156745065" duration="1524000" />
+      <workItem from="1592158282072" duration="133000" />
+      <workItem from="1592158980522" duration="26000" />
+      <workItem from="1592181830534" duration="944000" />
     </task>
     <servers />
   </component>
