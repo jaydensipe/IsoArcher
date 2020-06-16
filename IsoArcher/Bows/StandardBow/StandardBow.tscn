@@ -5,9 +5,11 @@
 
 [node name="StandardBow" instance=ExtResource( 2 )]
 transform = Transform( 1.05, 0, 0, 0, 1.05, 0, 0, 0, 1.05, 0, 0, 0 )
-bowDamage = 5
+bowDamage = 50
 bowName = "Standard Bow"
-bowAnimationName = "standardBowDraw"
+bowDrawNameAnim = "standardBowDraw"
+bowHoldNameAnim = "standardBowHold"
+bowRelNameAnim = "standardBowRelease"
 bowModelName = "StandardBowModel"
 
 [node name="StandardBowModel" parent="." index="0" instance=ExtResource( 1 )]

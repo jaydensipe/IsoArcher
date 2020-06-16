@@ -21,6 +21,10 @@ run/main_scene="res://IsoArcher/GameController/GameController.tscn"
 boot_splash/bg_color=Color( 0.156863, 0.552941, 0.172549, 1 )
 config/icon="res://icon.png"
 
+[autoload]
+
+MainCamera="*res://IsoArcher/GameController/Scripts/MainCamera.cs"
+
 [importer_defaults]
 
 texture={

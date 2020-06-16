@@ -6,7 +6,7 @@ using Godot.Collections;
 // All of Game Logic for IsoArcher
 public class GameController : Node
 {
-    // Logic for picking 1 of 4 locations for an enemy to spawn
+    // Variables for picking 1 of 4 locations for an enemy to spawn
     private PackedScene testEnemy = new PackedScene();
     private readonly Random rng = new Random();
     private readonly Array<Position3D> positionArray = new Array<Position3D>();
@@ -15,6 +15,7 @@ public class GameController : Node
     private int currentWave = 0;
     private bool waveEnded = false;
     
+    // Determines what position enemies should spawn from
     public override void _Ready()
     {
         positionArray.Add(GetNode<Position3D>("CurrentWorld/World1/EnemySpawnPositions/Position3D"));
@@ -39,10 +40,10 @@ public class GameController : Node
         waveEnded = false;
         currentWave += 1;
 
-        for (int i = 0; i < Math.Ceiling(currentWave*4.5); i++)
+        for (int i = 0; i < Math.Ceiling(currentWave*3.5); i++)
         {
-            SpawnEnemy(positionArray);
             await ToSignal(GetNode<Timer>("Timers/EnemySpawnTimer"), "timeout");
+            SpawnEnemy(positionArray);
         }
 
         waveEnded = true;
@@ -57,11 +58,11 @@ public class GameController : Node
         // Instances enemy
         testEnemy = (PackedScene) ResourceLoader.Load("res://IsoArcher/Enemies/TestEnemy/TestEnemy.tscn");
         var enemyInstance = (KinematicBody) testEnemy.Instance();
-        enemyInstance.Translate(spawnLocation.Translation);
-        AddChild(enemyInstance);
         
+        // Changes scale of enemy and transform
+        enemyInstance.Scale = (new Vector3(0.5f, 0.5f, 0.5f));
+        enemyInstance.GlobalTransform = (spawnLocation.GlobalTransform);
+        
+        AddChild(enemyInstance);
     }
-
- 
-
 }

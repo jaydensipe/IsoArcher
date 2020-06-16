@@ -3,7 +3,7 @@ using System;
 
 public class WoodArrow : Area
 {
-    // Controls how fast arrows fly
+    // Controls arrow velocity
     [Export] private int arrowSpeed = 250;
     
     
@@ -13,7 +13,7 @@ public class WoodArrow : Area
         Translate((Vector3.Forward) * arrowSpeed * delta);
     }
 
-    // Determines whether the arrow hit an Area or KinematicBody, and if so deletes the arrow
+    // Determines whether the arrow hit an Area, and if so deletes the arrow
     void _on_WoodArrow_area_entered(Area area)
     {
         QueueFree();

@@ -14,7 +14,9 @@
         </e>
         <e p="Bows" t="Include">
           <e p="BowBaseClass.cs" t="Include" />
-          <e p="CurrentBowStatsManager.cs" t="Include" />
+          <e p="CurrentBowStatsManager" t="Include">
+            <e p="CurrentBowStatsManager.cs" t="Include" />
+          </e>
         </e>
         <e p="Enemies" t="Include">
           <e p="EnemyBaseClass.cs" t="Include" />
@@ -22,6 +24,12 @@
         <e p="GameController" t="Include">
           <e p="Scripts" t="Include">
             <e p="GameController.cs" t="Include" />
+            <e p="MainCamera.cs" t="Include" />
+          </e>
+        </e>
+        <e p="GoldManager" t="Include">
+          <e p="GlobalGoldManager" t="Include">
+            <e p="GlobalGoldManager.cs" t="Include" />
           </e>
         </e>
         <e p="PlayerController" t="Include">

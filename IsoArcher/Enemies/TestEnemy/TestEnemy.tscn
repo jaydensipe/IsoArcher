@@ -8,8 +8,9 @@
 albedo_color = Color( 1, 0, 0, 1 )
 
 [node name="TestEnemy" instance=ExtResource( 1 )]
-enemyMoveSpeed = 10
-enemyHealth = 10
+enemyMoveSpeed = 1
+enemyHealth = 100
+howMuchGoldToDrop = 10
 
 [node name="MeshInstance" parent="." index="0"]
 mesh = SubResource( 1 )

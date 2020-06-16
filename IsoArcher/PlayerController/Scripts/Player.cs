@@ -4,6 +4,8 @@ using System;
 public class Player : Spatial
 {
 
+  private int playerHealth = 90;
+
   // Player Movement Script 
   private void Movement()
   {
@@ -36,6 +38,10 @@ public class Player : Spatial
   void _on_PlayerArea_area_entered(Area area)
   {
     GetTree().ReloadCurrentScene();
+    // playerHealth -= 30;
+    // var playerHitTimer = GetNode<Timer>("PlayerHitDelay");
+    // playerHitTimer.Start();
+    // await ToSignal(playerHitTimer, "timeout");
   }
 
 // Update method for moving 

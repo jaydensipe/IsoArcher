@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://IsoArcher/Worlds/World1/World1.tscn" type="PackedScene" id=1]
 [ext_resource path="res://IsoArcher/PlayerController/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://IsoArcher/GameController/Scripts/GameController.cs" type="Script" id=3]
+[ext_resource path="res://IsoArcher/GameController/Scripts/MainCamera.cs" type="Script" id=4]
 
 [sub_resource type="ProceduralSky" id=1]
 sky_top_color = Color( 0.745098, 0.854902, 0.913725, 1 )
@@ -13,11 +14,12 @@ ground_curve = 0.062767
 ground_energy = 2.0
 
 [sub_resource type="Environment" id=2]
-background_mode = 1
+background_mode = 2
 background_sky = SubResource( 1 )
 background_sky_custom_fov = 55.0
 background_color = Color( 0.0705882, 0.847059, 0.756863, 1 )
 ambient_light_color = Color( 0.552941, 0.552941, 0.552941, 1 )
+ambient_light_energy = 0.3
 ssao_intensity = 9.4
 ssao_intensity2 = 0.0
 ssao_bias = 0.001
@@ -36,13 +38,14 @@ environment = SubResource( 2 )
 [node name="DirectionalLight" type="DirectionalLight" parent="MainWorldEnvironment"]
 transform = Transform( 1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 11, 18 )
 
-[node name="MainCamera" type="Camera" parent="MainWorldEnvironment"]
-transform = Transform( 0.707107, -0.353553, 0.612373, 0, 0.866026, 0.5, -0.707107, -0.353553, 0.612373, 28.2868, 22.4, 29.2868 )
+[node name="MainCamera" type="Camera" parent="."]
+transform = Transform( 0.707107, -0.353553, 0.612373, 0, 0.866026, 0.499999, -0.707107, -0.353553, 0.612373, 32.206, 25.6, 33.206 )
 current = true
 fov = 50.0
+script = ExtResource( 4 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-transform = Transform( 0.275, 0, 0, 0, 0.275, 0, 0, 0, 0.275, 0, 2.7, 0 )
+transform = Transform( 0.17875, 0, 0, 0, 0.17875, 0, 0, 0, 0.17875, 0, 2.3, 0 )
 
 [node name="CurrentWorld" type="Spatial" parent="."]
 
@@ -51,5 +54,5 @@ transform = Transform( 0.275, 0, 0, 0, 0.275, 0, 0, 0, 0.275, 0, 2.7, 0 )
 [node name="Timers" type="Node" parent="."]
 
 [node name="EnemySpawnTimer" type="Timer" parent="Timers"]
-wait_time = 0.5
+wait_time = 1.5
 autostart = true

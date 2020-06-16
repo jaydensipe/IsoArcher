@@ -33,4 +33,6 @@ transform = Transform( 1.1, 0, 0, 0, 1.1, 0, 0, 0, 1.1, 0, 0, 0 )
 [node name="CollisionShape" type="CollisionShape" parent="PlayerArea"]
 transform = Transform( 1, 0, 0, 0, 2, 0, 0, 0, 1, 0, 0, 0 )
 shape = SubResource( 3 )
+
+[node name="PlayerHitDelay" type="Timer" parent="."]
 [connection signal="area_entered" from="PlayerArea" to="." method="_on_PlayerArea_area_entered"]
