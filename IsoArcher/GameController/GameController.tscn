@@ -8,9 +8,9 @@
 [sub_resource type="ProceduralSky" id=1]
 sky_top_color = Color( 0.745098, 0.854902, 0.913725, 1 )
 sky_energy = 1.5
-ground_bottom_color = Color( 0.113725, 0.709804, 0.768627, 1 )
+ground_bottom_color = Color( 0.427451, 0.74902, 0.780392, 1 )
 ground_horizon_color = Color( 1, 1, 1, 1 )
-ground_curve = 0.062767
+ground_curve = 0.095137
 ground_energy = 2.0
 
 [sub_resource type="Environment" id=2]

@@ -20,22 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3001d631-6566-4ee0-b3f9-500bef3efcfe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Bows/BowBaseClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Bows/BowBaseClass.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Bows/CurrentBowStatsManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Bows/StandardBow/Models/StandardBowModel.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Bows/StandardBow/Models/StandardBowModel.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Bows/StandardBow/Models/isoArcherStandardBow.gltf" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Bows/StandardBow/Models/isoArcherStandardBow.gltf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Bows/StandardBow/StandardBow.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Bows/StandardBow/StandardBow.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Enemies/TestEnemy/TestEnemy.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Enemies/TestEnemy/TestEnemy.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher/Enemies/TestEnemy/TestEnemy.tscn" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/GameController/GameController.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/GameController/GameController.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/PlayerController/Player.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/PlayerController/Player.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/Worlds/World1/World1.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Worlds/World1/World1.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,13 +56,15 @@
         <option value="$PROJECT_DIR$/IsoArcher/Bows/CurrentBowStatsManager.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/GoldManager/GlobalGoldManager.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/GoldManager/GlobalGoldManager/GlobalGoldManager.cs" />
-        <option value="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" />
-        <option value="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/GameController/Scripts/MainCamera.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Bows/CurrentBowStatsManager/CurrentBowStatsManager.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Bows/BowBaseClass.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/Enemies/Goblin/Scripts/Goblin.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/Enemies/Goblin/Goblin.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" />
       </list>
     </option>
   </component>
@@ -169,6 +165,9 @@
       <workItem from="1592268954837" duration="3175000" />
       <workItem from="1592289180800" duration="2289000" />
       <workItem from="1592331021038" duration="7878000" />
+      <workItem from="1592359520228" duration="599000" />
+      <workItem from="1592360276383" duration="3512000" />
+      <workItem from="1592428588752" duration="236000" />
     </task>
     <servers />
   </component>

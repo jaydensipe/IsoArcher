@@ -56,11 +56,11 @@ public class GameController : Node
         var spawnLocation = positionArraysForSpawning[randomEnemySelection];
         
         // Instances enemy
-        testEnemy = (PackedScene) ResourceLoader.Load("res://IsoArcher/Enemies/TestEnemy/TestEnemy.tscn");
+        testEnemy = (PackedScene) ResourceLoader.Load("res://IsoArcher/Enemies/Goblin/Goblin.tscn");
         var enemyInstance = (KinematicBody) testEnemy.Instance();
         
         // Changes scale of enemy and transform
-        enemyInstance.Scale = (new Vector3(0.5f, 0.5f, 0.5f));
+        enemyInstance.Scale = (new Vector3(0.15f, 0.15f, 0.15f));
         enemyInstance.GlobalTransform = (spawnLocation.GlobalTransform);
         
         AddChild(enemyInstance);

@@ -23,7 +23,7 @@ transform = Transform( -19.2, 0, 1.81195e-07, 0, 1, 0, -2.89912e-06, 0, -1.2, 0,
 material = SubResource( 2 )
 
 [node name="EnemySpawnPositions" type="Spatial" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.249228, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.0677, 0 )
 
 [node name="Position3D" type="Position3D" parent="EnemySpawnPositions"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 3, 0 )
