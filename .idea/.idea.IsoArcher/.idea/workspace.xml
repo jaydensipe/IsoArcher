@@ -20,16 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3001d631-6566-4ee0-b3f9-500bef3efcfe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher/Bows/BowBaseClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Bows/BowBaseClass.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher/Bows/CurrentBowStatsManager/CurrentBowStatsManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher/Bows/StandardBow/Models/StandardBowModel.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Bows/StandardBow/Models/StandardBowModel.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Enemies/TestEnemy/TestEnemy.tscn" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/GameController/GameController.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/GameController/GameController.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher/GoldManager/GlobalGoldManager/GlobalGoldManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/GoldManager/GlobalGoldManager/GlobalGoldManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher/GoldManager/GoldManagerUI.tscn" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/PlayerController/Player.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/PlayerController/Player.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Worlds/World1/World1.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Worlds/World1/World1.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,14 +44,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/IsoArcher/Bows/CurrentBowStatsManager/CurrentBowStatsManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/IsoArcher/GoldManager/GlobalGoldManager/GlobalGoldManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/IsoArcher/Bows/BowBaseClass.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IsoArcher/Bows/GlobalCurrentBowStatsManager/GlobalCurrentBowStatsManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/IsoArcher/GameController/Scripts/MainCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IsoArcher/Shop/Scripts/Shop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IsoArcher/Enemies/GlobalEnemyBaseRemaining.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -55,16 +61,21 @@
         <option value="$PROJECT_DIR$/IsoArcher/Bows/StandardBow/StandardBow.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Bows/CurrentBowStatsManager.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/GoldManager/GlobalGoldManager.cs" />
-        <option value="$PROJECT_DIR$/IsoArcher/GoldManager/GlobalGoldManager/GlobalGoldManager.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/GameController/Scripts/MainCamera.cs" />
-        <option value="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Bows/CurrentBowStatsManager/CurrentBowStatsManager.cs" />
-        <option value="$PROJECT_DIR$/IsoArcher/Bows/BowBaseClass.cs" />
-        <option value="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Enemies/Goblin/Scripts/Goblin.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Enemies/Goblin/Goblin.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseRemaining.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/Enemies/GlobalEnemyBaseRemaining.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/GoldManager/GlobalGoldManager/GlobalGoldManager.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/Bows/CurrentBowStatsManager/GlobalCurrentBowStatsManager.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/Bows/BowBaseClass.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/Bows/GlobalCurrentBowStatsManager/GlobalCurrentBowStatsManager.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/Shop/Scripts/Shop.cs" />
       </list>
     </option>
   </component>
@@ -168,6 +179,19 @@
       <workItem from="1592359520228" duration="599000" />
       <workItem from="1592360276383" duration="3512000" />
       <workItem from="1592428588752" duration="236000" />
+      <workItem from="1592451202848" duration="7635000" />
+      <workItem from="1592461725678" duration="85000" />
+      <workItem from="1592511216258" duration="9820000" />
+      <workItem from="1592523047009" duration="115000" />
+      <workItem from="1592602264786" duration="32000" />
+      <workItem from="1592602331033" duration="1131000" />
+      <workItem from="1592603474202" duration="89000" />
+      <workItem from="1592603907378" duration="1143000" />
+      <workItem from="1592607934247" duration="109000" />
+      <workItem from="1592608055731" duration="72000" />
+      <workItem from="1592608137609" duration="187000" />
+      <workItem from="1592608347213" duration="1151000" />
+      <workItem from="1592609518643" duration="4000" />
     </task>
     <servers />
   </component>
@@ -187,85 +211,85 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1224" height="285" key="GridCell.Tab.0.bottom" timestamp="1592342555345">
+    <state width="1224" height="281" key="GridCell.Tab.0.bottom" timestamp="1592608324205">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1224" height="285" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1592342555345" />
-    <state width="1224" height="285" key="GridCell.Tab.0.center" timestamp="1592342555345">
+    <state width="1224" height="281" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1592608324205" />
+    <state width="1224" height="281" key="GridCell.Tab.0.center" timestamp="1592608324204">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1224" height="285" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1592342555345" />
-    <state width="1224" height="285" key="GridCell.Tab.0.left" timestamp="1592342555345">
+    <state width="1224" height="281" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1592608324204" />
+    <state width="1224" height="281" key="GridCell.Tab.0.left" timestamp="1592608324204">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1224" height="285" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1592342555345" />
-    <state width="1224" height="285" key="GridCell.Tab.0.right" timestamp="1592342555345">
+    <state width="1224" height="281" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1592608324204" />
+    <state width="1224" height="281" key="GridCell.Tab.0.right" timestamp="1592608324205">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1224" height="285" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1592342555345" />
-    <state width="1224" height="285" key="GridCell.Tab.1.bottom" timestamp="1592342555345">
+    <state width="1224" height="281" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1592608324205" />
+    <state width="1224" height="281" key="GridCell.Tab.1.bottom" timestamp="1592608324205">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1224" height="285" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1592342555345" />
-    <state width="1224" height="285" key="GridCell.Tab.1.center" timestamp="1592342555345">
+    <state width="1224" height="281" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1592608324205" />
+    <state width="1224" height="281" key="GridCell.Tab.1.center" timestamp="1592608324205">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1224" height="285" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1592342555345" />
-    <state width="1224" height="285" key="GridCell.Tab.1.left" timestamp="1592342555345">
+    <state width="1224" height="281" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1592608324205" />
+    <state width="1224" height="281" key="GridCell.Tab.1.left" timestamp="1592608324205">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1224" height="285" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1592342555345" />
-    <state width="1224" height="285" key="GridCell.Tab.1.right" timestamp="1592342555345">
+    <state width="1224" height="281" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1592608324205" />
+    <state width="1224" height="281" key="GridCell.Tab.1.right" timestamp="1592608324205">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1224" height="285" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1592342555345" />
-    <state width="1224" height="285" key="GridCell.Tab.2.bottom" timestamp="1592342555345">
+    <state width="1224" height="281" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1592608324205" />
+    <state width="1224" height="281" key="GridCell.Tab.2.bottom" timestamp="1592608324205">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1224" height="285" key="GridCell.Tab.2.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1592342555345" />
-    <state width="1224" height="285" key="GridCell.Tab.2.center" timestamp="1592342555345">
+    <state width="1224" height="281" key="GridCell.Tab.2.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1592608324205" />
+    <state width="1224" height="281" key="GridCell.Tab.2.center" timestamp="1592608324205">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1224" height="285" key="GridCell.Tab.2.center/0.0.2560.1400@0.0.2560.1400" timestamp="1592342555345" />
-    <state width="1224" height="285" key="GridCell.Tab.2.left" timestamp="1592342555345">
+    <state width="1224" height="281" key="GridCell.Tab.2.center/0.0.2560.1400@0.0.2560.1400" timestamp="1592608324205" />
+    <state width="1224" height="281" key="GridCell.Tab.2.left" timestamp="1592608324205">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1224" height="285" key="GridCell.Tab.2.left/0.0.2560.1400@0.0.2560.1400" timestamp="1592342555345" />
-    <state width="1224" height="285" key="GridCell.Tab.2.right" timestamp="1592342555345">
+    <state width="1224" height="281" key="GridCell.Tab.2.left/0.0.2560.1400@0.0.2560.1400" timestamp="1592608324205" />
+    <state width="1224" height="281" key="GridCell.Tab.2.right" timestamp="1592608324205">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1224" height="285" key="GridCell.Tab.2.right/0.0.2560.1400@0.0.2560.1400" timestamp="1592342555345" />
-    <state width="1224" height="285" key="GridCell.Tab.3.bottom" timestamp="1592342555345">
+    <state width="1224" height="281" key="GridCell.Tab.2.right/0.0.2560.1400@0.0.2560.1400" timestamp="1592608324205" />
+    <state width="1224" height="281" key="GridCell.Tab.3.bottom" timestamp="1592608324205">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1224" height="285" key="GridCell.Tab.3.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1592342555345" />
-    <state width="1224" height="285" key="GridCell.Tab.3.center" timestamp="1592342555345">
+    <state width="1224" height="281" key="GridCell.Tab.3.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1592608324205" />
+    <state width="1224" height="281" key="GridCell.Tab.3.center" timestamp="1592608324205">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1224" height="285" key="GridCell.Tab.3.center/0.0.2560.1400@0.0.2560.1400" timestamp="1592342555345" />
-    <state width="1224" height="285" key="GridCell.Tab.3.left" timestamp="1592342555345">
+    <state width="1224" height="281" key="GridCell.Tab.3.center/0.0.2560.1400@0.0.2560.1400" timestamp="1592608324205" />
+    <state width="1224" height="281" key="GridCell.Tab.3.left" timestamp="1592608324205">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1224" height="285" key="GridCell.Tab.3.left/0.0.2560.1400@0.0.2560.1400" timestamp="1592342555345" />
-    <state width="1224" height="285" key="GridCell.Tab.3.right" timestamp="1592342555345">
+    <state width="1224" height="281" key="GridCell.Tab.3.left/0.0.2560.1400@0.0.2560.1400" timestamp="1592608324205" />
+    <state width="1224" height="281" key="GridCell.Tab.3.right" timestamp="1592608324205">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1224" height="285" key="GridCell.Tab.3.right/0.0.2560.1400@0.0.2560.1400" timestamp="1592342555345" />
+    <state width="1224" height="281" key="GridCell.Tab.3.right/0.0.2560.1400@0.0.2560.1400" timestamp="1592608324205" />
     <state x="1250" y="258" key="SettingsEditor" timestamp="1592066327500">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1250" y="258" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1592066327500" />
-    <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog" timestamp="1592066310621">
+    <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog" timestamp="1592603560145">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592066310621" />
+    <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592603560145" />
     <state x="1389" y="533" key="cloudConfig.SelfSettingsDialog" timestamp="1591902140510">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1389" y="533" key="cloudConfig.SelfSettingsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1591902140510" />
-    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup" timestamp="1592063370218">
+    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup" timestamp="1592515251225">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1592063370218" />
+    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1592515251225" />
   </component>
 </project>

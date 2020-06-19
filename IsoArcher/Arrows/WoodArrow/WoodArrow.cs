@@ -4,7 +4,7 @@ using System;
 public class WoodArrow : Area
 {
     // Controls arrow velocity
-    [Export] private int arrowSpeed = 250;
+    private float arrowSpeed = GlobalCurrentBowStatsManager.currentBowArrowVelocity;
     
     
     // Controls which direction the arrows fly

@@ -8,6 +8,7 @@ public class EnemyBaseClass : KinematicBody
     [Export] private int enemyHealth = 0;
     [Export] private int howMuchGoldToDrop = 0;
     [Export] private String goblinName = "";
+    GameController update = new GameController();
 
     
     // Sets animation to loop
@@ -42,13 +43,14 @@ public class EnemyBaseClass : KinematicBody
         {
             // MainCamera cameraShake = GetNode<MainCamera>("/root/MainCamera");
             // cameraShake.Shake(5f, 40f, 5f);
+            enemyHealth -= GlobalCurrentBowStatsManager.currentBowDamage;
             
-            enemyHealth -= CurrentBowStatsManager.currentBowDamage;
             if (enemyHealth <= 0)
             {
                 GlobalGoldManager.globalGold += howMuchGoldToDrop;
-                GD.Print((GlobalGoldManager.globalGold));
+                GlobalEnemyBaseRemaining.enemiesRemaining -= 1;
                 QueueFree();
+                
             }
         }
         

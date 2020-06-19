@@ -14,6 +14,7 @@ public class GameController : Node
     // Wave spawning enemy logic
     private int currentWave = 0;
     private bool waveEnded = false;
+    private static int enemiesAmount = 0;
     
     // Determines what position enemies should spawn from
     public override void _Ready()
@@ -28,6 +29,7 @@ public class GameController : Node
     // Debug to spawn waves
     public override void _Process(float delta)
     {
+        UpdateUI();
         if (Input.IsActionJustPressed("TestWave"))
         {
             WaveSystem();
@@ -39,8 +41,10 @@ public class GameController : Node
     {
         waveEnded = false;
         currentWave += 1;
+        enemiesAmount = (int)Math.Ceiling(currentWave * 3.5);
+        GlobalEnemyBaseRemaining.enemiesRemaining = enemiesAmount;
 
-        for (int i = 0; i < Math.Ceiling(currentWave*3.5); i++)
+        for (int i = 0; i < enemiesAmount; i++)
         {
             await ToSignal(GetNode<Timer>("Timers/EnemySpawnTimer"), "timeout");
             SpawnEnemy(positionArray);
@@ -64,5 +68,12 @@ public class GameController : Node
         enemyInstance.GlobalTransform = (spawnLocation.GlobalTransform);
         
         AddChild(enemyInstance);
+    }
+
+    private void UpdateUI()
+    {
+        GetNode<Label>("UI/HudUI/CurrentWave/HBoxContainer/WaveAmount").Text = currentWave.ToString();
+        GetNode<Label>("UI/HudUI/Gold/HBoxContainer/GoldAmount").Text = GlobalGoldManager.globalGold.ToString();
+        GetNode<Label>("UI/HudUI/EnemiesLeft/HBoxContainer/EnemiesLeftAmount").Text = GlobalEnemyBaseRemaining.enemiesRemaining.ToString();
     }
 }

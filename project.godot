@@ -25,6 +25,12 @@ config/icon="res://icon.png"
 
 MainCamera="*res://IsoArcher/GameController/Scripts/MainCamera.cs"
 
+[display]
+
+window/size/width=1920
+window/size/height=1080
+window/dpi/allow_hidpi=true
+
 [importer_defaults]
 
 texture={

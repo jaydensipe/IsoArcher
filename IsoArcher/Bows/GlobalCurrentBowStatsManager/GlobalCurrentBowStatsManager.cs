@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public static class CurrentBowStatsManager
+public static class GlobalCurrentBowStatsManager
 { 
     
     // Current bow variables for global use
@@ -11,5 +11,7 @@ public static class CurrentBowStatsManager
     public static string currentBowHoldNameAnim = "";
     public static string currentBowRelNameAnim = "";
     public static string currentBowModelName = "";
-    
+    public static float currentBowRofSpeed = 1.0f;
+    public static int currentBowArrowVelocity = 250;
+
 }

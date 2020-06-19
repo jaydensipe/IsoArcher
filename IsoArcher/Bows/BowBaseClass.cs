@@ -16,9 +16,11 @@ public class BowBaseClass : Spatial
     private bool hasBowFired = true;
     private bool canSpawnArrow = false;
     
+    
     // Code for firing current bow
     private async void FireWeapon()
     {
+
         if (Input.IsActionPressed("Fire"))
         {
             if (hasBowFired == true)
@@ -26,6 +28,7 @@ public class BowBaseClass : Spatial
                 // Plays bow draw animation
                 var animationPlayerWeapon = GetNode<AnimationPlayer>(bowModelName + "/AnimationPlayer");
                 animationPlayerWeapon.Play(bowDrawNameAnim);
+                animationPlayerWeapon.PlaybackSpeed = GlobalCurrentBowStatsManager.currentBowRofSpeed;
                 
                 if (!Input.IsActionJustReleased("Fire"))
                 {
@@ -58,6 +61,12 @@ public class BowBaseClass : Spatial
         }
     }
     
+
+    private void _Fire_Arrow()
+    {
+        
+    }
+    
     // Update method for shooting
     public override void _PhysicsProcess(float delta)
     {
@@ -67,12 +76,14 @@ public class BowBaseClass : Spatial
     // Initializes bow as current bow
     public override void _Ready()
     {
+        var playerInstance = GetOwner<Spatial>();
+        playerInstance.Connect("ShootBow", this, nameof(_Fire_Arrow));
         
-        CurrentBowStatsManager.currentBowDamage = this.bowDamage;
-        CurrentBowStatsManager.currentBowName = this.bowName;
-        CurrentBowStatsManager.currentBowDrawNameAnim = this.bowDrawNameAnim;
-        CurrentBowStatsManager.currentBowHoldNameAnim = this.bowHoldNameAnim;
-        CurrentBowStatsManager.currentBowRelNameAnim = bowRelNameAnim;
-        CurrentBowStatsManager.currentBowModelName = this.bowModelName;
+        GlobalCurrentBowStatsManager.currentBowDamage = this.bowDamage;
+        GlobalCurrentBowStatsManager.currentBowName = this.bowName;
+        GlobalCurrentBowStatsManager.currentBowDrawNameAnim = this.bowDrawNameAnim;
+        GlobalCurrentBowStatsManager.currentBowHoldNameAnim = this.bowHoldNameAnim;
+        GlobalCurrentBowStatsManager.currentBowRelNameAnim = bowRelNameAnim;
+        GlobalCurrentBowStatsManager.currentBowModelName = this.bowModelName;
     }
 }

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://IsoArcher/Shop/Scripts/Shop.cs" type="Script" id=1]
+
+[node name="Shop" type="Spatial"]
+script = ExtResource( 1 )

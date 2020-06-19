@@ -4,13 +4,13 @@
 [ext_resource path="res://IsoArcher/Bows/StandardBow/Materials/WoodTexture.jpg" type="Texture" id=2]
 [ext_resource path="res://IsoArcher/Bows/StandardBow/Materials/StringTexture.jpeg" type="Texture" id=3]
 
-[sub_resource type="SpatialMaterial" id=24]
+[sub_resource type="SpatialMaterial" id=1]
 albedo_texture = ExtResource( 2 )
 
-[sub_resource type="SpatialMaterial" id=25]
+[sub_resource type="SpatialMaterial" id=2]
 albedo_texture = ExtResource( 3 )
 
-[sub_resource type="Animation" id=23]
+[sub_resource type="Animation" id=3]
 resource_name = "standardBowDraw"
 length = 0.32
 tracks/0/type = "transform"
@@ -42,7 +42,7 @@ tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = PoolRealArray( 0, 1, 0, -5, 0, 0, 0, 0, 1, 1, 1, 1, 0.0666667, 1, 1.38889, -4.75, 0, 0, 0, -0.120907, 0.992664, 1, 0.972222, 1, 0.133333, 1, 2.77778, -4.5, 0, 0, 0, -0.24004, 0.970763, 1, 0.944444, 1, 0.2, 1, 4.16667, -4.25, 0, 0, 0, -0.355651, 0.934619, 1, 0.916667, 1, 0.266667, 1, 5, -4.16667, 0, 0, 0, -0.427884, 0.903834, 1, 0.933333, 1, 0.32, 1, 5, -4.3, 0, 0, 0, -0.438371, 0.898794, 1, 1, 1 )
 
-[sub_resource type="Animation" id=21]
+[sub_resource type="Animation" id=4]
 resource_name = "standardBowHold"
 length = 0.001
 tracks/0/type = "transform"
@@ -74,7 +74,7 @@ tracks/3/imported = false
 tracks/3/enabled = true
 tracks/3/keys = PoolRealArray( 0, 1, 5, -4.1, 0, 0, 0, -0.422618, 0.906308, 1, 0.9, 1 )
 
-[sub_resource type="Animation" id=22]
+[sub_resource type="Animation" id=5]
 resource_name = "standardBowRelease"
 length = 0.28
 tracks/0/type = "transform"
@@ -107,137 +107,151 @@ tracks/3/enabled = true
 tracks/3/keys = PoolRealArray( 0, 1, 5, -4.1, 0, 0, 0, -0.422618, 0.906308, 1, 0.9, 1, 0.0666667, 1, -0.1, -5, 0, 0, 0, 0, 1, 1, 1, 1, 0.133333, 1, -0.2, -5, 0, 0, 0, 0, 1, 1, 1, 1, 0.266667, 1, -0.0999999, -5, 0, 0, 0, 0, 1, 1, 1, 1, 0.28, 1, 0, -5, 0, 0, 0, 0, 1, 1, 1, 1 )
 
 [node name="StandardBowModel" instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.45, 0, 0, 0 )
+
+[node name="bowBottom" parent="standardBow" index="0"]
+transform = Transform( 1.64207, -0.232937, 0, 0.439992, 0.869333, 0, 0, 0, 1, 1.625, -11, -0.775 )
 
 [node name="2a3b7e6e-56b5-69a0-274f-2fd09b497399" parent="standardBow/bowBottom" index="0"]
-material/0 = SubResource( 24 )
-material/1 = SubResource( 24 )
-material/2 = SubResource( 24 )
-material/3 = SubResource( 24 )
-material/4 = SubResource( 24 )
-material/5 = SubResource( 24 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.96046e-08, 2.5, 0 )
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
 
 [node name="a956dbb3-08f0-38f9-121e-c779e2859382" parent="standardBow/bowBottom" index="1"]
-material/0 = SubResource( 24 )
-material/1 = SubResource( 24 )
-material/2 = SubResource( 24 )
-material/3 = SubResource( 24 )
-material/4 = SubResource( 24 )
-material/5 = SubResource( 24 )
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
 
 [node name="eb03549d-d501-ec4f-0c17-734a2aec76ac" parent="standardBow/bowBottom" index="2"]
-material/0 = SubResource( 24 )
-material/1 = SubResource( 24 )
-material/2 = SubResource( 24 )
-material/3 = SubResource( 24 )
-material/4 = SubResource( 24 )
-material/5 = SubResource( 24 )
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
 
 [node name="57b5405b-d84a-0fd5-b92e-b6749dfc1bca" parent="standardBow/bowBottom" index="3"]
-material/0 = SubResource( 24 )
-material/1 = SubResource( 24 )
-material/2 = SubResource( 24 )
-material/3 = SubResource( 24 )
-material/4 = SubResource( 24 )
-material/5 = SubResource( 24 )
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
 
 [node name="26981e1f-204d-1435-a2c3-331ad2e324c2" parent="standardBow/bowBottom" index="4"]
-material/0 = SubResource( 24 )
-material/1 = SubResource( 24 )
-material/2 = SubResource( 24 )
-material/3 = SubResource( 24 )
-material/4 = SubResource( 24 )
-material/5 = SubResource( 24 )
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
 
 [node name="2c75fb50-8a82-a89a-0296-5f03c6bc10ee" parent="standardBow/bowBottom" index="5"]
-material/0 = SubResource( 24 )
-material/1 = SubResource( 24 )
-material/2 = SubResource( 24 )
-material/3 = SubResource( 24 )
-material/4 = SubResource( 24 )
-material/5 = SubResource( 24 )
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
 
 [node name="3d40915d-f64f-f0c5-33b5-84c395430e1f" parent="standardBow/bowBottom" index="6"]
-material/0 = SubResource( 24 )
-material/1 = SubResource( 24 )
-material/2 = SubResource( 24 )
-material/3 = SubResource( 24 )
-material/4 = SubResource( 24 )
-material/5 = SubResource( 24 )
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
+
+[node name="bowTop" parent="standardBow" index="1"]
+transform = Transform( 1.64207, -0.232937, 3.16962e-17, -0.439992, -0.869333, 1.18292e-16, 2.81241e-24, -1.10218e-16, -1, 1.65, 5.675, 0.725 )
 
 [node name="83d4c1f1-8272-ce82-aff8-64bc6c24a20f" parent="standardBow/bowTop" index="0"]
-material/0 = SubResource( 24 )
-material/1 = SubResource( 24 )
-material/2 = SubResource( 24 )
-material/3 = SubResource( 24 )
-material/4 = SubResource( 24 )
-material/5 = SubResource( 24 )
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
 
 [node name="8e9ddfa6-0c57-2f5c-ca3b-1df6b8671a3b" parent="standardBow/bowTop" index="1"]
-material/0 = SubResource( 24 )
-material/1 = SubResource( 24 )
-material/2 = SubResource( 24 )
-material/3 = SubResource( 24 )
-material/4 = SubResource( 24 )
-material/5 = SubResource( 24 )
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
 
 [node name="0b8555f2-bfe8-8329-142c-e5630cba857f" parent="standardBow/bowTop" index="2"]
-material/0 = SubResource( 24 )
-material/1 = SubResource( 24 )
-material/2 = SubResource( 24 )
-material/3 = SubResource( 24 )
-material/4 = SubResource( 24 )
-material/5 = SubResource( 24 )
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
 
 [node name="edef7771-dd2c-5628-467f-dbe3e2753a86" parent="standardBow/bowTop" index="3"]
-material/0 = SubResource( 24 )
-material/1 = SubResource( 24 )
-material/2 = SubResource( 24 )
-material/3 = SubResource( 24 )
-material/4 = SubResource( 24 )
-material/5 = SubResource( 24 )
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
 
 [node name="2ca02378-de09-8db0-026b-ed3105b2e3d0" parent="standardBow/bowTop" index="4"]
-material/0 = SubResource( 24 )
-material/1 = SubResource( 24 )
-material/2 = SubResource( 24 )
-material/3 = SubResource( 24 )
-material/4 = SubResource( 24 )
-material/5 = SubResource( 24 )
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
 
 [node name="1deffbaa-da1c-cc83-c6de-ea93018d43d4" parent="standardBow/bowTop" index="5"]
-material/0 = SubResource( 24 )
-material/1 = SubResource( 24 )
-material/2 = SubResource( 24 )
-material/3 = SubResource( 24 )
-material/4 = SubResource( 24 )
-material/5 = SubResource( 24 )
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
 
 [node name="3d572da7-8e38-a729-5bd9-ee5589f42445" parent="standardBow/bowTop" index="6"]
-material/0 = SubResource( 24 )
-material/1 = SubResource( 24 )
-material/2 = SubResource( 24 )
-material/3 = SubResource( 24 )
-material/4 = SubResource( 24 )
-material/5 = SubResource( 24 )
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
+
+[node name="bowString" parent="standardBow" index="2"]
+transform = Transform( 0.642788, -0.766044, 0, 0.766044, 0.642788, 0, 0, 0, 1, 5, -1, 0 )
 
 [node name="520795b6-71f6-181e-c57b-4afb2c41ec8b" parent="standardBow/bowString" index="0"]
-material/0 = SubResource( 25 )
-material/1 = SubResource( 25 )
-material/2 = SubResource( 25 )
-material/3 = SubResource( 25 )
-material/4 = SubResource( 25 )
-material/5 = SubResource( 25 )
+material/0 = SubResource( 2 )
+material/1 = SubResource( 2 )
+material/2 = SubResource( 2 )
+material/3 = SubResource( 2 )
+material/4 = SubResource( 2 )
+material/5 = SubResource( 2 )
+
+[node name="bowString2" parent="standardBow" index="3"]
+transform = Transform( 0.642788, 0.68944, 0, -0.766044, 0.578509, 0, 0, 0, 1, 5, -4.1, 0 )
 
 [node name="c7f0306d-e921-6e35-360a-872e6220f2d0" parent="standardBow/bowString2" index="0"]
-material/0 = SubResource( 25 )
-material/1 = SubResource( 25 )
-material/2 = SubResource( 25 )
-material/3 = SubResource( 25 )
-material/4 = SubResource( 25 )
-material/5 = SubResource( 25 )
+material/0 = SubResource( 2 )
+material/1 = SubResource( 2 )
+material/2 = SubResource( 2 )
+material/3 = SubResource( 2 )
+material/4 = SubResource( 2 )
+material/5 = SubResource( 2 )
 
 [node name="AnimationPlayer" parent="." index="1"]
-playback_speed = 0.4
-anims/standardBowDraw = SubResource( 23 )
-anims/standardBowHold = SubResource( 21 )
-anims/standardBowRelease = SubResource( 22 )
+playback_speed = 0.25
+anims/standardBowDraw = SubResource( 3 )
+anims/standardBowHold = SubResource( 4 )
+anims/standardBowRelease = SubResource( 5 )

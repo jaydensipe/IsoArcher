@@ -1,0 +1,132 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://IsoArcher/Fonts/Adventurer.ttf" type="DynamicFontData" id=1]
+
+[sub_resource type="DynamicFont" id=1]
+size = 64
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[node name="HudUI" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CurrentWave" type="MarginContainer" parent="."]
+anchor_right = 1.0
+margin_bottom = 124.0
+custom_constants/margin_right = 30
+custom_constants/margin_top = 30
+custom_constants/margin_left = 30
+custom_constants/margin_bottom = 30
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CurrentWave"]
+margin_left = 30.0
+margin_top = 30.0
+margin_right = 1890.0
+margin_bottom = 94.0
+mouse_filter = 2
+custom_constants/separation = 20
+alignment = 2
+
+[node name="Wave" type="Label" parent="CurrentWave/HBoxContainer"]
+margin_left = 1632.0
+margin_right = 1796.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.537255, 0.941176, 0.321569, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Wave:"
+
+[node name="WaveAmount" type="Label" parent="CurrentWave/HBoxContainer"]
+margin_left = 1816.0
+margin_right = 1860.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 0.890196, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "0"
+
+[node name="Gold" type="MarginContainer" parent="."]
+anchor_right = 1.0
+margin_bottom = 184.0
+custom_constants/margin_right = 30
+custom_constants/margin_top = 170
+custom_constants/margin_left = 30
+custom_constants/margin_bottom = 30
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Gold"]
+margin_left = 30.0
+margin_top = 170.0
+margin_right = 1890.0
+margin_bottom = 301.0
+mouse_filter = 2
+custom_constants/separation = 20
+alignment = 2
+
+[node name="Gold" type="Label" parent="Gold/HBoxContainer"]
+margin_left = 1652.0
+margin_top = 33.0
+margin_right = 1796.0
+margin_bottom = 97.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.980392, 0.741176, 0.054902, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Gold:"
+
+[node name="GoldAmount" type="Label" parent="Gold/HBoxContainer"]
+margin_left = 1816.0
+margin_top = 33.0
+margin_right = 1860.0
+margin_bottom = 97.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 0.890196, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "0"
+
+[node name="EnemiesLeft" type="MarginContainer" parent="."]
+anchor_right = 1.0
+margin_bottom = 194.0
+custom_constants/margin_right = 30
+custom_constants/margin_top = 100
+custom_constants/margin_left = 30
+custom_constants/margin_bottom = 30
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="EnemiesLeft"]
+margin_left = 30.0
+margin_top = 100.0
+margin_right = 1890.0
+margin_bottom = 164.0
+mouse_filter = 2
+custom_constants/separation = 20
+alignment = 2
+
+[node name="EnemiesLeft" type="Label" parent="EnemiesLeft/HBoxContainer"]
+margin_left = 1548.0
+margin_right = 1796.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 0.196078, 0.196078, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Enemies:"
+
+[node name="EnemiesLeftAmount" type="Label" parent="EnemiesLeft/HBoxContainer"]
+margin_left = 1816.0
+margin_right = 1860.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 0.890196, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "0"
