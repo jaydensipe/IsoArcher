@@ -8,15 +8,16 @@ public class EnemyBaseClass : KinematicBody
     [Export] private int enemyHealth = 0;
     [Export] private int howMuchGoldToDrop = 0;
     [Export] private String goblinName = "";
-    GameController update = new GameController();
 
-    
+
     // Sets animation to loop
     public override void _Ready()
     {
         var enemyAnimation = GetNode<AnimationPlayer>(goblinName + "/AnimationPlayer").GetAnimation("enemyGoblinWalk");
         enemyAnimation.Loop = true;
         GetNode<AnimationPlayer>(goblinName + "/AnimationPlayer").Play("enemyGoblinWalk");
+        
+        // Looks at player position
         LookAt(new Vector3(0, 2.0f, 0), Vector3.Up);
     }
 
@@ -36,7 +37,7 @@ public class EnemyBaseClass : KinematicBody
         AttackPlayer(delta);
     }
 
-    // Logic for when an enemy is hit by an arrow
+    // Logic for when an enemy is hit and killed by an arrow
     void _on_Area_area_entered(Area area)
     {
         if (area.IsInGroup("Arrows"))
@@ -50,7 +51,6 @@ public class EnemyBaseClass : KinematicBody
                 GlobalGoldManager.globalGold += howMuchGoldToDrop;
                 GlobalEnemyBaseRemaining.enemiesRemaining -= 1;
                 QueueFree();
-                
             }
         }
         

@@ -7,15 +7,16 @@ using Godot.Collections;
 public class GameController : Node
 {
     // Variables for picking 1 of 4 locations for an enemy to spawn
-    private PackedScene testEnemy = new PackedScene();
+    private PackedScene goblin = new PackedScene();
     private readonly Random rng = new Random();
     private readonly Array<Position3D> positionArray = new Array<Position3D>();
 
     // Wave spawning enemy logic
     private int currentWave = 0;
     private bool waveEnded = false;
-    private static int enemiesAmount = 0;
+    private int enemiesAmount = 0;
     
+
     // Determines what position enemies should spawn from
     public override void _Ready()
     {
@@ -60,8 +61,8 @@ public class GameController : Node
         var spawnLocation = positionArraysForSpawning[randomEnemySelection];
         
         // Instances enemy
-        testEnemy = (PackedScene) ResourceLoader.Load("res://IsoArcher/Enemies/Goblin/Goblin.tscn");
-        var enemyInstance = (KinematicBody) testEnemy.Instance();
+        goblin = (PackedScene) ResourceLoader.Load("res://IsoArcher/Enemies/Goblin/Goblin.tscn");
+        var enemyInstance = (KinematicBody) goblin.Instance();
         
         // Changes scale of enemy and transform
         enemyInstance.Scale = (new Vector3(0.15f, 0.15f, 0.15f));
@@ -70,6 +71,7 @@ public class GameController : Node
         AddChild(enemyInstance);
     }
 
+    // Updates player HUD (gold, enemies remaining, etc.)
     private void UpdateUI()
     {
         GetNode<Label>("UI/HudUI/CurrentWave/HBoxContainer/WaveAmount").Text = currentWave.ToString();

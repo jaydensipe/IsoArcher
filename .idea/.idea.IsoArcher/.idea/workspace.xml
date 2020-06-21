@@ -20,18 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3001d631-6566-4ee0-b3f9-500bef3efcfe" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/Bows/BowBaseClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Bows/BowBaseClass.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Bows/CurrentBowStatsManager/CurrentBowStatsManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher/Bows/GlobalCurrentBowStatsManager/GlobalCurrentBowStatsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Bows/GlobalCurrentBowStatsManager/GlobalCurrentBowStatsManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/Bows/StandardBow/Models/StandardBowModel.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Bows/StandardBow/Models/StandardBowModel.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher/Bows/StandardBow/StandardBow.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Bows/StandardBow/StandardBow.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/GameController/GameController.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/GameController/GameController.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/GoldManager/GlobalGoldManager/GlobalGoldManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/GoldManager/GlobalGoldManager/GlobalGoldManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/GoldManager/GoldManagerUI.tscn" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/PlayerController/Player.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/PlayerController/Player.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher/PlayerController/Player/isoArcherPlayer.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/PlayerController/Player/isoArcherPlayer.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
     </list>
@@ -67,15 +68,15 @@
         <option value="$PROJECT_DIR$/IsoArcher/Enemies/Goblin/Goblin.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseRemaining.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Enemies/GlobalEnemyBaseRemaining.cs" />
-        <option value="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/GoldManager/GlobalGoldManager/GlobalGoldManager.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Bows/CurrentBowStatsManager/GlobalCurrentBowStatsManager.cs" />
-        <option value="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/Shop/Scripts/Shop.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Bows/BowBaseClass.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" />
-        <option value="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Bows/GlobalCurrentBowStatsManager/GlobalCurrentBowStatsManager.cs" />
-        <option value="$PROJECT_DIR$/IsoArcher/Shop/Scripts/Shop.cs" />
       </list>
     </option>
   </component>
@@ -192,6 +193,11 @@
       <workItem from="1592608137609" duration="187000" />
       <workItem from="1592608347213" duration="1151000" />
       <workItem from="1592609518643" duration="4000" />
+      <workItem from="1592695519113" duration="37000" />
+      <workItem from="1592701814903" duration="186000" />
+      <workItem from="1592740558470" duration="1672000" />
+      <workItem from="1592742479824" duration="4788000" />
+      <workItem from="1592775649951" duration="4210000" />
     </task>
     <servers />
   </component>
@@ -279,17 +285,17 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1250" y="258" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1592066327500" />
-    <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog" timestamp="1592603560145">
+    <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog" timestamp="1592778736482">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592603560145" />
+    <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592778736482" />
     <state x="1389" y="533" key="cloudConfig.SelfSettingsDialog" timestamp="1591902140510">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1389" y="533" key="cloudConfig.SelfSettingsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1591902140510" />
-    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup" timestamp="1592515251225">
+    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup" timestamp="1592747163724">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1592515251225" />
+    <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1592747163724" />
   </component>
 </project>

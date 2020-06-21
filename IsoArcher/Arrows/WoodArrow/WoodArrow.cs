@@ -16,6 +16,9 @@ public class WoodArrow : Area
     // Determines whether the arrow hit an Area, and if so deletes the arrow
     void _on_WoodArrow_area_entered(Area area)
     {
-        QueueFree();
+        if (area.IsInGroup("Enemy"))
+        {
+            QueueFree();
+        }
     }
 }

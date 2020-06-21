@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://IsoArcher/PlayerController/Models/isoArcherPlayer.gltf" type="PackedScene" id=1]
 [ext_resource path="res://IsoArcher/PlayerController/Materials/fairskin.jpg" type="Texture" id=2]
@@ -72,7 +72,66 @@ albedo_texture = ExtResource( 3 )
 uv1_scale = Vector3( 0.485, 0.09, 1.226 )
 
 [sub_resource type="Animation" id=8]
-resource_name = "PlayerbowRelease"
+resource_name = "PlayerIdle"
+length = 0.05
+tracks/0/type = "transform"
+tracks/0/path = NodePath("Body/Head")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = PoolRealArray( 0, 1, -0.55, 8, 0.75, -0.00500533, 0.573555, 0.00714836, 0.819121, 1, 1, 1 )
+tracks/1/type = "transform"
+tracks/1/path = NodePath("Body/Body2/armLeft")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = PoolRealArray( 0, 1, -6.25, 5.25, 0.25, 0, 0, 0.642788, 0.766044, 1, 1, 1 )
+tracks/2/type = "transform"
+tracks/2/path = NodePath("Body/Body2/armRight/elbowRight")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = PoolRealArray( 0, 1, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1 )
+tracks/3/type = "transform"
+tracks/3/path = NodePath("Body/Body2/armRight")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = PoolRealArray( 0, 1, 2.75, 5.25, 0.25, 0, 0, -0.642788, 0.766044, 1, 1, 1 )
+tracks/4/type = "transform"
+tracks/4/path = NodePath("Body/Body2")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = PoolRealArray( 0, 1, 1.7, 1, 0, 0, 0.0784591, 0, 0.996917, 1, 1, 1 )
+tracks/5/type = "transform"
+tracks/5/path = NodePath("Body/legRight")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = PoolRealArray( 0, 1, 2.2, 0.3, -0.25, 0.128543, -0.172163, 0.0226656, 0.976383, 1, 1, 1 )
+tracks/6/type = "transform"
+tracks/6/path = NodePath("Body/legLeft")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = PoolRealArray( 0, 1, -0.8, -4.625, 0.9375, 0, 0.34202, 0, 0.939693, 1, 1, 1 )
+tracks/7/type = "transform"
+tracks/7/path = NodePath("Body")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/keys = PoolRealArray( 0, 1, 0.05, 8, -0.25, 0, 0, 0, 1, 1, 1, 1 )
+
+[sub_resource type="Animation" id=17]
 length = 0.36
 tracks/0/type = "transform"
 tracks/0/path = NodePath("Body/Head/Beard")
@@ -509,6 +568,7 @@ material/5 = SubResource( 6 )
 
 [node name="AnimationPlayerNew" parent="." index="1" instance=ExtResource( 5 )]
 method_call_mode = 1
+anims/PlayerIdle = SubResource( 8 )
 
 [node name="AnimationPlayer" parent="." index="2"]
-anims/PlayerbowRelease = SubResource( 8 )
+anims/PlayerbowRelease = SubResource( 17 )

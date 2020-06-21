@@ -251,7 +251,6 @@ material/4 = SubResource( 2 )
 material/5 = SubResource( 2 )
 
 [node name="AnimationPlayer" parent="." index="1"]
-playback_speed = 0.25
 anims/standardBowDraw = SubResource( 3 )
 anims/standardBowHold = SubResource( 4 )
 anims/standardBowRelease = SubResource( 5 )

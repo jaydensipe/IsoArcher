@@ -8,7 +8,6 @@ public static class GlobalCurrentBowStatsManager
     public static int currentBowDamage = 0;
     public static string currentBowName = "";
     public static string currentBowDrawNameAnim = "";
-    public static string currentBowHoldNameAnim = "";
     public static string currentBowRelNameAnim = "";
     public static string currentBowModelName = "";
     public static float currentBowRofSpeed = 1.0f;

@@ -3,15 +3,15 @@ using System;
 
 public class Player : Spatial
 {
-
+  
+  // Players health
   private int playerHealth = 90;
+  
+  // Variables for controlling bow shooting/animations
   private bool hasPlayerShot = false;
   private bool canShootBow = false;
   private bool playingBackwards = false;
-  private float time;
-  
-  [Signal]
-  public delegate void ShootBow();
+  private PackedScene arrow = new PackedScene();
 
   // Player Movement Script 
   private void Movement(float delta)
@@ -39,24 +39,33 @@ public class Player : Spatial
     }
   }
   
-  private async void PlayerBowAnimation()
+  // Everything dealing with bow shooting and playing the animations
+  private async void PlayerBowAnimationAndShoot()
   {
     
-    GD.Print(canShootBow);
-
-    var animationPlayerWeapon = GetNode<AnimationPlayer>("CurrentPlayerModel/isoArcherPlayer/AnimationPlayerNew");
-    animationPlayerWeapon.PlaybackSpeed = GlobalCurrentBowStatsManager.currentBowRofSpeed;
+    // Instances bow and player animations
+    var playerAnimations = GetNode<AnimationPlayer>("CurrentPlayerModel/isoArcherPlayer/AnimationPlayerNew");
+    playerAnimations.PlaybackSpeed = GlobalCurrentBowStatsManager.currentBowRofSpeed;
     
+    var bowAnimations = GetNode<AnimationPlayer>("CurrentBow/" + GlobalCurrentBowStatsManager.currentBowName + "/" + GlobalCurrentBowStatsManager.currentBowModelName +  "/AnimationPlayer");
+    bowAnimations.PlaybackSpeed = GlobalCurrentBowStatsManager.currentBowRofSpeed;
+    var bowTimer = GetNode<Timer>("Timers/BowDelay");
+    bowTimer.WaitTime = 0.96f / GlobalCurrentBowStatsManager.currentBowRofSpeed;
+    
+    // Logic for bow shooting and playing animations
     if (Input.IsActionPressed("Fire") && canShootBow == false && hasPlayerShot == false)
     {
       playingBackwards = false;
       canShootBow = false;
-      if (animationPlayerWeapon.IsPlaying() == false)
+      
+      if (playerAnimations.IsPlaying() == false)
       {
-        animationPlayerWeapon.Play("PlayerbowDraw");
+        playerAnimations.Play("PlayerbowDraw");
+        bowAnimations.Play(GlobalCurrentBowStatsManager.currentBowDrawNameAnim);
+        bowTimer.Start();
       }
       
-      await ToSignal(animationPlayerWeapon, "animation_finished");
+      await ToSignal(bowTimer, "timeout");
       if (playingBackwards == true)
       {
         canShootBow = false;
@@ -69,17 +78,30 @@ public class Player : Spatial
     if (Input.IsActionJustReleased("Fire") && canShootBow == false && hasPlayerShot == false)
     {
       playingBackwards = true;
-      animationPlayerWeapon.PlayBackwards("PlayerbowDraw");
+      playerAnimations.PlayBackwards("PlayerbowDraw");
+      bowAnimations.PlayBackwards(GlobalCurrentBowStatsManager.currentBowDrawNameAnim);
+      bowTimer.Stop();
     }
     
     if (Input.IsActionJustReleased("Fire") && canShootBow == true && hasPlayerShot == false)
     {
-      EmitSignal(nameof(ShootBow));
+      
       canShootBow = false;
       hasPlayerShot = true;
-      animationPlayerWeapon.Stop(false);
-      animationPlayerWeapon.Queue("PlayerbowRelease");
-      await ToSignal(animationPlayerWeapon, "animation_finished");
+      playerAnimations.Stop(false);
+      playerAnimations.Queue("PlayerbowRelease");
+      bowAnimations.Stop(false);
+      bowAnimations.Queue(GlobalCurrentBowStatsManager.currentBowRelNameAnim);
+      
+      arrow = (PackedScene) ResourceLoader.Load("res://IsoArcher/Arrows/WoodArrow/WoodArrow.tscn");
+      var arrowInstance = (Area)arrow.Instance();
+      arrowInstance.Transform = (GetNode<Position3D>("CurrentBow/" + GlobalCurrentBowStatsManager.currentBowName + "/ArrowPosition").Transform);
+      arrowInstance.Translate(Vector3.Forward);
+      arrowInstance.Scale = new Vector3(0.5f, 0.5f, 0.5f);
+      AddChild(arrowInstance);
+      arrowInstance.SetAsToplevel(true);
+      
+      await ToSignal(playerAnimations, "animation_finished");
       hasPlayerShot = false;
     }
   }
@@ -87,9 +109,13 @@ public class Player : Spatial
   // Logic for determining what happens when a player takes damage
   void _on_PlayerArea_area_entered(Area area)
   {
-    GlobalGoldManager.globalGold = 0;
-    GlobalEnemyBaseRemaining.enemiesRemaining = 0;
-    GetTree().ReloadCurrentScene();
+    if (area.IsInGroup("Enemy"))
+    {
+      GlobalGoldManager.globalGold = 0;
+      GlobalEnemyBaseRemaining.enemiesRemaining = 0;
+      GetTree().ReloadCurrentScene();
+    }
+    
     // playerHealth -= 30;
     // var playerHitTimer = GetNode<Timer>("PlayerHitDelay");
     // playerHitTimer.Start();
@@ -100,7 +126,8 @@ public class Player : Spatial
   public override void _Process(float delta)
   {
     Movement(delta);
-    PlayerBowAnimation();
+    PlayerBowAnimationAndShoot();
   }
+  
 }
   

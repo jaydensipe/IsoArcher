@@ -47,6 +47,9 @@ transform = Transform( 0.707107, -0.353553, 0.612373, 0, 0.866026, 0.499999, -0.
 current = true
 fov = 45.0
 script = ExtResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 transform = Transform( 0.17875, 0, 0, 0, 0.17875, 0, 0, 0, 0.17875, 0, 2.26681, 0 )
