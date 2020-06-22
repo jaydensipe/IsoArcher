@@ -26,7 +26,7 @@ public class EnemyBaseClass : KinematicBody
     {
         var enemyPosition = GlobalTransform.origin;
         var playerPosition = new Vector3(0, 2.0f, 0); 
-        var directionToPlayer = playerPosition - enemyPosition;
+        var directionToPlayer = enemyPosition.DirectionTo(playerPosition);
         MoveAndCollide(directionToPlayer.Normalized() * enemyMoveSpeed * delta);
 
     }

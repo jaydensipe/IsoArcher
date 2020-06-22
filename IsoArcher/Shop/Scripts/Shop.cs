@@ -9,14 +9,20 @@ public class Shop : Spatial
 
     private void UpdateBowStats()
     {
-        GlobalCurrentBowStatsManager.currentBowDamage += bowDamageCount * 50;
-        GlobalCurrentBowStatsManager.currentBowRofSpeed += bowRofUpdateCount * 0.25f;
-        GlobalCurrentBowStatsManager.currentBowArrowVelocity += arrowVelocityUpdateCount * 10;
-        GD.Print(GlobalCurrentBowStatsManager.currentBowArrowVelocity);
+        if (Input.IsActionJustPressed("TestBowRof"))
+        {
+            bowRofUpdateCount += 1;
+            GlobalCurrentBowStatsManager.currentBowRofSpeed += bowRofUpdateCount * 0.25f;
+            GD.Print(GlobalCurrentBowStatsManager.currentBowRofSpeed);
+        }
+        // GlobalCurrentBowStatsManager.currentBowDamage += bowDamageCount * 50;
+        // GlobalCurrentBowStatsManager.currentBowRofSpeed += bowRofUpdateCount * 0.25f;
+        // GlobalCurrentBowStatsManager.currentBowArrowVelocity += arrowVelocityUpdateCount * 10;
+        // GD.Print(GlobalCurrentBowStatsManager.currentBowArrowVelocity);
     }
 
-    // public override void _Process(float delta)
-    // {
-    //     UpdateBowStats();
-    // }
+    public override void _Process(float delta)
+    {
+        UpdateBowStats();
+    }
 }
