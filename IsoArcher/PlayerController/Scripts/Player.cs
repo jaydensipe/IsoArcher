@@ -51,6 +51,8 @@ public class Player : Spatial
     bowAnimations.PlaybackSpeed = GlobalCurrentBowStatsManager.currentBowRofSpeed;
     var bowTimer = GetNode<Timer>("Timers/BowDelay");
     bowTimer.WaitTime = 0.96f / GlobalCurrentBowStatsManager.currentBowRofSpeed;
+    // var bowParticles = GetNode<Particles>("CurrentBow/Particles");
+    
     
     // Logic for bow shooting and playing animations
     if (Input.IsActionPressed("Fire") && canShootBow == false && hasPlayerShot == false)
@@ -85,7 +87,7 @@ public class Player : Spatial
     
     if (Input.IsActionJustReleased("Fire") && canShootBow == true && hasPlayerShot == false)
     {
-      
+      // bowParticles.Emitting = true;
       canShootBow = false;
       hasPlayerShot = true;
       playerAnimations.Stop(false);
@@ -97,7 +99,7 @@ public class Player : Spatial
       var arrowInstance = (Area)arrow.Instance();
       arrowInstance.Transform = (GetNode<Position3D>("CurrentBow/" + GlobalCurrentBowStatsManager.currentBowName + "/ArrowPosition").Transform);
       arrowInstance.Translate(Vector3.Forward);
-      arrowInstance.Scale = new Vector3(0.5f, 0.5f, 0.5f);
+      arrowInstance.Scale = new Vector3(0.7f, 0.7f, 0.7f);
       AddChild(arrowInstance);
       arrowInstance.SetAsToplevel(true);
       
@@ -111,15 +113,17 @@ public class Player : Spatial
   {
     if (area.IsInGroup("Enemy"))
     {
-      GlobalGoldManager.globalGold = 0;
-      GlobalEnemyBaseRemaining.enemiesRemaining = 0;
-      GetTree().ReloadCurrentScene();
+      playerHealth -= 30;
+      if (playerHealth <= 0)
+      {
+        // Resets static classes
+        GlobalCurrentBowStatsManager.Reset();
+        GlobalEnemyBaseRemaining.Reset();
+        GlobalGoldManager.Reset();
+      
+        GetTree().ReloadCurrentScene();
+      }
     }
-    
-    // playerHealth -= 30;
-    // var playerHitTimer = GetNode<Timer>("PlayerHitDelay");
-    // playerHitTimer.Start();
-    // await ToSignal(playerHitTimer, "timeout");
   }
 
 // Update method for moving 

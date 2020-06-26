@@ -10,6 +10,7 @@ public class GameController : Node
     private PackedScene goblin = new PackedScene();
     private readonly Random rng = new Random();
     private readonly Array<Position3D> positionArray = new Array<Position3D>();
+    
 
     // Wave spawning enemy logic
     private int currentWave = 0;
@@ -63,11 +64,11 @@ public class GameController : Node
         // Instances enemy
         goblin = (PackedScene) ResourceLoader.Load("res://IsoArcher/Enemies/Goblin/Goblin.tscn");
         var enemyInstance = (KinematicBody) goblin.Instance();
-        
+
         // Changes scale of enemy and transform
         enemyInstance.Scale = (new Vector3(0.15f, 0.15f, 0.15f));
         enemyInstance.GlobalTransform = (spawnLocation.GlobalTransform);
-        
+
         AddChild(enemyInstance);
     }
 

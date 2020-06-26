@@ -1,0 +1,85 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://IsoArcher/Shop/Materials/flashlight texture.jpg" type="Texture" id=1]
+[ext_resource path="res://IsoArcher/PlayerController/Materials/woodTest.jpg" type="Texture" id=2]
+[ext_resource path="res://IsoArcher/PlayerController/Materials/metal.jpg" type="Texture" id=3]
+[ext_resource path="res://IsoArcher/Shop/Models/IAShopSword.gltf" type="PackedScene" id=4]
+
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0.596078, 0.717647, 0.847059, 1 )
+albedo_texture = ExtResource( 3 )
+metallic = 0.77
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_texture = ExtResource( 3 )
+metallic_specular = 0.69
+uv1_scale = Vector3( -0.076, 0.07, 1 )
+uv1_offset = Vector3( 0.017, 0, 0 )
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_texture = ExtResource( 1 )
+
+[sub_resource type="SpatialMaterial" id=4]
+albedo_color = Color( 0.486275, 0.517647, 0.682353, 1 )
+albedo_texture = ExtResource( 2 )
+uv1_scale = Vector3( 1.387, 1.388, 1 )
+
+[node name="IAShopSword" instance=ExtResource( 4 )]
+
+[node name="bc5d6c2a-f91e-9b2c-ad56-ed242c512d7c" parent="." index="0"]
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
+
+[node name="e7f37244-8604-d7d7-189f-1c993981bea7" parent="." index="1"]
+transform = Transform( 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 0, 0, 1, -0.262778, 3.55, -0.00534201 )
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
+
+[node name="db88b40f-5197-1b44-64bc-eba3fb2674eb" parent="." index="2"]
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
+
+[node name="544f0f62-4833-5b4a-6b09-3e2d08ada067" parent="." index="3"]
+material/0 = SubResource( 2 )
+material/1 = SubResource( 2 )
+material/2 = SubResource( 2 )
+material/3 = SubResource( 2 )
+material/4 = SubResource( 2 )
+material/5 = SubResource( 2 )
+
+[node name="d3de5659-8631-bb8f-d8d9-dc9e1e8a4ff4" parent="." index="4"]
+material/0 = SubResource( 2 )
+material/1 = SubResource( 2 )
+material/2 = SubResource( 2 )
+material/3 = SubResource( 2 )
+material/4 = SubResource( 2 )
+material/5 = SubResource( 2 )
+
+[node name="a4c6e515-68e1-f061-25d4-156b568d80c3" parent="." index="5"]
+material/0 = SubResource( 3 )
+material/1 = SubResource( 3 )
+material/2 = SubResource( 3 )
+material/3 = SubResource( 3 )
+material/4 = SubResource( 3 )
+material/5 = SubResource( 3 )
+
+[node name="4aa587a2-eafb-5c41-fe17-0e1d33d60a20" parent="." index="6"]
+material/0 = SubResource( 4 )
+material/1 = SubResource( 4 )
+material/2 = SubResource( 4 )
+material/3 = SubResource( 4 )
+material/4 = SubResource( 4 )
+material/5 = SubResource( 4 )

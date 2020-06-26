@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=2]
+
+[sub_resource type="ParticlesMaterial" id=1]
+gravity = Vector3( 0, 25, 0 )
+initial_velocity = 25.0
+angular_velocity = 720.0
+scale = 0.1
+scale_random = 1.0
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 1, 0, 0, 1 )
+
+[sub_resource type="SphereMesh" id=3]
+material = SubResource( 2 )
+
+[node name="BloodParticles" type="Particles"]
+transform = Transform( -1, -1.50996e-07, 0, 1.50996e-07, -1, 0, 0, 0, 1, 0, 2, 0 )
+emitting = false
+lifetime = 0.5
+one_shot = true
+speed_scale = 2.0
+explosiveness = 0.5
+randomness = 1.0
+process_material = SubResource( 1 )
+draw_pass_1 = SubResource( 3 )

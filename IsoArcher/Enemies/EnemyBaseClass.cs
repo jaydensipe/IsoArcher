@@ -10,6 +10,12 @@ public class EnemyBaseClass : KinematicBody
     [Export] private String goblinName = "";
 
 
+    public int EnemyHealth
+    {
+        get => enemyHealth;
+        set => enemyHealth = value;
+    }
+
     // Sets animation to loop
     public override void _Ready()
     {
@@ -26,7 +32,7 @@ public class EnemyBaseClass : KinematicBody
     {
         var enemyPosition = GlobalTransform.origin;
         var playerPosition = new Vector3(0, 2.0f, 0); 
-        var directionToPlayer = enemyPosition.DirectionTo(playerPosition);
+        var directionToPlayer = playerPosition - enemyPosition;
         MoveAndCollide(directionToPlayer.Normalized() * enemyMoveSpeed * delta);
 
     }
@@ -44,7 +50,12 @@ public class EnemyBaseClass : KinematicBody
         {
             // MainCamera cameraShake = GetNode<MainCamera>("/root/MainCamera");
             // cameraShake.Shake(5f, 40f, 5f);
+            var bowParticles = GetNode<Particles>("BloodParticles");
+            bowParticles.Emitting = true;
             enemyHealth -= GlobalCurrentBowStatsManager.currentBowDamage;
+            
+            // Enemy knockback
+            Translate(Vector3.Back * 5.0f);
             
             if (enemyHealth <= 0)
             {
@@ -52,6 +63,9 @@ public class EnemyBaseClass : KinematicBody
                 GlobalEnemyBaseRemaining.enemiesRemaining -= 1;
                 QueueFree();
             }
+        } else if (area.IsInGroup("Player"))
+        {
+            QueueFree();
         }
         
     }

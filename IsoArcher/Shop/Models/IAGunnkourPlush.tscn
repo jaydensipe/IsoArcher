@@ -1,0 +1,116 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://IsoArcher/Shop/Models/IAGunnkourPlush.gltf" type="PackedScene" id=1]
+[ext_resource path="res://IsoArcher/Shop/Materials/yellow pattern.png" type="Texture" id=2]
+[ext_resource path="res://IsoArcher/Shop/Materials/blackplush.jpg" type="Texture" id=3]
+
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_texture = ExtResource( 3 )
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_texture = ExtResource( 2 )
+emission_enabled = true
+emission = Color( 1, 0.866667, 0, 1 )
+emission_energy = 1.0
+emission_operator = 0
+emission_on_uv2 = false
+uv1_scale = Vector3( -0.1, 1, 1 )
+
+[node name="IAGunnkourPlush" instance=ExtResource( 1 )]
+
+[node name="c5dff775-d500-4396-5f6f-1cfcb7ae11d5" parent="." index="0"]
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
+
+[node name="99320aca-b45e-06a5-a6c5-2a5f411ce373" parent="." index="1"]
+material/0 = SubResource( 2 )
+material/1 = SubResource( 2 )
+material/2 = SubResource( 2 )
+material/3 = SubResource( 2 )
+material/4 = SubResource( 2 )
+material/5 = SubResource( 2 )
+
+[node name="63c60bc3-8027-354d-08da-370499c03089" parent="." index="2"]
+material/0 = SubResource( 2 )
+material/1 = SubResource( 2 )
+material/2 = SubResource( 2 )
+material/3 = SubResource( 2 )
+material/4 = SubResource( 2 )
+material/5 = SubResource( 2 )
+
+[node name="b4a140a8-e09c-4fa5-af03-2ee90d81bac1" parent="." index="3"]
+material/0 = SubResource( 2 )
+material/1 = SubResource( 2 )
+material/2 = SubResource( 2 )
+material/3 = SubResource( 2 )
+material/4 = SubResource( 2 )
+material/5 = SubResource( 2 )
+
+[node name="68ffc2d0-3135-540b-5e94-ad107142fa5f" parent="." index="4"]
+material/0 = SubResource( 2 )
+material/1 = SubResource( 2 )
+material/2 = SubResource( 2 )
+material/3 = SubResource( 2 )
+material/4 = SubResource( 2 )
+material/5 = SubResource( 2 )
+
+[node name="85ae5e47-e685-577d-7c02-db406c3ce790" parent="." index="5"]
+material/0 = SubResource( 2 )
+material/1 = SubResource( 2 )
+material/2 = SubResource( 2 )
+material/3 = SubResource( 2 )
+material/4 = SubResource( 2 )
+material/5 = SubResource( 2 )
+
+[node name="b46aa018-2a1e-c77d-8be4-c3b91b494e62" parent="." index="6"]
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
+
+[node name="b840ec4d-1234-e8fe-9ff4-9510a8c4c4ec" parent="." index="7"]
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
+
+[node name="8bb54624-9416-e6f2-ad0e-ead589e7925e" parent="." index="8"]
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
+
+[node name="cedd2637-1938-b94d-f451-36736f47621d" parent="." index="9"]
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
+
+[node name="3ae7a4be-04cc-03b3-fc93-8abb2e03c668" parent="." index="10"]
+material/0 = SubResource( 2 )
+material/1 = SubResource( 2 )
+material/2 = SubResource( 2 )
+material/3 = SubResource( 2 )
+material/4 = SubResource( 2 )
+material/5 = SubResource( 2 )
+
+[node name="280ed6c7-a224-44ff-4362-65c167536ddc" parent="." index="11"]
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )

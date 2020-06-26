@@ -119,6 +119,7 @@ transform = Transform( 1, 0, 0, 0, 1.1, 0, 0, 0, 1, 2.2, 4.55, -0.2 )
 transform = Transform( 1, 0, 0, 0, 0.984808, 0.173648, 0, -0.173648, 0.984808, -2.7, 2.65, -2.9 )
 
 [node name="c304a729-156d-5fc5-7db2-4a91d2e4d535" parent="TheWholeWazoo/Head" index="0"]
+transform = Transform( 1, 0, 0, 0, 0.866025, -0.5, 0, 0.5, 0.866025, 0, -1, -0.55 )
 material/0 = SubResource( 1 )
 material/1 = SubResource( 1 )
 material/2 = SubResource( 1 )

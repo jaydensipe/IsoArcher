@@ -1,0 +1,603 @@
+[gd_scene load_steps=25 format=2]
+
+[ext_resource path="res://IsoArcher/Shop/Models/IsoArcher.Shopkeeper.gltf" type="PackedScene" id=1]
+[ext_resource path="res://IsoArcher/Shop/Materials/stonetile.jpg" type="Texture" id=2]
+[ext_resource path="res://IsoArcher/Shop/Materials/yellow pattern.png" type="Texture" id=3]
+[ext_resource path="res://IsoArcher/Shop/Materials/cloth.png" type="Texture" id=4]
+[ext_resource path="res://IsoArcher/Shop/Materials/lizardskin.png" type="Texture" id=5]
+[ext_resource path="res://IsoArcher/Shop/Materials/furcoat.jpg" type="Texture" id=6]
+[ext_resource path="res://IsoArcher/Shop/Materials/wool.jpg" type="Texture" id=7]
+[ext_resource path="res://IsoArcher/Shop/Materials/leather.jpg" type="Texture" id=8]
+[ext_resource path="res://IsoArcher/PlayerController/Materials/woodTest.jpg" type="Texture" id=9]
+[ext_resource path="res://IsoArcher/PlayerController/Materials/metal.jpg" type="Texture" id=10]
+[ext_resource path="res://IsoArcher/Shop/Materials/leather sack.jpg" type="Texture" id=11]
+
+[sub_resource type="SpatialMaterial" id=14]
+albedo_color = Color( 0.972549, 0.815686, 0.815686, 1 )
+albedo_texture = ExtResource( 4 )
+emission_enabled = true
+emission = Color( 0.0901961, 0.129412, 0.156863, 1 )
+emission_energy = 1.0
+emission_operator = 0
+emission_on_uv2 = false
+uv1_scale = Vector3( 0.246, 0.26, 1 )
+
+[sub_resource type="SpatialMaterial" id=15]
+albedo_color = Color( 0.54902, 0.376471, 0.376471, 1 )
+albedo_texture = ExtResource( 6 )
+emission_enabled = true
+emission = Color( 0.0784314, 0.027451, 0.0823529, 1 )
+emission_energy = 1.25
+emission_operator = 0
+emission_on_uv2 = false
+uv1_scale = Vector3( 0.058, 0.041, 1 )
+uv1_offset = Vector3( -1.529, -1.218, 0 )
+
+[sub_resource type="SpatialMaterial" id=16]
+albedo_texture = ExtResource( 5 )
+emission_enabled = true
+emission = Color( 0.231373, 0.247059, 0.498039, 1 )
+emission_energy = 0.5
+emission_operator = 0
+emission_on_uv2 = false
+uv1_scale = Vector3( 0.079, 0.19, 1 )
+uv1_offset = Vector3( -0.042, 0.083, 0 )
+uv1_triplanar_sharpness = 0.933033
+
+[sub_resource type="SpatialMaterial" id=17]
+albedo_color = Color( 0.164706, 0.0784314, 0.231373, 1 )
+albedo_texture = ExtResource( 3 )
+
+[sub_resource type="SpatialMaterial" id=18]
+albedo_texture = ExtResource( 3 )
+emission_enabled = true
+emission = Color( 1, 1, 1, 1 )
+emission_energy = 1.55
+emission_operator = 0
+emission_on_uv2 = false
+
+[sub_resource type="SpatialMaterial" id=6]
+albedo_color = Color( 0.658824, 0.184314, 0.184314, 1 )
+albedo_texture = ExtResource( 2 )
+
+[sub_resource type="SpatialMaterial" id=19]
+albedo_color = Color( 0.807843, 0.831373, 1, 1 )
+albedo_texture = ExtResource( 9 )
+
+[sub_resource type="SpatialMaterial" id=20]
+albedo_color = Color( 0.266667, 0.188235, 0.12549, 1 )
+albedo_texture = ExtResource( 10 )
+
+[sub_resource type="SpatialMaterial" id=9]
+albedo_color = Color( 0, 0.25098, 1, 1 )
+albedo_texture = ExtResource( 3 )
+emission_enabled = true
+emission = Color( 0.796078, 1, 0.0705882, 1 )
+emission_energy = 1.0
+emission_operator = 0
+emission_on_uv2 = false
+
+[sub_resource type="SpatialMaterial" id=10]
+albedo_texture = ExtResource( 8 )
+uv1_scale = Vector3( -0.304, 0.213, 1 )
+
+[sub_resource type="SpatialMaterial" id=11]
+albedo_color = Color( 0.133333, 0.160784, 0.45098, 1 )
+albedo_texture = ExtResource( 7 )
+uv1_scale = Vector3( 0.495, 1.041, 1 )
+uv1_offset = Vector3( 0, -0.004, 0 )
+
+[sub_resource type="SpatialMaterial" id=12]
+albedo_color = Color( 1, 0.909804, 0.545098, 1 )
+albedo_texture = ExtResource( 8 )
+emission_enabled = true
+emission = Color( 0.317647, 0.352941, 0.447059, 1 )
+emission_energy = 0.21
+emission_operator = 0
+emission_on_uv2 = false
+uv1_scale = Vector3( 0.08, 0.334, 1 )
+
+[sub_resource type="SpatialMaterial" id=13]
+albedo_color = Color( 0.74902, 0.74902, 0.807843, 1 )
+albedo_texture = ExtResource( 11 )
+uv1_scale = Vector3( 0.035, 0.286, 1 )
+uv1_offset = Vector3( 0.805, 0, 0 )
+
+[node name="IsoArcherShopkeeper" instance=ExtResource( 1 )]
+
+[node name="Body" parent="." index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -12, 0 )
+
+[node name="198225c6-d64d-c3b6-379f-e43bb0f4efc0" parent="Body" index="0"]
+material/0 = SubResource( 14 )
+material/1 = SubResource( 14 )
+material/2 = SubResource( 14 )
+material/3 = SubResource( 14 )
+material/4 = SubResource( 14 )
+material/5 = SubResource( 14 )
+
+[node name="4666d3a3-9476-5e0c-b2bb-bbc5022cb577" parent="Body" index="1"]
+material/0 = SubResource( 15 )
+material/1 = SubResource( 15 )
+material/2 = SubResource( 15 )
+material/3 = SubResource( 15 )
+material/4 = SubResource( 15 )
+material/5 = SubResource( 15 )
+
+[node name="866afba6-8e5c-1a3e-5d0b-8dfe17e7be8d" parent="Body" index="2"]
+material/0 = SubResource( 15 )
+material/1 = SubResource( 15 )
+material/2 = SubResource( 15 )
+material/3 = SubResource( 15 )
+material/4 = SubResource( 15 )
+material/5 = SubResource( 15 )
+
+[node name="f3b00e5e-4702-593c-5aa1-516e8917a276" parent="Body/upperTorse" index="0"]
+material/0 = SubResource( 14 )
+material/1 = SubResource( 14 )
+material/2 = SubResource( 14 )
+material/3 = SubResource( 14 )
+material/4 = SubResource( 14 )
+material/5 = SubResource( 14 )
+
+[node name="568aa91a-8cd1-377d-8470-abe9c4949a87" parent="Body/upperTorse" index="1"]
+material/0 = SubResource( 16 )
+material/1 = SubResource( 16 )
+material/2 = SubResource( 16 )
+material/3 = SubResource( 16 )
+material/4 = SubResource( 16 )
+material/5 = SubResource( 16 )
+
+[node name="a5d843d0-66e2-a6fb-2e9f-86e2232a7d3a" parent="Body/upperTorse" index="2"]
+material/0 = SubResource( 15 )
+material/1 = SubResource( 15 )
+material/2 = SubResource( 15 )
+material/3 = SubResource( 15 )
+material/4 = SubResource( 15 )
+material/5 = SubResource( 15 )
+
+[node name="9ecdd88d-7966-7006-096f-294ddf6f6d4a" parent="Body/upperTorse" index="3"]
+material/0 = SubResource( 15 )
+material/1 = SubResource( 15 )
+material/2 = SubResource( 15 )
+material/3 = SubResource( 15 )
+material/4 = SubResource( 15 )
+material/5 = SubResource( 15 )
+
+[node name="2d774035-a585-e44e-04ae-de917375e428" parent="Body/upperTorse/Head" index="0"]
+material/0 = SubResource( 16 )
+material/1 = SubResource( 16 )
+material/2 = SubResource( 16 )
+material/3 = SubResource( 17 )
+material/4 = SubResource( 16 )
+material/5 = SubResource( 16 )
+
+[node name="212c821e-4e23-6a80-f5b2-24fe47459ad5" parent="Body/upperTorse/Head" index="1"]
+material/0 = SubResource( 16 )
+material/1 = SubResource( 16 )
+material/2 = SubResource( 16 )
+material/3 = SubResource( 16 )
+material/4 = SubResource( 16 )
+material/5 = SubResource( 16 )
+
+[node name="5b2df626-36db-2160-b436-8ab1e7f5a26d" parent="Body/upperTorse/Head" index="2"]
+material/0 = SubResource( 16 )
+material/1 = SubResource( 16 )
+material/2 = SubResource( 16 )
+material/3 = SubResource( 16 )
+material/4 = SubResource( 16 )
+material/5 = SubResource( 16 )
+
+[node name="1a1c191d-e0f4-05d1-6d10-ba95dec2211a" parent="Body/upperTorse/Head" index="3"]
+material/0 = SubResource( 16 )
+material/1 = SubResource( 16 )
+material/2 = SubResource( 16 )
+material/3 = SubResource( 16 )
+material/4 = SubResource( 16 )
+material/5 = SubResource( 16 )
+
+[node name="ff7d9f8c-289d-db79-f778-04c075eefc86" parent="Body/upperTorse/Head/Eye" index="0"]
+material/0 = SubResource( 18 )
+material/1 = SubResource( 18 )
+material/2 = SubResource( 18 )
+material/3 = SubResource( 18 )
+material/4 = SubResource( 18 )
+material/5 = SubResource( 18 )
+
+[node name="5cbfe71c-366b-ca62-847e-b21deb7216ad" parent="Body/upperTorse/Head/Jaw" index="0"]
+transform = Transform( 1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, -1, 0.8 )
+material/0 = SubResource( 16 )
+material/1 = SubResource( 16 )
+material/2 = SubResource( 17 )
+material/3 = SubResource( 16 )
+material/4 = SubResource( 16 )
+material/5 = SubResource( 16 )
+
+[node name="30a1da8c-0386-2926-4902-4a60947a4e79" parent="Body/upperTorse/Head/Jaw" index="1"]
+material/0 = SubResource( 6 )
+material/1 = SubResource( 6 )
+material/2 = SubResource( 6 )
+material/3 = SubResource( 6 )
+material/4 = SubResource( 6 )
+material/5 = SubResource( 6 )
+
+[node name="6b30ec1f-2490-4e7a-f75f-147e007fcb78" parent="Body/upperTorse/Head/Frills2" index="0"]
+material/0 = SubResource( 16 )
+material/1 = SubResource( 16 )
+material/2 = SubResource( 16 )
+material/3 = SubResource( 16 )
+material/4 = SubResource( 16 )
+material/5 = SubResource( 16 )
+
+[node name="7dcc7600-71bd-527a-2fc0-281100f94ec7" parent="Body/upperTorse/Head/Frills2" index="1"]
+material/0 = SubResource( 16 )
+material/1 = SubResource( 16 )
+material/2 = SubResource( 16 )
+material/3 = SubResource( 16 )
+material/4 = SubResource( 16 )
+material/5 = SubResource( 16 )
+
+[node name="2d8cfa1f-97f5-cdcd-98d3-2b4983c7217f" parent="Body/upperTorse/Head/Frills2" index="2"]
+transform = Transform( 0.642788, 0.763129, 0.0667652, -0.766044, 0.640342, 0.0560226, 3.72529e-09, -0.0871557, 0.996195, 0, -2, -0.1 )
+material/0 = SubResource( 16 )
+material/1 = SubResource( 16 )
+material/2 = SubResource( 16 )
+material/3 = SubResource( 16 )
+material/4 = SubResource( 16 )
+material/5 = SubResource( 16 )
+
+[node name="c55630a3-4363-c92e-a509-2b9d67461783" parent="Body/upperTorse/Head/Frills3" index="0"]
+material/0 = SubResource( 16 )
+material/1 = SubResource( 16 )
+material/2 = SubResource( 16 )
+material/3 = SubResource( 16 )
+material/4 = SubResource( 16 )
+material/5 = SubResource( 16 )
+
+[node name="ec655a89-1f5e-a8ae-8abf-74e65091a48b" parent="Body/upperTorse/Head/Frills3" index="1"]
+material/0 = SubResource( 16 )
+material/1 = SubResource( 16 )
+material/2 = SubResource( 16 )
+material/3 = SubResource( 16 )
+material/4 = SubResource( 16 )
+material/5 = SubResource( 16 )
+
+[node name="ebf34b1e-8854-7301-e464-08afecd3e10c" parent="Body/upperTorse/Head/Frills3" index="2"]
+transform = Transform( 1, -0.000670337, -0.000118199, 0.000680678, 0.984807, 0.173648, 8.88178e-16, -0.173648, 0.984808, -4, -2.2, 0.3 )
+material/0 = SubResource( 16 )
+material/1 = SubResource( 16 )
+material/2 = SubResource( 16 )
+material/3 = SubResource( 16 )
+material/4 = SubResource( 16 )
+material/5 = SubResource( 16 )
+
+[node name="d90cbc0c-9709-f575-59d8-5be122d0fb53" parent="Body/upperTorse/Head/Goggle" index="0"]
+material/0 = SubResource( 19 )
+material/1 = SubResource( 19 )
+material/2 = SubResource( 19 )
+material/3 = SubResource( 19 )
+material/4 = SubResource( 19 )
+material/5 = SubResource( 19 )
+
+[node name="6eb2b233-4d36-a205-c5f3-2b853e72e4fa" parent="Body/upperTorse/Head/Goggle" index="1"]
+material/0 = SubResource( 19 )
+material/1 = SubResource( 19 )
+material/2 = SubResource( 19 )
+material/3 = SubResource( 19 )
+material/4 = SubResource( 19 )
+material/5 = SubResource( 19 )
+
+[node name="ef4c6974-423e-342e-1701-647d1956feca" parent="Body/upperTorse/Head/Goggle" index="2"]
+material/0 = SubResource( 20 )
+material/1 = SubResource( 20 )
+material/2 = SubResource( 20 )
+material/3 = SubResource( 20 )
+material/4 = SubResource( 20 )
+material/5 = SubResource( 20 )
+
+[node name="1dcafe76-7845-f468-a7db-c60cf0ed26dc" parent="Body/upperTorse/Head/Goggle" index="3"]
+transform = Transform( 1, 0, 2.98023e-08, 0, 1, 0, -2.98023e-08, 0, 1, -1.6, -1.1, -2.2 )
+material/0 = SubResource( 9 )
+material/1 = SubResource( 9 )
+material/2 = SubResource( 9 )
+material/3 = SubResource( 9 )
+material/4 = SubResource( 9 )
+material/5 = SubResource( 9 )
+
+[node name="6c701ad8-ef77-bd29-a856-3b2133de20c5" parent="Body/upperTorse/Head/Goggle" index="4"]
+material/0 = SubResource( 20 )
+material/1 = SubResource( 20 )
+material/2 = SubResource( 20 )
+material/3 = SubResource( 20 )
+material/4 = SubResource( 20 )
+material/5 = SubResource( 20 )
+
+[node name="48b4d2a1-4c8a-4b75-8e66-8693573629be" parent="Body/upperTorse/Head/Goggle" index="5"]
+material/0 = SubResource( 10 )
+material/1 = SubResource( 10 )
+material/2 = SubResource( 10 )
+material/3 = SubResource( 10 )
+material/4 = SubResource( 10 )
+material/5 = SubResource( 10 )
+
+[node name="0e4f1f42-76f4-7840-59a0-ed035654eaef" parent="Body/upperTorse/Head/Goggle" index="6"]
+material/0 = SubResource( 10 )
+material/1 = SubResource( 10 )
+material/2 = SubResource( 10 )
+material/3 = SubResource( 10 )
+material/4 = SubResource( 10 )
+material/5 = SubResource( 10 )
+
+[node name="1675e131-6fe5-5619-8a34-470f817de7e2" parent="Body/upperTorse/Head/browRight" index="0"]
+material/0 = SubResource( 11 )
+material/1 = SubResource( 11 )
+material/2 = SubResource( 11 )
+material/3 = SubResource( 11 )
+material/4 = SubResource( 11 )
+material/5 = SubResource( 11 )
+
+[node name="cd07836d-18e4-c9b5-3469-23126b46daae" parent="Body/upperTorse/Head/browLeft" index="0"]
+transform = Transform( 0.981627, 0.190809, 0, -0.190809, 0.981627, 0, 0, 0, 1, -1.9, 0.7, 0 )
+material/0 = SubResource( 11 )
+material/1 = SubResource( 11 )
+material/2 = SubResource( 11 )
+material/3 = SubResource( 11 )
+material/4 = SubResource( 11 )
+material/5 = SubResource( 11 )
+
+[node name="f044b112-168c-6874-9091-6ebf5d021b42" parent="Body/upperTorse/leftShoulder2" index="0"]
+material/0 = SubResource( 15 )
+material/1 = SubResource( 15 )
+material/2 = SubResource( 15 )
+material/3 = SubResource( 15 )
+material/4 = SubResource( 15 )
+material/5 = SubResource( 15 )
+
+[node name="2901a89c-ec94-d4e3-bb06-7fe21a41e818" parent="Body/upperTorse/leftShoulder2/leftArm2" index="0"]
+material/0 = SubResource( 15 )
+material/1 = SubResource( 15 )
+material/2 = SubResource( 15 )
+material/3 = SubResource( 15 )
+material/4 = SubResource( 15 )
+material/5 = SubResource( 15 )
+
+[node name="35c12065-fb5a-c1de-54e1-2e0d29bbe79d" parent="Body/upperTorse/leftShoulder2/leftArm2/leftElbow" index="0"]
+material/0 = SubResource( 15 )
+material/1 = SubResource( 15 )
+material/2 = SubResource( 15 )
+material/3 = SubResource( 15 )
+material/4 = SubResource( 15 )
+material/5 = SubResource( 15 )
+
+[node name="2a7a20bd-4631-b9ce-8075-d8b39f9f399f" parent="Body/upperTorse/leftShoulder2/leftArm2/leftElbow/leftCuff" index="0"]
+material/0 = SubResource( 15 )
+material/1 = SubResource( 15 )
+material/2 = SubResource( 15 )
+material/3 = SubResource( 15 )
+material/4 = SubResource( 15 )
+material/5 = SubResource( 15 )
+
+[node name="ff7a5dba-1c78-9d21-71e4-3994649fa278" parent="Body/upperTorse/leftShoulder2/leftArm2/leftElbow/leftCuff/Hand" index="0"]
+material/0 = SubResource( 12 )
+material/1 = SubResource( 12 )
+material/2 = SubResource( 12 )
+material/3 = SubResource( 12 )
+material/4 = SubResource( 12 )
+material/5 = SubResource( 12 )
+
+[node name="804ce17b-abb9-c744-cb9f-eb89fd784313" parent="Body/upperTorse/leftShoulder2/leftArm2/leftElbow/leftCuff/Hand" index="1"]
+material/0 = SubResource( 12 )
+material/1 = SubResource( 12 )
+material/2 = SubResource( 12 )
+material/3 = SubResource( 12 )
+material/4 = SubResource( 12 )
+material/5 = SubResource( 12 )
+
+[node name="8e16dbc1-f113-87a3-d24a-64b0f3370183" parent="Body/upperTorse/leftShoulder2/leftArm2/leftElbow/leftCuff/Hand" index="2"]
+material/0 = SubResource( 12 )
+material/1 = SubResource( 12 )
+material/2 = SubResource( 12 )
+material/3 = SubResource( 12 )
+material/4 = SubResource( 12 )
+material/5 = SubResource( 12 )
+
+[node name="15a5aa33-7246-1664-2533-de0e7bdcbaaf" parent="Body/upperTorse/rightShoulder" index="0"]
+material/0 = SubResource( 15 )
+material/1 = SubResource( 15 )
+material/2 = SubResource( 15 )
+material/3 = SubResource( 15 )
+material/4 = SubResource( 15 )
+material/5 = SubResource( 15 )
+
+[node name="55395816-d3d8-f17b-c450-4a69de838856" parent="Body/upperTorse/rightShoulder/rightArm" index="0"]
+material/0 = SubResource( 15 )
+material/1 = SubResource( 15 )
+material/2 = SubResource( 15 )
+material/3 = SubResource( 15 )
+material/4 = SubResource( 15 )
+material/5 = SubResource( 15 )
+
+[node name="6335e01a-f19b-b13a-ddc5-e3023cb0b881" parent="Body/upperTorse/rightShoulder/rightArm/rightElbow" index="0"]
+material/0 = SubResource( 15 )
+material/1 = SubResource( 15 )
+material/2 = SubResource( 15 )
+material/3 = SubResource( 15 )
+material/4 = SubResource( 15 )
+material/5 = SubResource( 15 )
+
+[node name="60e5e295-386d-619b-efee-bd725566a51d" parent="Body/upperTorse/rightShoulder/rightArm/rightElbow" index="1"]
+material/0 = SubResource( 15 )
+material/1 = SubResource( 15 )
+material/2 = SubResource( 15 )
+material/3 = SubResource( 15 )
+material/4 = SubResource( 15 )
+material/5 = SubResource( 15 )
+
+[node name="e20a6508-561d-edd3-75c1-2f25708c8d79" parent="Body/upperTorse/rightShoulder/rightArm/rightElbow/Hand2" index="0"]
+material/0 = SubResource( 12 )
+material/1 = SubResource( 12 )
+material/2 = SubResource( 12 )
+material/3 = SubResource( 12 )
+material/4 = SubResource( 12 )
+material/5 = SubResource( 12 )
+
+[node name="05d2831c-15a9-4088-50f9-606a39b52dd9" parent="Body/upperTorse/rightShoulder/rightArm/rightElbow/Hand2" index="1"]
+material/0 = SubResource( 12 )
+material/1 = SubResource( 12 )
+material/2 = SubResource( 12 )
+material/3 = SubResource( 12 )
+material/4 = SubResource( 12 )
+material/5 = SubResource( 12 )
+
+[node name="f08b0e9b-1592-617c-f31b-43e5645fe42c" parent="Body/upperTorse/rightShoulder/rightArm/rightElbow/Hand2" index="2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.91284, -0.311129, 0.3985 )
+material/0 = SubResource( 12 )
+material/1 = SubResource( 12 )
+material/2 = SubResource( 12 )
+material/3 = SubResource( 12 )
+material/4 = SubResource( 12 )
+material/5 = SubResource( 12 )
+
+[node name="2a31566d-24c2-03dd-7b35-2bebcbdd354d" parent="Body/upperTorse/BagStrap" index="0"]
+material/0 = SubResource( 13 )
+material/1 = SubResource( 13 )
+material/2 = SubResource( 13 )
+material/3 = SubResource( 13 )
+material/4 = SubResource( 13 )
+material/5 = SubResource( 13 )
+
+[node name="20b86afb-8cec-2823-cc90-53cce9be2f15" parent="Body/upperTorse/BagStrap" index="1"]
+material/0 = SubResource( 13 )
+material/1 = SubResource( 13 )
+material/2 = SubResource( 13 )
+material/3 = SubResource( 13 )
+material/4 = SubResource( 13 )
+material/5 = SubResource( 13 )
+
+[node name="ddc00248-ca6b-82c2-2eb4-e64fb0e35c16" parent="Body/upperTorse/BagStrap" index="2"]
+material/0 = SubResource( 13 )
+material/1 = SubResource( 13 )
+material/2 = SubResource( 13 )
+material/3 = SubResource( 13 )
+material/4 = SubResource( 13 )
+material/5 = SubResource( 13 )
+
+[node name="6e218ab1-afd5-87cf-c5d3-c620254db882" parent="Body/upperTorse/BagStrap" index="3"]
+material/0 = SubResource( 13 )
+material/1 = SubResource( 13 )
+material/2 = SubResource( 13 )
+material/3 = SubResource( 13 )
+material/4 = SubResource( 13 )
+material/5 = SubResource( 13 )
+
+[node name="ed5ef6cc-9d61-bea1-5385-91a5fef60250" parent="Body/upperTorse/BagStrap/BagStrap2" index="0"]
+material/0 = SubResource( 13 )
+material/1 = SubResource( 13 )
+material/2 = SubResource( 13 )
+material/3 = SubResource( 13 )
+material/4 = SubResource( 13 )
+material/5 = SubResource( 13 )
+
+[node name="eefa3b8e-aab0-8ca2-363b-817f727b865c" parent="Body/upperTorse/BagStrap/BagStrap2" index="1"]
+material/0 = SubResource( 13 )
+material/1 = SubResource( 13 )
+material/2 = SubResource( 13 )
+material/3 = SubResource( 13 )
+material/4 = SubResource( 13 )
+material/5 = SubResource( 13 )
+
+[node name="104b9b8a-7cf7-8226-8063-5477f491787b" parent="Body/upperTorse/BagStrap/BagStrap2" index="2"]
+material/0 = SubResource( 13 )
+material/1 = SubResource( 13 )
+material/2 = SubResource( 13 )
+material/3 = SubResource( 13 )
+material/4 = SubResource( 13 )
+material/5 = SubResource( 13 )
+
+[node name="5751f577-4e3f-6eb4-ad9e-571354314c56" parent="Body/upperTorse/BagStrap/BagStrap2" index="3"]
+material/0 = SubResource( 13 )
+material/1 = SubResource( 13 )
+material/2 = SubResource( 13 )
+material/3 = SubResource( 13 )
+material/4 = SubResource( 13 )
+material/5 = SubResource( 13 )
+
+[node name="8217bf70-e9d4-de27-64e4-1b7118d4b555" parent="Body/Bag" index="0"]
+material/0 = SubResource( 13 )
+material/1 = SubResource( 13 )
+material/2 = SubResource( 13 )
+material/3 = SubResource( 13 )
+material/4 = SubResource( 13 )
+material/5 = SubResource( 13 )
+
+[node name="672ce44e-9ee7-0f37-3f01-11dee7def757" parent="Body/Bag" index="1"]
+material/0 = SubResource( 12 )
+material/1 = SubResource( 12 )
+material/2 = SubResource( 12 )
+material/3 = SubResource( 12 )
+material/4 = SubResource( 12 )
+material/5 = SubResource( 12 )
+
+[node name="3a2e0084-2b10-7ae7-89df-146c431fca9c" parent="Body/Bag" index="2"]
+material/0 = SubResource( 12 )
+material/1 = SubResource( 12 )
+material/2 = SubResource( 12 )
+material/3 = SubResource( 12 )
+material/4 = SubResource( 12 )
+material/5 = SubResource( 12 )
+
+[node name="65486f05-1e30-ae57-eba8-49afd3e7db0e" parent="Body/Bag" index="3"]
+material/0 = SubResource( 13 )
+material/1 = SubResource( 13 )
+material/2 = SubResource( 13 )
+material/3 = SubResource( 13 )
+material/4 = SubResource( 13 )
+material/5 = SubResource( 13 )
+
+[node name="c4e8cfbb-6996-acc2-4158-993da74198eb" parent="Body/Bag" index="4"]
+material/0 = SubResource( 13 )
+material/1 = SubResource( 13 )
+material/2 = SubResource( 13 )
+material/3 = SubResource( 13 )
+material/4 = SubResource( 13 )
+material/5 = SubResource( 13 )
+
+[node name="142dd99a-1cf4-642a-3a23-05aca69ebc67" parent="Body/Bag" index="5"]
+material/0 = SubResource( 19 )
+material/1 = SubResource( 19 )
+material/2 = SubResource( 19 )
+material/3 = SubResource( 19 )
+material/4 = SubResource( 19 )
+material/5 = SubResource( 19 )
+
+[node name="3ccee130-1852-7ff3-1f00-20500c1a0e1e" parent="Body/Bag" index="6"]
+material/0 = SubResource( 13 )
+material/1 = SubResource( 13 )
+material/2 = SubResource( 13 )
+material/3 = SubResource( 13 )
+material/4 = SubResource( 13 )
+material/5 = SubResource( 13 )
+
+[node name="bb3c5d6a-36c7-1fd2-b5ba-c342e6492d11" parent="Body/Bag/Chest" index="0"]
+material/0 = SubResource( 13 )
+material/1 = SubResource( 13 )
+material/2 = SubResource( 13 )
+material/3 = SubResource( 13 )
+material/4 = SubResource( 13 )
+material/5 = SubResource( 13 )
+
+[node name="5493caaf-7583-b402-e1d1-53cd633c925c" parent="Body/Bag/Chest" index="1"]
+material/0 = SubResource( 13 )
+material/1 = SubResource( 13 )
+material/2 = SubResource( 13 )
+material/3 = SubResource( 13 )
+material/4 = SubResource( 13 )
+material/5 = SubResource( 13 )
+
+[node name="95553800-fc32-d464-67c0-736c3dcf2723" parent="Body/Bag/Chest" index="2"]
+material/0 = SubResource( 13 )
+material/1 = SubResource( 13 )
+material/2 = SubResource( 13 )
+material/3 = SubResource( 13 )
+material/4 = SubResource( 13 )
+material/5 = SubResource( 13 )

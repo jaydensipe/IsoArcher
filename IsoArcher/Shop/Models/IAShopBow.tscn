@@ -1,0 +1,57 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://IsoArcher/Shop/Materials/farmerhat.jpg" type="Texture" id=1]
+[ext_resource path="res://IsoArcher/PlayerController/Materials/woodTest.jpg" type="Texture" id=2]
+[ext_resource path="res://IsoArcher/Shop/Models/IAShopBow.gltf" type="PackedScene" id=3]
+
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0.619608, 0.639216, 0.827451, 1 )
+albedo_texture = ExtResource( 2 )
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_texture = ExtResource( 1 )
+uv1_scale = Vector3( 5.099, 0.167, 1 )
+uv1_offset = Vector3( 0.079, 0, 0 )
+
+[node name="IAShopBow" instance=ExtResource( 3 )]
+
+[node name="9d6fa0f1-853b-a9e7-6d52-b603cc070596" parent="bone2" index="0"]
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
+
+[node name="a303215b-cf3b-2594-f802-64d1f435e3b0" parent="bone2" index="1"]
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
+
+[node name="6c23f573-0613-07a8-e230-3de41e5305e7" parent="bone" index="0"]
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
+
+[node name="7b8df5fc-52ca-a5b8-a3d2-70614b41d10e" parent="bone" index="1"]
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
+
+[node name="84622636-f86b-a647-4c44-87c7ca44deb5" parent="." index="2"]
+material/0 = SubResource( 2 )
+material/1 = SubResource( 2 )
+material/2 = SubResource( 2 )
+material/3 = SubResource( 2 )
+material/4 = SubResource( 2 )
+material/5 = SubResource( 2 )

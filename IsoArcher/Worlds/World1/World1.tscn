@@ -26,13 +26,13 @@ material = SubResource( 2 )
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.0677, 0 )
 
 [node name="Position3D" type="Position3D" parent="EnemySpawnPositions"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 3, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 3, 0 )
 
 [node name="Position3D3" type="Position3D" parent="EnemySpawnPositions"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -18, 3, 0 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -19, 3, 0 )
 
 [node name="Position3D2" type="Position3D" parent="EnemySpawnPositions"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 18 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 19 )
 
 [node name="Position3D4" type="Position3D" parent="EnemySpawnPositions"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, -18 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, -19 )

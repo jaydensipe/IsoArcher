@@ -21,12 +21,20 @@
   <component name="ChangeListManager">
     <list default="true" id="3001d631-6566-4ee0-b3f9-500bef3efcfe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher/Bows/GlobalCurrentBowStatsManager/GlobalCurrentBowStatsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Bows/GlobalCurrentBowStatsManager/GlobalCurrentBowStatsManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher/Bows/StandardBow/StandardBow.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Bows/StandardBow/StandardBow.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher/Enemies/GlobalEnemyBaseRemaining.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Enemies/GlobalEnemyBaseRemaining.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher/Enemies/Goblin/Goblin.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Enemies/Goblin/Goblin.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/Enemies/Goblin/Models/isoArcherGoblin.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Enemies/Goblin/Models/isoArcherGoblin.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/GameController/GameController.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/GameController/GameController.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/GameController/Scripts/MainCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/GameController/Scripts/MainCamera.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Shop/Scripts/Shop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Shop/Scripts/Shop.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher/GoldManager/GlobalGoldManager/GlobalGoldManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/GoldManager/GlobalGoldManager/GlobalGoldManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher/PlayerController/Player.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/PlayerController/Player.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher/Shop/Shop.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Shop/Shop.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher/Worlds/World1/World1.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Worlds/World1/World1.tscn" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,17 +66,17 @@
         <option value="$PROJECT_DIR$/IsoArcher/Enemies/Goblin/Scripts/Goblin.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Enemies/Goblin/Goblin.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseRemaining.cs" />
-        <option value="$PROJECT_DIR$/IsoArcher/Enemies/GlobalEnemyBaseRemaining.cs" />
-        <option value="$PROJECT_DIR$/IsoArcher/GoldManager/GlobalGoldManager/GlobalGoldManager.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Bows/CurrentBowStatsManager/GlobalCurrentBowStatsManager.cs" />
-        <option value="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Bows/BowBaseClass.cs" />
-        <option value="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" />
-        <option value="$PROJECT_DIR$/IsoArcher/Bows/GlobalCurrentBowStatsManager/GlobalCurrentBowStatsManager.cs" />
-        <option value="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/GameController/Scripts/MainCamera.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Shop/Scripts/Shop.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/Enemies/GlobalEnemyBaseRemaining.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/GoldManager/GlobalGoldManager/GlobalGoldManager.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/Bows/GlobalCurrentBowStatsManager/GlobalCurrentBowStatsManager.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" />
       </list>
     </option>
   </component>
@@ -196,6 +204,14 @@
       <workItem from="1592791157487" duration="4238000" />
       <workItem from="1592795573244" duration="653000" />
       <workItem from="1592796238474" duration="87000" />
+      <workItem from="1592841627314" duration="28000" />
+      <workItem from="1592857799588" duration="511000" />
+      <workItem from="1592872204188" duration="664000" />
+      <workItem from="1592972387987" duration="110000" />
+      <workItem from="1592976145271" duration="581000" />
+      <workItem from="1593037698893" duration="2299000" />
+      <workItem from="1593052677987" duration="70000" />
+      <workItem from="1593131741624" duration="1482000" />
     </task>
     <servers />
   </component>

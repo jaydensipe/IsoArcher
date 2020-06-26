@@ -1,0 +1,86 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://IsoArcher/Shop/Models/IAPotionFlask.gltf" type="PackedScene" id=1]
+[ext_resource path="res://IsoArcher/Shop/Materials/glass1.png" type="Texture" id=2]
+[ext_resource path="res://IsoArcher/PlayerController/Materials/woodTest.jpg" type="Texture" id=3]
+
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 1, 0.92549, 0.811765, 1 )
+albedo_texture = ExtResource( 3 )
+emission_enabled = true
+emission = Color( 1, 0.886275, 0.666667, 1 )
+emission_energy = 0.25
+emission_operator = 0
+emission_on_uv2 = false
+emission_texture = ExtResource( 3 )
+uv1_scale = Vector3( 0.503, 0.964, 1 )
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_texture = ExtResource( 2 )
+emission_enabled = true
+emission = Color( 1, 1, 1, 1 )
+emission_energy = 0.1
+emission_operator = 0
+emission_on_uv2 = false
+clearcoat_enabled = true
+clearcoat = 1.0
+clearcoat_gloss = 1.0
+subsurf_scatter_enabled = true
+subsurf_scatter_strength = 0.29
+refraction_enabled = true
+refraction_scale = 0.8
+refraction_texture = ExtResource( 2 )
+refraction_texture_channel = 0
+uv1_scale = Vector3( 4.002, 5.343, 1 )
+uv1_offset = Vector3( 0.255, -0.006, 0 )
+
+[node name="IAPotionFlask" instance=ExtResource( 1 )]
+
+[node name="79f0f279-9869-ce92-3935-e74a8884325e" parent="." index="0"]
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
+
+[node name="53b1f54f-a729-00fc-ab21-3f649c655c70" parent="." index="1"]
+material/0 = SubResource( 2 )
+material/1 = SubResource( 2 )
+material/2 = SubResource( 2 )
+material/3 = SubResource( 2 )
+material/4 = SubResource( 2 )
+material/5 = SubResource( 2 )
+
+[node name="631b0154-9caa-38bc-8ec5-11950c34af45" parent="." index="2"]
+material/0 = SubResource( 2 )
+material/1 = SubResource( 2 )
+material/2 = SubResource( 2 )
+material/3 = SubResource( 2 )
+material/4 = SubResource( 2 )
+material/5 = SubResource( 2 )
+
+[node name="39ec8c13-0b81-bea3-6dcd-79d35a392549" parent="." index="3"]
+material/0 = SubResource( 2 )
+material/1 = SubResource( 2 )
+material/2 = SubResource( 2 )
+material/3 = SubResource( 2 )
+material/4 = SubResource( 2 )
+material/5 = SubResource( 2 )
+
+[node name="83a0cfc1-294b-a5b8-6698-3354c68be859" parent="." index="4"]
+material/0 = SubResource( 2 )
+material/1 = SubResource( 2 )
+material/2 = SubResource( 2 )
+material/3 = SubResource( 2 )
+material/4 = SubResource( 2 )
+material/5 = SubResource( 2 )
+
+[node name="9bb9da4d-2257-b171-2947-a7e0f99531f7" parent="." index="5"]
+material/0 = SubResource( 2 )
+material/1 = SubResource( 2 )
+material/2 = SubResource( 2 )
+material/3 = SubResource( 2 )
+material/4 = SubResource( 2 )
+material/5 = SubResource( 2 )

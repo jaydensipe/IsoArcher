@@ -1,0 +1,147 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://IsoArcher/Shop/Materials/drape.jpg" type="Texture" id=1]
+[ext_resource path="res://IsoArcher/PlayerController/Materials/woodTest.jpg" type="Texture" id=2]
+[ext_resource path="res://IsoArcher/Shop/Models/IsoArcher.arrow.gltf" type="PackedScene" id=3]
+[ext_resource path="res://IsoArcher/Shop/Materials/stonetile.jpg" type="Texture" id=4]
+
+
+[sub_resource type="SpatialMaterial" id=1]
+albedo_color = Color( 0.921569, 0.392157, 0.392157, 1 )
+albedo_texture = ExtResource( 1 )
+uv1_scale = Vector3( -2.078, 1.927, 1 )
+uv1_offset = Vector3( 0.248, -0.224, 0 )
+
+[sub_resource type="SpatialMaterial" id=3]
+albedo_color = Color( 0.690196, 0.627451, 0.627451, 1 )
+albedo_texture = ExtResource( 4 )
+uv1_scale = Vector3( -0.282, 1.815, 1 )
+uv1_offset = Vector3( -0.018, 0, 0 )
+
+[sub_resource type="SpatialMaterial" id=2]
+albedo_color = Color( 0.698039, 0.780392, 1, 1 )
+albedo_texture = ExtResource( 2 )
+uv1_scale = Vector3( 2.372, 1.864, 1 )
+uv1_offset = Vector3( 0.214, 0, 0 )
+
+[node name="IsoArcherarrow" instance=ExtResource( 3 )]
+
+[node name="1ea4d548-f086-178e-73b8-49be394b940e" parent="Feather3" index="0"]
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
+
+[node name="de598adf-060d-991b-62bc-e8b8c399892c" parent="Feather3" index="1"]
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
+
+[node name="dfc1f6ac-8116-7370-995a-172479285e55" parent="Feather3" index="2"]
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
+
+[node name="a1677301-f187-065c-4e82-2542b5e3ae78" parent="Feather2" index="0"]
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
+
+[node name="7dbfb04c-edc3-2b69-c7ed-3d3211226edb" parent="Feather2" index="1"]
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
+
+[node name="949b490e-fcf6-f788-2f34-650c4cdb0df4" parent="Feather2" index="2"]
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
+
+[node name="4417084d-fec9-f581-c722-23504b6b3c8c" parent="bone" index="0"]
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
+
+[node name="9c764c30-f756-50fc-f89d-91d7d4dd961e" parent="bone" index="1"]
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
+
+[node name="583d874e-b163-b309-5b69-a2b5bf503a9c" parent="bone" index="2"]
+material/0 = SubResource( 1 )
+material/1 = SubResource( 1 )
+material/2 = SubResource( 1 )
+material/3 = SubResource( 1 )
+material/4 = SubResource( 1 )
+material/5 = SubResource( 1 )
+
+[node name="89610e5b-14cf-f53b-6971-e648db3985f9" parent="." index="4"]
+material/0 = SubResource( 3 )
+material/1 = SubResource( 3 )
+material/2 = SubResource( 3 )
+material/3 = SubResource( 3 )
+material/4 = SubResource( 3 )
+material/5 = SubResource( 3 )
+
+[node name="0455e8b1-8c47-5009-832d-5c2387693681" parent="." index="5"]
+material/0 = SubResource( 3 )
+material/1 = SubResource( 3 )
+material/2 = SubResource( 3 )
+material/3 = SubResource( 3 )
+material/4 = SubResource( 3 )
+material/5 = SubResource( 3 )
+
+[node name="90eca5a1-1c42-ab53-94e7-ed0f11142ffe" parent="." index="6"]
+material/0 = SubResource( 3 )
+material/1 = SubResource( 3 )
+material/2 = SubResource( 3 )
+material/3 = SubResource( 3 )
+material/4 = SubResource( 3 )
+material/5 = SubResource( 3 )
+
+[node name="49005386-c311-5ce1-26ec-653ee90f68c9" parent="." index="7"]
+material/0 = SubResource( 3 )
+material/1 = SubResource( 3 )
+material/2 = SubResource( 3 )
+material/3 = SubResource( 3 )
+material/4 = SubResource( 3 )
+material/5 = SubResource( 3 )
+
+[node name="15048dc1-eaa8-a1f0-29c7-59d6564ae6b0" parent="." index="8"]
+material/0 = SubResource( 3 )
+material/1 = SubResource( 3 )
+material/2 = SubResource( 3 )
+material/3 = SubResource( 3 )
+material/4 = SubResource( 3 )
+material/5 = SubResource( 3 )
+
+[node name="392da4a6-0bd7-9289-1cb7-db5d670ab290" parent="." index="9"]
+material/0 = SubResource( 2 )
+material/1 = SubResource( 2 )
+material/2 = SubResource( 2 )
+material/3 = SubResource( 2 )
+material/4 = SubResource( 2 )
+material/5 = SubResource( 2 )
