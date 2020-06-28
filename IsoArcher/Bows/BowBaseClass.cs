@@ -9,6 +9,7 @@ public class BowBaseClass : Spatial
     [Export] private string bowDrawNameAnim = "";
     [Export] private string bowRelNameAnim = "";
     [Export] private string bowModelName = "";
+    [Export] private float bowRofSpeed = 0;
 
     // Initializes bow as current bow
     public override void _Ready()
@@ -18,5 +19,6 @@ public class BowBaseClass : Spatial
         GlobalCurrentBowStatsManager.currentBowDrawNameAnim = this.bowDrawNameAnim;
         GlobalCurrentBowStatsManager.currentBowRelNameAnim = bowRelNameAnim;
         GlobalCurrentBowStatsManager.currentBowModelName = this.bowModelName;
+        GlobalCurrentBowStatsManager.currentBowRofSpeed = this.bowRofSpeed;
     }
 }

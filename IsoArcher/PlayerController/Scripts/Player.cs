@@ -116,19 +116,14 @@ public class Player : Spatial
       playerHealth -= 30;
       if (playerHealth <= 0)
       {
-        // Resets static classes
-        GlobalCurrentBowStatsManager.Reset();
-        GlobalEnemyBaseRemaining.Reset();
-        GlobalGoldManager.Reset();
-      
         GetTree().ReloadCurrentScene();
       }
     }
   }
-
-// Update method for moving 
+  
   public override void _Process(float delta)
   {
+    // Update methods for moving and shooting
     Movement(delta);
     PlayerBowAnimationAndShoot();
   }

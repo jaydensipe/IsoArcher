@@ -20,17 +20,11 @@
         </e>
         <e p="Enemies" t="Include">
           <e p="EnemyBaseClass.cs" t="Include" />
-          <e p="GlobalEnemyBaseRemaining.cs" t="Include" />
         </e>
         <e p="GameController" t="Include">
           <e p="Scripts" t="Include">
             <e p="GameController.cs" t="Include" />
             <e p="MainCamera.cs" t="Include" />
-          </e>
-        </e>
-        <e p="GoldManager" t="Include">
-          <e p="GlobalGoldManager" t="Include">
-            <e p="GlobalGoldManager.cs" t="Include" />
           </e>
         </e>
         <e p="PlayerController" t="Include">

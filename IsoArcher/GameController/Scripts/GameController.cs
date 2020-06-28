@@ -10,13 +10,15 @@ public class GameController : Node
     private PackedScene goblin = new PackedScene();
     private readonly Random rng = new Random();
     private readonly Array<Position3D> positionArray = new Array<Position3D>();
-    
 
     // Wave spawning enemy logic
-    private int currentWave = 0;
+    public static int globalCurrentWave = 0;
+    public static int globalEnemiesAmount = 0;
     private bool waveEnded = false;
-    private int enemiesAmount = 0;
     
+    // Variable for global player gold
+    public static float globalGold = 0;
+
 
     // Determines what position enemies should spawn from
     public override void _Ready()
@@ -27,26 +29,28 @@ public class GameController : Node
         positionArray.Add(GetNode<Position3D>("CurrentWorld/World1/EnemySpawnPositions/Position3D4"));
         
     }
-
-    // Debug to spawn waves
+    
+    
     public override void _Process(float delta)
     {
         UpdateUI();
+        // Debug to spawn waves
         if (Input.IsActionJustPressed("TestWave"))
         {
             WaveSystem();
         }
     }
+    
 
     // Controls the waves and how the enemies spawn, and spawns an enemy every x seconds
     private async void WaveSystem()
     {
         waveEnded = false;
-        currentWave += 1;
-        enemiesAmount = (int)Math.Ceiling(currentWave * 3.5);
-        GlobalEnemyBaseRemaining.enemiesRemaining = enemiesAmount;
+        globalCurrentWave += 1;
+        globalEnemiesAmount = (int)Math.Ceiling(globalCurrentWave * 3.5);
+        EnemyBaseClass.globalEnemiesRemaining = globalEnemiesAmount;
 
-        for (int i = 0; i < enemiesAmount; i++)
+        for (int i = 0; i < globalEnemiesAmount; i++)
         {
             await ToSignal(GetNode<Timer>("Timers/EnemySpawnTimer"), "timeout");
             SpawnEnemy(positionArray);
@@ -75,8 +79,8 @@ public class GameController : Node
     // Updates player HUD (gold, enemies remaining, etc.)
     private void UpdateUI()
     {
-        GetNode<Label>("UI/HudUI/CurrentWave/HBoxContainer/WaveAmount").Text = currentWave.ToString();
-        GetNode<Label>("UI/HudUI/Gold/HBoxContainer/GoldAmount").Text = GlobalGoldManager.globalGold.ToString();
-        GetNode<Label>("UI/HudUI/EnemiesLeft/HBoxContainer/EnemiesLeftAmount").Text = GlobalEnemyBaseRemaining.enemiesRemaining.ToString();
+        GetNode<Label>("UI/HudUI/CurrentWave/HBoxContainer/WaveAmount").Text = globalCurrentWave.ToString();
+        GetNode<Label>("UI/HudUI/Gold/HBoxContainer/GoldAmount").Text = globalGold.ToString();
+        GetNode<Label>("UI/HudUI/EnemiesLeft/HBoxContainer/EnemiesLeftAmount").Text = EnemyBaseClass.globalEnemiesRemaining.ToString();
     }
 }

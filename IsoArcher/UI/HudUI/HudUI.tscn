@@ -68,16 +68,15 @@ __meta__ = {
 margin_left = 30.0
 margin_top = 170.0
 margin_right = 1890.0
-margin_bottom = 301.0
+margin_bottom = 234.0
 mouse_filter = 2
 custom_constants/separation = 20
 alignment = 2
 
 [node name="Gold" type="Label" parent="Gold/HBoxContainer"]
 margin_left = 1652.0
-margin_top = 33.0
 margin_right = 1796.0
-margin_bottom = 97.0
+margin_bottom = 64.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.980392, 0.741176, 0.054902, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
@@ -85,9 +84,8 @@ text = "Gold:"
 
 [node name="GoldAmount" type="Label" parent="Gold/HBoxContainer"]
 margin_left = 1816.0
-margin_top = 33.0
 margin_right = 1860.0
-margin_bottom = 97.0
+margin_bottom = 64.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 1, 0.890196, 0, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )

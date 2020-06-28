@@ -10,9 +10,9 @@ bowName = "Standard Bow"
 bowDrawNameAnim = "standardBowDraw"
 bowRelNameAnim = "standardBowRelease"
 bowModelName = "StandardBowModel"
+bowRofSpeed = 1.25
 
 [node name="StandardBowModel" parent="." index="0" instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 0.45, 0, 0, 0 )
 
 [node name="ArrowPosition" type="Position3D" parent="." index="1"]
 transform = Transform( -4.37113e-08, 0, -1, 0, 1, 0, 1, 0, -4.37113e-08, -2, 2.93334, -8.74227e-08 )

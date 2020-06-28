@@ -1,0 +1,65 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://IsoArcher/Fonts/Adventurer.ttf" type="DynamicFontData" id=1]
+
+[sub_resource type="DynamicFont" id=4]
+size = 128
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 64
+font_data = ExtResource( 1 )
+
+[sub_resource type="QuadMesh" id=7]
+
+[sub_resource type="ViewportTexture" id=8]
+viewport_path = NodePath("Viewport")
+
+[sub_resource type="SpatialMaterial" id=9]
+resource_local_to_scene = true
+flags_transparent = true
+flags_unshaded = true
+albedo_texture = SubResource( 8 )
+
+[node name="ShopHudIn3D" type="Spatial"]
+
+[node name="Viewport" type="Viewport" parent="."]
+size = Vector2( 1024, 512 )
+transparent_bg = true
+hdr = false
+usage = 0
+render_target_v_flip = true
+render_target_update_mode = 3
+
+[node name="GUI" type="Control" parent="Viewport"]
+margin_right = 1024.0
+margin_bottom = 512.0
+mouse_filter = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Viewport/GUI"]
+margin_left = 163.545
+margin_top = 97.1343
+margin_right = 883.545
+margin_bottom = 225.134
+custom_fonts/font = SubResource( 4 )
+text = "Bow Damage"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="Viewport/GUI/Label"]
+margin_left = 86.3145
+margin_top = 151.971
+margin_right = 617.314
+margin_bottom = 315.971
+mouse_filter = 1
+custom_fonts/font = SubResource( 10 )
+text = "Upgrade"
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 3.38, 0, 0, 0, 2.6, 0, 0, 0, 2.6, 0, 0, 0 )
+mesh = SubResource( 7 )
+material/0 = SubResource( 9 )

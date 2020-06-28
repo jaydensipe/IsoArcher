@@ -8,33 +8,33 @@ public class EnemyBaseClass : KinematicBody
     [Export] private int enemyHealth = 0;
     [Export] private int howMuchGoldToDrop = 0;
     [Export] private String goblinName = "";
-
-
-    public int EnemyHealth
-    {
-        get => enemyHealth;
-        set => enemyHealth = value;
-    }
-
-    // Sets animation to loop
+    
+    // Variable for how many enemies remain
+    public static int globalEnemiesRemaining = 0;
+    
+    
     public override void _Ready()
     {
+        // Sets animation to loop
         var enemyAnimation = GetNode<AnimationPlayer>(goblinName + "/AnimationPlayer").GetAnimation("enemyGoblinWalk");
         enemyAnimation.Loop = true;
         GetNode<AnimationPlayer>(goblinName + "/AnimationPlayer").Play("enemyGoblinWalk");
         
         // Looks at player position
         LookAt(new Vector3(0, 2.0f, 0), Vector3.Up);
+        
+        // Initializes enemy health
+        enemyHealth += 50 * Mathf.CeilToInt(GameController.globalCurrentWave / 5);
     }
-
-    // Determines how the enemies attack the player, by moving towards them
+    
+    
     private void AttackPlayer(float delta)
     {
+        // Determines how the enemies attack the player, by moving towards them
         var enemyPosition = GlobalTransform.origin;
         var playerPosition = new Vector3(0, 2.0f, 0); 
         var directionToPlayer = playerPosition - enemyPosition;
         MoveAndCollide(directionToPlayer.Normalized() * enemyMoveSpeed * delta);
-
     }
     
     // Update method for enemy attack
@@ -55,12 +55,12 @@ public class EnemyBaseClass : KinematicBody
             enemyHealth -= GlobalCurrentBowStatsManager.currentBowDamage;
             
             // Enemy knockback
-            Translate(Vector3.Back * 5.0f);
+            Translate(Vector3.Back * 3.0f);
             
             if (enemyHealth <= 0)
             {
-                GlobalGoldManager.globalGold += howMuchGoldToDrop;
-                GlobalEnemyBaseRemaining.enemiesRemaining -= 1;
+                GameController.globalGold += howMuchGoldToDrop;
+                globalEnemiesRemaining -= 1;
                 QueueFree();
             }
         } else if (area.IsInGroup("Player"))

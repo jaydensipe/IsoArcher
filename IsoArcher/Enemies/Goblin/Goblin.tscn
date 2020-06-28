@@ -20,3 +20,4 @@ transform = Transform( 3.555, 0, 0, 0, 3.555, 0, 0, 0, 3.555, 0, 4, 0 )
 
 [node name="BloodParticles" parent="." index="3" instance=ExtResource( 3 )]
 transform = Transform( 2.29485e-08, 7.92728e-08, -0.525, -4.5897e-08, -0.525, -7.92728e-08, -0.525, 4.5897e-08, -2.29485e-08, -4.52987e-07, 5, -2.38419e-07 )
+amount = 4
