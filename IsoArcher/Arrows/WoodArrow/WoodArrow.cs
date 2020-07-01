@@ -3,19 +3,11 @@ using System;
 
 public class WoodArrow : Area
 {
-    // Controls arrow velocity
-    private int arrowSpeed = 250;
-
-    // Initializes arrow velocity
-    public override void _Ready()
-    {
-        GlobalCurrentBowStatsManager.currentBowArrowVelocity = this.arrowSpeed;
-    }
 
     // Controls which direction the arrows fly
     public override void _Process(float delta)
     {
-        Translate((Vector3.Forward) * arrowSpeed * delta);
+        Translate((Vector3.Forward) * GlobalCurrentBowStatsManager.currentBowArrowVelocity * delta);
     }
 
     // Determines whether the arrow hit an Area, and if so deletes the arrow

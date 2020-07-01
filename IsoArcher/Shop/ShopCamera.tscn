@@ -1,0 +1,8 @@
+[gd_scene format=2]
+
+[node name="Camera" type="Camera"]
+transform = Transform( -1, -2.42213e-08, 3.2494e-07, 0, 0.997233, 0.0743348, -3.25841e-07, 0.0743348, -0.997233, 0, 6.292, -15.92 )
+current = true
+fov = 61.0
+near = 0.01
+far = 47.5

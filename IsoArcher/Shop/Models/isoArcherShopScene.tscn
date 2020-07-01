@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://IsoArcher/Shop/Models/isoArcherShopScene.gltf" type="PackedScene" id=1]
 [ext_resource path="res://IsoArcher/Shop/Models/isoArcherShopMenu.tscn" type="PackedScene" id=2]
@@ -21,6 +21,7 @@
 [ext_resource path="res://IsoArcher/Shop/Models/IAShopChest.tscn" type="PackedScene" id=19]
 [ext_resource path="res://IsoArcher/PlayerController/Materials/metal.jpg" type="Texture" id=20]
 [ext_resource path="res://IsoArcher/PlayerController/Materials/woodTest.jpg" type="Texture" id=21]
+[ext_resource path="res://IsoArcher/Shop/ShopCamera.tscn" type="PackedScene" id=23]
 
 [sub_resource type="SpatialMaterial" id=1]
 albedo_color = Color( 0.768627, 0.72549, 0.72549, 1 )
@@ -1807,38 +1808,31 @@ material/3 = SubResource( 16 )
 material/4 = SubResource( 16 )
 material/5 = SubResource( 16 )
 
-[node name="Camera" type="Camera" parent="." index="25"]
-transform = Transform( -1, -2.42213e-08, 3.2494e-07, 0, 0.997233, 0.0743348, -3.25841e-07, 0.0743348, -0.997233, 0, 6.292, -15.92 )
-current = true
-fov = 61.0
-near = 0.01
-far = 47.5
-
-[node name="IAFarmnerFlashlight" parent="." index="26" instance=ExtResource( 12 )]
+[node name="IAFarmnerFlashlight" parent="." index="25" instance=ExtResource( 12 )]
 transform = Transform( 0.235821, -0.128624, -0.194326, 0.200031, 0.253563, 0.0749111, 0.119559, -0.170528, 0.257961, 4.56917, 13.2845, 4.10998 )
 
 [node name="3a573bff-3c75-84c5-3464-b3637239d47a" parent="IAFarmnerFlashlight" index="3"]
 transform = Transform( 1, -1.49012e-08, -2.98023e-08, 0, 1, 0, 0, -2.98023e-08, 1, -3.8147e-06, 1.90735e-06, -3 )
 
-[node name="IsoArcherarrow19" parent="." index="27" instance=ExtResource( 16 )]
+[node name="IsoArcherarrow19" parent="." index="26" instance=ExtResource( 16 )]
 transform = Transform( -0.0817849, 0.686073, 0, -0.686073, -0.0817849, 0, 0, 0, 0.69093, -9.31344, 4.9928, -5.13677 )
 
-[node name="IsoArcherarrow20" parent="." index="28" instance=ExtResource( 16 )]
+[node name="IsoArcherarrow20" parent="." index="27" instance=ExtResource( 16 )]
 transform = Transform( -0.110894, 0.271928, 0.625413, -0.681516, -0.0210191, -0.111703, -0.0249366, -0.634821, 0.271597, -8.50545, 4.92712, -3.54938 )
 
-[node name="IAShopJar" parent="." index="29" instance=ExtResource( 18 )]
+[node name="IAShopJar" parent="." index="28" instance=ExtResource( 18 )]
 transform = Transform( -0.298464, -0.0105852, 0.142005, -0.00861632, 0.359431, 0.00868265, -0.142138, 0.000438444, -0.298711, -2.15591, 7.25198, 6.04367 )
 
-[node name="IAShopJar4" parent="." index="30" instance=ExtResource( 18 )]
+[node name="IAShopJar4" parent="." index="29" instance=ExtResource( 18 )]
 transform = Transform( -0.298464, -0.0105852, 0.142005, -0.00861632, 0.359431, 0.00868265, -0.142138, 0.000438444, -0.298711, 7.40837, 7.65862, 6.38707 )
 
-[node name="IAShopChest" parent="." index="31" instance=ExtResource( 19 )]
+[node name="IAShopChest" parent="." index="30" instance=ExtResource( 19 )]
 transform = Transform( 0.410805, 0, 0.163712, 0, 0.442225, 0, -0.163712, 0, 0.410805, -4.01459, 9.73219, 5.43145 )
 
-[node name="IAShopChest2" parent="." index="32" instance=ExtResource( 19 )]
+[node name="IAShopChest2" parent="." index="31" instance=ExtResource( 19 )]
 transform = Transform( 0.423917, 0, -0.125924, 0, 0.442225, 0, 0.125924, 0, 0.423917, 5.00631, 7.69612, 5.42369 )
 
-[node name="IAShopChest3" parent="." index="33" instance=ExtResource( 19 )]
+[node name="IAShopChest3" parent="." index="32" instance=ExtResource( 19 )]
 transform = Transform( 0.512298, 0, 0.135317, 0, 0.529868, 0, -0.135317, 0, 0.512298, 7.94665, 10.3592, 6.52916 )
 
 [node name="df0d8bd0-1d3f-83d3-ddca-d650381cd625" parent="IAShopChest3/bone3" index="2"]
@@ -1847,25 +1841,25 @@ transform = Transform( 1, 0, -4.47035e-08, 0, 1, 0, 4.47035e-08, 0, 1, 0, 0, 0 )
 [node name="db227c90-b457-0047-380e-946e9ef17cd7" parent="IAShopChest3" index="11"]
 transform = Transform( 1, 0, -5.96046e-08, 0, 1, 0, 5.96046e-08, 0, 1, 0, 0, 0 )
 
-[node name="IAShopJar3" parent="." index="34" instance=ExtResource( 18 )]
+[node name="IAShopJar3" parent="." index="33" instance=ExtResource( 18 )]
 transform = Transform( -0.0880025, -0.00774778, 0.228231, 0.00287278, 0.265898, 0.0118032, -0.228315, 0.00633198, -0.0878214, -1.67669, 7.10839, 5.47551 )
 
-[node name="IAShopJar2" parent="." index="35" instance=ExtResource( 18 )]
+[node name="IAShopJar2" parent="." index="34" instance=ExtResource( 18 )]
 transform = Transform( -0.353211, -0.000271413, -0.0668426, 0.000713566, 0.390843, -0.000623585, 0.0668075, -0.00560948, -0.35339, -3.29381, 7.214, 5.78142 )
 
 [node name="48c4b99a-9bad-b5d1-30bb-d50b972173fa" parent="IAShopJar2" index="2"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 5.96046e-08, -1.49012e-08, 1, 0, 0, 0 )
 
-[node name="IAGunnkourPlush" parent="." index="36" instance=ExtResource( 9 )]
+[node name="IAGunnkourPlush" parent="." index="35" instance=ExtResource( 9 )]
 transform = Transform( 0.376555, 0, 0.341188, 0, 0.508136, 0, -0.341188, 0, 0.376555, 8.92868, 5.29441, 6.05693 )
 
-[node name="IAFarmnerHat" parent="." index="37" instance=ExtResource( 11 )]
+[node name="IAFarmnerHat" parent="." index="36" instance=ExtResource( 11 )]
 transform = Transform( -0.428203, -0.374885, -0.224408, -0.0155893, 0.327121, -0.516724, 0.43664, -0.355961, -0.238521, 2.5519, 12.3503, 4.69183 )
 
-[node name="IAShopMat" parent="." index="38" instance=ExtResource( 17 )]
+[node name="IAShopMat" parent="." index="37" instance=ExtResource( 17 )]
 transform = Transform( 1, 0, 0, 0, 0.840984, 0.0305081, 0, -0.00402207, 0.630795, -3.18918, 0.0874715, -6.31531 )
 
-[node name="IAShopMat2" parent="." index="39" instance=ExtResource( 17 )]
+[node name="IAShopMat2" parent="." index="38" instance=ExtResource( 17 )]
 transform = Transform( 0.48122, -0.00341675, -0.0711183, 0.00109607, 0.423449, 0.00533073, 0.00124856, 0.0223367, 0.626266, 6.41798, 8.19928, 4.24122 )
 
 [node name="cb8ada56-fab9-0062-279e-2b6b79d39a4d" parent="IAShopMat2" index="0"]
@@ -1874,7 +1868,7 @@ transform = Transform( 1, -4.47035e-08, 1.39698e-09, -8.73115e-11, -2.79397e-09,
 [node name="1014b63e-7035-e214-8832-ce6e7809c3c8" parent="IAShopMat2" index="1"]
 transform = Transform( 1, 0, 1.49012e-08, -3.2378e-10, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 1.85, -3.1 )
 
-[node name="IAPotionFlask" parent="." index="40" instance=ExtResource( 10 )]
+[node name="IAPotionFlask" parent="." index="39" instance=ExtResource( 10 )]
 transform = Transform( -0.263646, 0, -0.0964285, 0, 0.280727, 0, 0.0964285, 0, -0.263646, 4.42457, 10.2501, 6.17109 )
 
 [node name="79f0f279-9869-ce92-3935-e74a8884325e" parent="IAPotionFlask" index="0"]
@@ -1907,7 +1901,7 @@ material/3 = SubResource( 17 )
 material/4 = SubResource( 17 )
 material/5 = SubResource( 17 )
 
-[node name="IAPotionFlask2" parent="." index="41" instance=ExtResource( 10 )]
+[node name="IAPotionFlask2" parent="." index="40" instance=ExtResource( 10 )]
 transform = Transform( 0.273012, 0, -0.124356, 0, 0.3, 0, 0.124356, 0, 0.273012, 5.10026, 10.3018, 5.15638 )
 
 [node name="83a0cfc1-294b-a5b8-6698-3354c68be859" parent="IAPotionFlask2" index="4"]
@@ -1927,7 +1921,7 @@ material/3 = SubResource( 18 )
 material/4 = SubResource( 18 )
 material/5 = SubResource( 18 )
 
-[node name="IAPotionFlask7" parent="." index="42" instance=ExtResource( 10 )]
+[node name="IAPotionFlask7" parent="." index="41" instance=ExtResource( 10 )]
 transform = Transform( 0.186358, 0, -0.0848854, 0, 0.20478, 0, 0.0848854, 0, 0.186358, 6.62607, 7.70281, 4.85689 )
 
 [node name="39ec8c13-0b81-bea3-6dcd-79d35a392549" parent="IAPotionFlask7" index="3"]
@@ -1950,7 +1944,7 @@ material/3 = SubResource( 18 )
 material/4 = SubResource( 18 )
 material/5 = SubResource( 18 )
 
-[node name="IAPotionFlask4" parent="." index="43" instance=ExtResource( 10 )]
+[node name="IAPotionFlask4" parent="." index="42" instance=ExtResource( 10 )]
 transform = Transform( 0.276104, 0, -0.0507393, 0, 0.280727, 0, 0.0507393, 0, 0.276104, -6.59145, 11.704, 5.19167 )
 
 [node name="79f0f279-9869-ce92-3935-e74a8884325e" parent="IAPotionFlask4" index="0"]
@@ -1984,7 +1978,7 @@ material/3 = SubResource( 17 )
 material/4 = SubResource( 17 )
 material/5 = SubResource( 17 )
 
-[node name="IAPotionFlask9" parent="." index="44" instance=ExtResource( 10 )]
+[node name="IAPotionFlask9" parent="." index="43" instance=ExtResource( 10 )]
 transform = Transform( 0.0698777, -0.0810636, 0.259525, -0.266614, -0.0729651, 0.0489955, 0.0533064, -0.258674, -0.0951506, -8.72866, 12.2906, 6.37056 )
 
 [node name="79f0f279-9869-ce92-3935-e74a8884325e" parent="IAPotionFlask9" index="0"]
@@ -2018,7 +2012,7 @@ material/3 = SubResource( 17 )
 material/4 = SubResource( 17 )
 material/5 = SubResource( 17 )
 
-[node name="IAPotionFlask3" parent="." index="45" instance=ExtResource( 10 )]
+[node name="IAPotionFlask3" parent="." index="44" instance=ExtResource( 10 )]
 transform = Transform( -0.172107, 0, 0.245722, 0, 0.3, 0, -0.245722, 0, -0.172107, -7.68867, 11.607, 5.72298 )
 
 [node name="83a0cfc1-294b-a5b8-6698-3354c68be859" parent="IAPotionFlask3" index="4"]
@@ -2038,7 +2032,7 @@ material/3 = SubResource( 18 )
 material/4 = SubResource( 18 )
 material/5 = SubResource( 18 )
 
-[node name="IAPotionFlask6" parent="." index="46" instance=ExtResource( 10 )]
+[node name="IAPotionFlask6" parent="." index="45" instance=ExtResource( 10 )]
 transform = Transform( 0.198449, 0, 0.198559, 0, 0.280727, 0, -0.198559, 0, 0.198449, 8.60299, 7.7184, 5.07639 )
 
 [node name="79f0f279-9869-ce92-3935-e74a8884325e" parent="IAPotionFlask6" index="0"]
@@ -2072,7 +2066,7 @@ material/3 = SubResource( 17 )
 material/4 = SubResource( 17 )
 material/5 = SubResource( 17 )
 
-[node name="IAPotionFlask8" parent="." index="47" instance=ExtResource( 10 )]
+[node name="IAPotionFlask8" parent="." index="46" instance=ExtResource( 10 )]
 transform = Transform( 0.176313, 0, 0.0155556, 0, 0.176998, 0, -0.0155556, 0, 0.176313, 3.24331, 7.7184, 5.33784 )
 
 [node name="79f0f279-9869-ce92-3935-e74a8884325e" parent="IAPotionFlask8" index="0"]
@@ -2107,7 +2101,7 @@ material/3 = SubResource( 17 )
 material/4 = SubResource( 17 )
 material/5 = SubResource( 17 )
 
-[node name="IAPotionFlask5" parent="." index="48" instance=ExtResource( 10 )]
+[node name="IAPotionFlask5" parent="." index="47" instance=ExtResource( 10 )]
 transform = Transform( -0.299991, 0, -0.00228758, 0, 0.3, 0, 0.00228758, 0, -0.299991, 8.41789, 7.7701, 6.28135 )
 
 [node name="83a0cfc1-294b-a5b8-6698-3354c68be859" parent="IAPotionFlask5" index="4"]
@@ -2127,73 +2121,73 @@ material/3 = SubResource( 18 )
 material/4 = SubResource( 18 )
 material/5 = SubResource( 18 )
 
-[node name="IsoArcherarrow" parent="." index="49" instance=ExtResource( 16 )]
+[node name="IsoArcherarrow" parent="." index="48" instance=ExtResource( 16 )]
 transform = Transform( -0.076797, -0.681398, -0.152103, 0.698074, -0.0774492, -0.0054981, -0.0114381, -0.151772, 0.68569, 9.12712, 3.13029, 5.61859 )
 
-[node name="IsoArcherarrow2" parent="." index="50" instance=ExtResource( 16 )]
+[node name="IsoArcherarrow2" parent="." index="49" instance=ExtResource( 16 )]
 transform = Transform( -0.0751005, -0.660884, -0.225674, 0.698074, -0.0774492, -0.0054981, -0.0197111, -0.224879, 0.665114, 8.25169, 3.13029, 6.10198 )
 
-[node name="IsoArcherarrow3" parent="." index="51" instance=ExtResource( 16 )]
+[node name="IsoArcherarrow3" parent="." index="50" instance=ExtResource( 16 )]
 transform = Transform( -0.00925241, -0.675312, -0.192885, 0.702053, -0.014191, 0.0160078, -0.0192879, -0.192584, 0.675185, 8.94003, 3.13029, 6.10198 )
 
-[node name="IsoArcherarrow6" parent="." index="52" instance=ExtResource( 16 )]
+[node name="IsoArcherarrow6" parent="." index="51" instance=ExtResource( 16 )]
 transform = Transform( 0.0378624, 0.653971, -0.253426, 0.699362, -0.0160743, 0.0630061, 0.0528639, -0.255734, -0.652029, -5.75613, 7.37581, 5.73659 )
 
-[node name="IsoArcherarrow5" parent="." index="53" instance=ExtResource( 16 )]
+[node name="IsoArcherarrow5" parent="." index="52" instance=ExtResource( 16 )]
 transform = Transform( 0.0410383, 0.677446, -0.180882, 0.698551, -0.023829, 0.0692414, 0.060647, -0.183942, -0.675147, -5.29658, 7.50557, 4.85795 )
 
-[node name="IsoArcherarrow4" parent="." index="54" instance=ExtResource( 16 )]
+[node name="IsoArcherarrow4" parent="." index="53" instance=ExtResource( 16 )]
 transform = Transform( -0.0141018, 0.668609, -0.214708, 0.695542, 0.0428817, 0.0878526, 0.0967371, -0.210854, -0.662962, -5.8686, 7.43254, 5.2338 )
 
-[node name="IsoArcherarrow18" parent="." index="55" instance=ExtResource( 16 )]
+[node name="IsoArcherarrow18" parent="." index="54" instance=ExtResource( 16 )]
 transform = Transform( -0.095877, -0.682461, -0.135614, 0.695766, -0.0954773, -0.0114178, -0.00734066, -0.135896, 0.689068, 9.51801, 10.8245, 5.56438 )
 
-[node name="IsoArcherarrow17" parent="." index="56" instance=ExtResource( 16 )]
+[node name="IsoArcherarrow17" parent="." index="55" instance=ExtResource( 16 )]
 transform = Transform( -0.0943775, -0.663691, -0.209625, 0.695833, -0.0947295, -0.0133564, -0.0156514, -0.209466, 0.670235, 8.6546, 10.7995, 6.0683 )
 
-[node name="IsoArcherarrow16" parent="." index="57" instance=ExtResource( 16 )]
+[node name="IsoArcherarrow16" parent="." index="56" instance=ExtResource( 16 )]
 transform = Transform( -0.0286694, -0.679054, -0.177199, 0.701593, -0.0319704, 0.00900316, -0.0167698, -0.176634, 0.6796, 9.34249, 10.8181, 6.05205 )
 
-[node name="IsoArcherarrow15" parent="." index="58" instance=ExtResource( 16 )]
+[node name="IsoArcherarrow15" parent="." index="57" instance=ExtResource( 16 )]
 transform = Transform( -0.632621, 0.296187, 0.0734831, -0.0635266, 0.0376076, -0.698488, -0.298481, -0.635763, -0.00708388, -5.24222, 7.47376, 8.80619 )
 
-[node name="IsoArcherarrow14" parent="." index="59" instance=ExtResource( 16 )]
+[node name="IsoArcherarrow14" parent="." index="58" instance=ExtResource( 16 )]
 transform = Transform( -0.633399, 0.287473, 0.0974737, -0.0551174, 0.112875, -0.691055, -0.298502, -0.630837, -0.079231, -4.93805, 6.84787, 8.088 )
 
-[node name="IsoArcherarrow13" parent="." index="60" instance=ExtResource( 16 )]
+[node name="IsoArcherarrow13" parent="." index="59" instance=ExtResource( 16 )]
 transform = Transform( -0.659083, 0.233491, 0.0665358, -0.0444711, 0.0731286, -0.697145, -0.238678, -0.658384, -0.0538374, -5.16745, 6.96716, 8.72593 )
 
-[node name="IsoArcherarrow9" parent="." index="61" instance=ExtResource( 16 )]
+[node name="IsoArcherarrow9" parent="." index="60" instance=ExtResource( 16 )]
 transform = Transform( -0.0188648, -0.633398, -0.302965, 0.69923, -0.0444412, 0.0493724, -0.0636928, -0.300281, 0.631752, -6.20788, 10.0317, 6.54617 )
 
-[node name="IsoArcherarrow8" parent="." index="62" instance=ExtResource( 16 )]
+[node name="IsoArcherarrow8" parent="." index="61" instance=ExtResource( 16 )]
 transform = Transform( -0.0153492, -0.596967, -0.369771, 0.698577, -0.0505583, 0.0526248, -0.0713436, -0.366619, 0.594841, -7.16724, 10.1186, 6.81475 )
 
-[node name="IsoArcherarrow7" parent="." index="63" instance=ExtResource( 16 )]
+[node name="IsoArcherarrow7" parent="." index="62" instance=ExtResource( 16 )]
 transform = Transform( 0.0488096, -0.613457, -0.338563, 0.69844, 0.0154756, 0.0726512, -0.0559939, -0.341713, 0.611092, -6.49873, 10.0754, 6.97299 )
 
-[node name="IsoArcherarrow12" parent="." index="64" instance=ExtResource( 16 )]
+[node name="IsoArcherarrow12" parent="." index="63" instance=ExtResource( 16 )]
 transform = Transform( 0.12118, 0.574496, -0.385494, 0.691601, -0.111008, 0.0519711, -0.0184168, -0.388545, -0.584833, 4.62651, 13.906, 6.80019 )
 
-[node name="IsoArcherarrow11" parent="." index="65" instance=ExtResource( 16 )]
+[node name="IsoArcherarrow11" parent="." index="64" instance=ExtResource( 16 )]
 transform = Transform( 0.125921, 0.612566, -0.319754, 0.690904, -0.117005, 0.0479315, -0.0114632, -0.323123, -0.623535, 4.88783, 13.9237, 5.83509 )
 
-[node name="IsoArcherarrow10" parent="." index="66" instance=ExtResource( 16 )]
+[node name="IsoArcherarrow10" parent="." index="65" instance=ExtResource( 16 )]
 transform = Transform( 0.0802929, 0.604884, -0.347857, 0.696855, -0.051543, 0.0712217, 0.0358087, -0.353263, -0.606019, 4.41047, 13.9441, 6.33058 )
 
-[node name="IAShopBow" parent="." index="67" instance=ExtResource( 14 )]
+[node name="IAShopBow" parent="." index="66" instance=ExtResource( 14 )]
 transform = Transform( -0.731148, 0.276028, -0.155126, 0.209155, 0.714102, 0.284859, 0.237718, 0.220679, -0.727753, 2.80923, 0.071579, 2.24518 )
 
-[node name="IAShopBow2" parent="." index="68" instance=ExtResource( 14 )]
+[node name="IAShopBow2" parent="." index="67" instance=ExtResource( 14 )]
 transform = Transform( 0.62344, 0.172607, 0.465148, 0.12703, 0.66656, -0.417605, -0.479603, 0.400921, 0.49404, -11.7669, 3.76744, 0.614468 )
 
-[node name="IAShopSword" parent="." index="69" instance=ExtResource( 15 )]
+[node name="IAShopSword" parent="." index="68" instance=ExtResource( 15 )]
 transform = Transform( -0.242532, 0.262836, -0.375471, 0.193465, -0.32639, -0.353445, -0.415491, -0.3054, 0.0545967, -3.02204, 5.66367, 4.91743 )
 
-[node name="IAShopSword2" parent="." index="70" instance=ExtResource( 15 )]
+[node name="IAShopSword2" parent="." index="69" instance=ExtResource( 15 )]
 transform = Transform( -0.396293, -0.196959, 0.17166, 0.00321967, -0.504602, -0.263325, 0.283578, -0.209745, 0.370475, 4.25246, 7.49268, 4.40147 )
 
-[node name="IsoArcherShopkeeper" parent="." index="71" instance=ExtResource( 6 )]
+[node name="IsoArcherShopkeeper" parent="." index="70" instance=ExtResource( 6 )]
 transform = Transform( 0.612642, 0, -0.252725, 0, 0.662722, 0, 0.252725, 0, 0.612642, -5.85552, 1.26367, 0.935452 )
 
 [node name="5751f577-4e3f-6eb4-ad9e-571354314c56" parent="IsoArcherShopkeeper/Body/upperTorse/BagStrap/BagStrap2" index="3"]
@@ -2202,13 +2196,13 @@ transform = Transform( 1, 0, 2.98023e-08, 0, 0.965926, 0.258819, -2.98023e-08, -
 [node name="AnimationPlayer" parent="IsoArcherShopkeeper" index="1"]
 playback_speed = 0.75
 
-[node name="OmniLight" type="OmniLight" parent="." index="72"]
+[node name="OmniLight" type="OmniLight" parent="." index="71"]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 7.5, -9.8 )
 light_energy = 2.0
 shadow_enabled = true
 omni_range = 15.9
 
-[node name="SpotLight" type="SpotLight" parent="." index="73"]
+[node name="SpotLight" type="SpotLight" parent="." index="72"]
 transform = Transform( 1, 0, 0, 0, -0.707107, 0.707107, 0, -0.707107, -0.707107, 0, 16.4104, -6.93888 )
 light_color = Color( 0.933333, 0.65098, 0.160784, 1 )
 light_energy = 16.0
@@ -2216,6 +2210,8 @@ light_specular = 1.0
 shadow_enabled = true
 spot_range = 19.6
 spot_angle = 65.4171
+
+[node name="Camera" parent="." index="73" instance=ExtResource( 23 )]
 
 [editable path="isoArcherShopMenu"]
 

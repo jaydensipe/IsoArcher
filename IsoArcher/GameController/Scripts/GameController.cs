@@ -40,6 +40,7 @@ public class GameController : Node
         // Gets UI Element Nodes
         shopUI = GetNode<Control>("UI/HudUI/Shop/HBoxContainer/Shop");
         spawnEnemyUI = GetNode<Control>("UI/HudUI/StartWave/HBoxContainer/StartWave");
+        
     }
     
     

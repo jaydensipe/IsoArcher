@@ -115,6 +115,7 @@ public class Player : Spatial
     if (area.IsInGroup("Enemy"))
     {
       playerHealth -= 30;
+      EnemyBaseClass.globalEnemiesRemaining -= 1;
       if (playerHealth <= 0)
       {
         // Resets static variables
@@ -122,6 +123,7 @@ public class Player : Spatial
         GameController.globalEnemiesAmount = 0;
         GameController.globalGold = 0;
         EnemyBaseClass.globalEnemiesRemaining = 0;
+        GlobalCurrentBowStatsManager.Reset();
         
         // Reloads game
         GetTree().ReloadCurrentScene();

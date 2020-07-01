@@ -1,10 +1,9 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://IsoArcher/Shop/Scripts/Shop.cs" type="Script" id=1]
 [ext_resource path="res://IsoArcher/Shop/Models/isoArcherShopScene.tscn" type="PackedScene" id=2]
 [ext_resource path="res://IsoArcher/UI/ShopUI/BowDamageHudIn3D.tscn" type="PackedScene" id=3]
-[ext_resource path="res://IsoArcher/UI/HudUI/Scripts/HudUI.cs" type="Script" id=4]
-[ext_resource path="res://IsoArcher/UI/ShopUI/ArrowVelocityHudIn3D.tscn" type="PackedScene" id=5]
+[ext_resource path="res://IsoArcher/UI/ShopUI/BowArrowVelocityHudIn3D.tscn" type="PackedScene" id=5]
 [ext_resource path="res://IsoArcher/UI/ShopUI/BowROFHudIn3D.tscn" type="PackedScene" id=6]
 [ext_resource path="res://IsoArcher/Fonts/Adventurer.ttf" type="DynamicFontData" id=7]
 
@@ -27,25 +26,25 @@ script = ExtResource( 1 )
 
 [node name="isoArcherShopScene" parent="." instance=ExtResource( 2 )]
 
-[node name="Menu" parent="isoArcherShopScene/bone" index="0"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3, 1, -8 )
+[node name="BowArrowVelocityHudIn3D" parent="isoArcherShopScene/isoArcherShopMenu/Menu/Panel3/b832e5c1-4bdd-975c-63fe-b90ede206dfa" index="0" instance=ExtResource( 5 )]
+transform = Transform( -1.16312, 0.075561, -0.0416991, 0.0763906, 1.16359, -0.0222498, 0.0401607, -0.0249199, -1.16535, -2.30091, 1.55535, -0.116798 )
 
-[node name="ArrowVelocityHudIn3D" parent="isoArcherShopScene/isoArcherShopMenu/Menu/Panel3/b832e5c1-4bdd-975c-63fe-b90ede206dfa" index="0" instance=ExtResource( 5 )]
-transform = Transform( -1.52619, 0.0829775, -0.0337244, 0.083288, 1.52649, -0.0133194, 0.0329497, -0.0151339, -1.52839, -0.257176, 1.6284, -0.262724 )
-
-[node name="BowROFHudIn3D" parent="isoArcherShopScene/isoArcherShopMenu/Menu/Panel2/86e2cb04-5db3-89bb-b928-76d24eda122e" index="0" instance=ExtResource( 6 )]
-transform = Transform( -1.52741, 0.0562207, -0.0336598, 0.0566395, 1.52766, -0.0185984, 0.0329499, -0.0198284, -1.52834, -0.0392733, -0.38562, -0.343623 )
+[node name="BowROFHudIn3DNew" parent="isoArcherShopScene/isoArcherShopMenu/Menu/Panel2/86e2cb04-5db3-89bb-b928-76d24eda122e" index="0" instance=ExtResource( 6 )]
+transform = Transform( -1.16261, 0.0831441, -0.0413051, 0.0839925, 1.16305, -0.0229745, 0.0395516, -0.0258754, -1.16535, -1.94542, -0.411804, -0.232602 )
 
 [node name="c00e574f-6a66-1921-5a1a-b340c78e7fbd" parent="isoArcherShopScene/isoArcherShopMenu/Menu/Panel2" index="4"]
 transform = Transform( 1, 1.86265e-09, 1.49012e-08, 0, 1, 4.47035e-08, 0, 0, 1, 0.5, -0.949999, -0.550001 )
 
 [node name="BowDamageHudIn3D" parent="isoArcherShopScene/isoArcherShopMenu/Menu/Panel4/1d7c79ae-8f31-608d-802d-585f347b82d7" index="0" instance=ExtResource( 3 )]
-transform = Transform( -1.52764, 0.0290487, -0.0524929, 0.0301894, 1.52816, -0.0329072, 0.051845, -0.033918, -1.52756, -0.628585, 0.827414, -0.306232 )
+transform = Transform( -1.16541, 0.0221608, -0.040046, 0.023031, 1.16581, -0.0251047, 0.0395516, -0.0258754, -1.16535, -2.53853, 0.679319, -0.237409 )
+
+[node name="Camera" parent="isoArcherShopScene" index="73"]
+far = 45.6
 
 [node name="GoldUI" type="Control" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-script = ExtResource( 4 )
+mouse_filter = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -54,6 +53,7 @@ __meta__ = {
 anchor_right = 1.0
 margin_top = -107.47
 margin_bottom = 156.53
+mouse_filter = 2
 custom_constants/margin_right = 30
 custom_constants/margin_top = 170
 custom_constants/margin_left = 30
@@ -92,6 +92,7 @@ text = "0"
 [node name="HudUI" type="Control" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+mouse_filter = 2
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -101,7 +102,7 @@ anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = -194.0
-mouse_filter = 1
+mouse_filter = 2
 custom_constants/margin_right = 30
 custom_constants/margin_top = 100
 custom_constants/margin_left = 30
