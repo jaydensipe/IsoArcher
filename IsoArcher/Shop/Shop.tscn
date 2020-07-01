@@ -1,19 +1,139 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://IsoArcher/Shop/Scripts/Shop.cs" type="Script" id=1]
 [ext_resource path="res://IsoArcher/Shop/Models/isoArcherShopScene.tscn" type="PackedScene" id=2]
-[ext_resource path="res://IsoArcher/UI/ShopUI/ShopHudIn3D.tscn" type="PackedScene" id=3]
+[ext_resource path="res://IsoArcher/UI/ShopUI/BowDamageHudIn3D.tscn" type="PackedScene" id=3]
+[ext_resource path="res://IsoArcher/UI/HudUI/Scripts/HudUI.cs" type="Script" id=4]
+[ext_resource path="res://IsoArcher/UI/ShopUI/ArrowVelocityHudIn3D.tscn" type="PackedScene" id=5]
+[ext_resource path="res://IsoArcher/UI/ShopUI/BowROFHudIn3D.tscn" type="PackedScene" id=6]
+[ext_resource path="res://IsoArcher/Fonts/Adventurer.ttf" type="DynamicFontData" id=7]
+
+[sub_resource type="DynamicFont" id=2]
+resource_local_to_scene = true
+size = 64
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 7 )
+
+[sub_resource type="DynamicFont" id=1]
+resource_local_to_scene = true
+size = 64
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 7 )
 
 [node name="Shop" type="Spatial"]
 script = ExtResource( 1 )
 
 [node name="isoArcherShopScene" parent="." instance=ExtResource( 2 )]
 
-[node name="ShopHudIn3D" parent="." instance=ExtResource( 3 )]
-transform = Transform( -0.98955, 0.0583605, -0.131852, 0.0439274, 0.992978, 0.109838, 0.137336, 0.102899, -0.985165, 5.12345, 8.53589, -8.11118 )
+[node name="GoldUI" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="ShopHudIn3D2" parent="." instance=ExtResource( 3 )]
-transform = Transform( -0.98955, 0.0583605, -0.131852, 0.0439274, 0.992978, 0.109838, 0.137336, 0.102899, -0.985165, 5.21388, 5.79069, -8.36165 )
+[node name="Gold" type="MarginContainer" parent="GoldUI"]
+anchor_right = 1.0
+margin_top = -107.47
+margin_bottom = 156.53
+custom_constants/margin_right = 30
+custom_constants/margin_top = 170
+custom_constants/margin_left = 30
+custom_constants/margin_bottom = 30
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="ShopHudIn3D3" parent="." instance=ExtResource( 3 )]
-transform = Transform( -0.98955, 0.0583605, -0.131852, 0.0439274, 0.992978, 0.109838, 0.137336, 0.102899, -0.985165, 5.06438, 3.1673, -8.6331 )
+[node name="HBoxContainer" type="HBoxContainer" parent="GoldUI/Gold"]
+margin_left = 30.0
+margin_top = 170.0
+margin_right = 1890.0
+margin_bottom = 234.0
+mouse_filter = 2
+custom_constants/separation = 20
+alignment = 2
+
+[node name="Gold" type="Label" parent="GoldUI/Gold/HBoxContainer"]
+margin_left = 1652.0
+margin_right = 1796.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.980392, 0.741176, 0.054902, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Gold:"
+
+[node name="GoldAmount" type="Label" parent="GoldUI/Gold/HBoxContainer"]
+margin_left = 1816.0
+margin_right = 1860.0
+margin_bottom = 64.0
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 1, 0.890196, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "0"
+
+[node name="HudUI" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LeaveShop" type="MarginContainer" parent="HudUI"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -194.0
+mouse_filter = 1
+custom_constants/margin_right = 30
+custom_constants/margin_top = 100
+custom_constants/margin_left = 30
+custom_constants/margin_bottom = 30
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HudUI/LeaveShop"]
+margin_left = 30.0
+margin_top = 100.0
+margin_right = 1890.0
+margin_bottom = 170.0
+mouse_filter = 2
+custom_constants/separation = 20
+alignment = 2
+
+[node name="LeaveShop" type="Button" parent="HudUI/LeaveShop/HBoxContainer"]
+margin_left = 1500.0
+margin_right = 1860.0
+margin_bottom = 70.0
+focus_mode = 0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 0, 0, 1 )
+enabled_focus_mode = 0
+text = "Leave Shop!"
+flat = true
+
+[node name="AnimationTimer" type="Timer" parent="."]
+one_shot = true
+autostart = true
+
+[node name="RandomAnimationSlap" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+
+[node name="3DHuds" type="Spatial" parent="."]
+
+[node name="BowROFHudIn3D" parent="3DHuds" instance=ExtResource( 6 )]
+transform = Transform( -1.51511, 0.0329598, -0.201578, 0.0107148, 1.51953, 0.167923, 0.203973, 0.165005, -1.50614, 5.01307, 5.64403, -8.41883 )
+
+[node name="ArrowVelocityHudIn3D" parent="3DHuds" instance=ExtResource( 5 )]
+transform = Transform( -1.51511, 0.0329598, -0.201578, 0.0107148, 1.51953, 0.167923, 0.203973, 0.165005, -1.50614, 5.41395, 2.90173, -8.77823 )
+
+[node name="BowDamageHudIn3D" parent="3DHuds" instance=ExtResource( 3 )]
+transform = Transform( -1.51284, 0.0892227, -0.201578, 0.0671571, 1.51808, 0.167923, 0.209962, 0.157314, -1.50614, 5.10131, 8.29416, -8.13517 )
+[connection signal="pressed" from="HudUI/LeaveShop/HBoxContainer/LeaveShop" to="." method="_on_LeaveShop_pressed"]
+[connection signal="timeout" from="AnimationTimer" to="." method="_on_AnimationTimer_timeout"]
+[connection signal="timeout" from="RandomAnimationSlap" to="." method="_on_RandomAnimationSlap_timeout"]

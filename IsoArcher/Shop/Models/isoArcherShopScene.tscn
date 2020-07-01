@@ -1818,9 +1818,6 @@ material/3 = SubResource( 16 )
 material/4 = SubResource( 16 )
 material/5 = SubResource( 16 )
 
-[node name="AnimationPlayer" parent="isoArcherShopMenu" index="1"]
-autoplay = "shopMenuDropDown"
-
 [node name="Camera" type="Camera" parent="." index="25"]
 transform = Transform( -1, -2.42213e-08, 3.2494e-07, 0, 0.997233, 0.0743348, -3.25841e-07, 0.0743348, -0.997233, 0, 6.292, -15.92 )
 current = true
@@ -2210,15 +2207,11 @@ transform = Transform( -0.396293, -0.196959, 0.17166, 0.00321967, -0.504602, -0.
 [node name="IsoArcherShopkeeper" parent="." index="71" instance=ExtResource( 6 )]
 transform = Transform( 0.612642, 0, -0.252725, 0, 0.662722, 0, 0.252725, 0, 0.612642, -5.85552, 1.26367, 0.935452 )
 
-[node name="Body" parent="IsoArcherShopkeeper" index="0"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 )
-
 [node name="5751f577-4e3f-6eb4-ad9e-571354314c56" parent="IsoArcherShopkeeper/Body/upperTorse/BagStrap/BagStrap2" index="3"]
 transform = Transform( 1, 0, 2.98023e-08, 0, 0.965926, 0.258819, -2.98023e-08, -0.258819, 0.965926, -4.475, 4.8, -2 )
 
 [node name="AnimationPlayer" parent="IsoArcherShopkeeper" index="1"]
-autoplay = "Idle-GoggleAdjust"
-playback_speed = 1.2
+playback_speed = 0.75
 
 [node name="OmniLight" type="OmniLight" parent="." index="72"]
 transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 7.5, -9.8 )

@@ -1,8 +1,10 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://IsoArcher/Fonts/Adventurer.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://IsoArcher/UI/HudUI/Scripts/HudUI.cs" type="Script" id=2]
 
 [sub_resource type="DynamicFont" id=1]
+resource_local_to_scene = true
 size = 64
 outline_size = 3
 outline_color = Color( 0, 0, 0, 1 )
@@ -11,6 +13,7 @@ font_data = ExtResource( 1 )
 [node name="HudUI" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 2 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -128,3 +131,73 @@ custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 1, 0.890196, 0, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 text = "0"
+
+[node name="Shop" type="MarginContainer" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -194.0
+mouse_filter = 1
+custom_constants/margin_right = 30
+custom_constants/margin_top = 100
+custom_constants/margin_left = 30
+custom_constants/margin_bottom = 30
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Shop"]
+margin_left = 30.0
+margin_top = 100.0
+margin_right = 1890.0
+margin_bottom = 170.0
+mouse_filter = 2
+custom_constants/separation = 20
+alignment = 2
+
+[node name="Shop" type="Button" parent="Shop/HBoxContainer"]
+margin_left = 1688.0
+margin_right = 1860.0
+margin_bottom = 70.0
+focus_mode = 0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 0, 0, 1 )
+enabled_focus_mode = 0
+text = "Shop!"
+flat = true
+
+[node name="StartWave" type="MarginContainer" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_top = -200.0
+mouse_filter = 1
+custom_constants/margin_right = 30
+custom_constants/margin_top = 100
+custom_constants/margin_left = 30
+custom_constants/margin_bottom = 30
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="StartWave"]
+margin_left = 30.0
+margin_top = 100.0
+margin_right = 378.0
+margin_bottom = 170.0
+mouse_filter = 2
+custom_constants/separation = 20
+alignment = 2
+
+[node name="StartWave" type="Button" parent="StartWave/HBoxContainer"]
+margin_right = 348.0
+margin_bottom = 70.0
+focus_mode = 0
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_color_hover = Color( 1, 0, 0, 1 )
+enabled_focus_mode = 0
+text = "Start Wave!"
+flat = true
+[connection signal="pressed" from="Shop/HBoxContainer/Shop" to="." method="_on_Shop_pressed"]
+[connection signal="pressed" from="StartWave/HBoxContainer/StartWave" to="." method="_on_StartWave_pressed"]

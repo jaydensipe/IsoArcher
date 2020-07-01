@@ -17,28 +17,35 @@ public class GameController : Node
     private bool waveEnded = false;
     
     // Variable for global player gold
-    public static float globalGold = 0;
+    public static int globalGold = 0;
+
+    // UI Elements
+    private Control shopUI;
+    private Control spawnEnemyUI;
 
 
-    // Determines what position enemies should spawn from
+    
     public override void _Ready()
     {
+        // Determines what position enemies should spawn from
         positionArray.Add(GetNode<Position3D>("CurrentWorld/World1/EnemySpawnPositions/Position3D"));
         positionArray.Add(GetNode<Position3D>("CurrentWorld/World1/EnemySpawnPositions/Position3D2"));
         positionArray.Add(GetNode<Position3D>("CurrentWorld/World1/EnemySpawnPositions/Position3D3"));
         positionArray.Add(GetNode<Position3D>("CurrentWorld/World1/EnemySpawnPositions/Position3D4"));
+
+        // Connects start wave signal
+        var hudUINode = GetNode<Control>("UI/HudUI");
+        hudUINode.Connect("startWave", this, "_start_Wave");
         
+        // Gets UI Element Nodes
+        shopUI = GetNode<Control>("UI/HudUI/Shop/HBoxContainer/Shop");
+        spawnEnemyUI = GetNode<Control>("UI/HudUI/StartWave/HBoxContainer/StartWave");
     }
     
     
     public override void _Process(float delta)
     {
         UpdateUI();
-        // Debug to spawn waves
-        if (Input.IsActionJustPressed("TestWave"))
-        {
-            WaveSystem();
-        }
     }
     
 
@@ -55,7 +62,7 @@ public class GameController : Node
             await ToSignal(GetNode<Timer>("Timers/EnemySpawnTimer"), "timeout");
             SpawnEnemy(positionArray);
         }
-
+        
         waveEnded = true;
     }
 
@@ -82,5 +89,19 @@ public class GameController : Node
         GetNode<Label>("UI/HudUI/CurrentWave/HBoxContainer/WaveAmount").Text = globalCurrentWave.ToString();
         GetNode<Label>("UI/HudUI/Gold/HBoxContainer/GoldAmount").Text = globalGold.ToString();
         GetNode<Label>("UI/HudUI/EnemiesLeft/HBoxContainer/EnemiesLeftAmount").Text = EnemyBaseClass.globalEnemiesRemaining.ToString();
+        
+        if (EnemyBaseClass.globalEnemiesRemaining == 0)
+        {
+            spawnEnemyUI.Show();
+            shopUI.Show();
+        }
+    }
+
+    // Stars current wave
+    void _start_Wave()
+    {
+        WaveSystem();
+        spawnEnemyUI.Hide();
+        shopUI.Hide();
     }
 }

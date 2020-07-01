@@ -37,6 +37,13 @@
             <e p="Shop.cs" t="Include" />
           </e>
         </e>
+        <e p="UI" t="Include">
+          <e p="HudUI" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="HudUI.cs" t="Include" />
+            </e>
+          </e>
+        </e>
       </e>
       <e p="IsoArcher.csproj" t="IncludeRecursive" />
       <e p="IsoArcher.sln" t="IncludeFlat" />

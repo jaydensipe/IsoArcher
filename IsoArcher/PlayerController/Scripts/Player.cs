@@ -116,6 +116,13 @@ public class Player : Spatial
       playerHealth -= 30;
       if (playerHealth <= 0)
       {
+        // Resets static variables
+        GameController.globalCurrentWave = 0;
+        GameController.globalEnemiesAmount = 0;
+        GameController.globalGold = 0;
+        EnemyBaseClass.globalEnemiesRemaining = 0;
+        
+        // Reloads game
         GetTree().ReloadCurrentScene();
       }
     }

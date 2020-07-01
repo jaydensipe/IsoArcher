@@ -22,19 +22,14 @@
     <list default="true" id="3001d631-6566-4ee0-b3f9-500bef3efcfe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Bows/BowBaseClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Bows/BowBaseClass.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Bows/GlobalCurrentBowStatsManager/GlobalCurrentBowStatsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Bows/GlobalCurrentBowStatsManager/GlobalCurrentBowStatsManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Bows/StandardBow/StandardBow.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Bows/StandardBow/StandardBow.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Enemies/GlobalEnemyBaseRemaining.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Enemies/Goblin/Goblin.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Enemies/Goblin/Goblin.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/GoldManager/GlobalGoldManager/GlobalGoldManager.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/Shop/Models/isoArcherShopScene.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Shop/Models/isoArcherShopScene.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher/Shop/Scripts/Shop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Shop/Scripts/Shop.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/Shop/Shop.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Shop/Shop.tscn" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/UI/HudUI/HudUI.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/UI/HudUI/HudUI.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher/UI/ShopUI/ShopHudIn3D.tscn" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project.godot" beforeDir="false" afterPath="$PROJECT_DIR$/project.godot" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +45,7 @@
     <setting file="file://$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/IsoArcher/Bows/GlobalCurrentBowStatsManager/GlobalCurrentBowStatsManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IsoArcher/UI/HudUI/Scripts/HudUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/IsoArcher/GameController/Scripts/MainCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/IsoArcher/Shop/Scripts/Shop.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
@@ -66,7 +62,6 @@
         <option value="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseRemaining.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Bows/CurrentBowStatsManager/GlobalCurrentBowStatsManager.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/GameController/Scripts/MainCamera.cs" />
-        <option value="$PROJECT_DIR$/IsoArcher/Shop/Scripts/Shop.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Enemies/GlobalEnemyBaseRemaining.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/GoldManager/GlobalGoldManager/GlobalGoldManager.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Bows/BowBaseClass.cs" />
@@ -74,8 +69,10 @@
         <option value="$PROJECT_DIR$/IsoArcher/Enemies/GlobalEnemyStatsManager.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" />
-        <option value="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/UI/HudUI/Scripts/HudUI.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/Shop/Scripts/Shop.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" />
       </list>
     </option>
   </component>
@@ -215,6 +212,8 @@
       <workItem from="1593298613522" duration="661000" />
       <workItem from="1593302139624" duration="2959000" />
       <workItem from="1593380145326" duration="1597000" />
+      <workItem from="1593564919669" duration="4886000" />
+      <workItem from="1593570244948" duration="53000" />
     </task>
     <servers />
   </component>
