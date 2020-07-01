@@ -47,8 +47,9 @@ public class Player : Spatial
     var playerAnimations = GetNode<AnimationPlayer>("CurrentPlayerModel/isoArcherPlayer/AnimationPlayerNew");
     playerAnimations.PlaybackSpeed = GlobalCurrentBowStatsManager.currentBowRofSpeed;
     
-    var bowAnimations = GetNode<AnimationPlayer>("CurrentBow/" + GlobalCurrentBowStatsManager.currentBowName + "/" + GlobalCurrentBowStatsManager.currentBowModelName +  "/AnimationPlayer");
-    bowAnimations.PlaybackSpeed = GlobalCurrentBowStatsManager.currentBowRofSpeed;
+    var bowAnimations = GetNode<AnimationPlayer>("CurrentPlayerModel/isoArcherPlayer/Body/Body2/armLeft/elbowLeft/handLeft/isoArcherBowAnimation/AnimationPlayer");
+    bowAnimations.PlaybackSpeed = GlobalCurrentBowStatsManager.currentBowRofSpeed / 5.0f;
+
     var bowTimer = GetNode<Timer>("Timers/BowDelay");
     bowTimer.WaitTime = 0.96f / GlobalCurrentBowStatsManager.currentBowRofSpeed;
     // var bowParticles = GetNode<Particles>("CurrentBow/Particles");
@@ -63,7 +64,7 @@ public class Player : Spatial
       if (playerAnimations.IsPlaying() == false)
       {
         playerAnimations.Play("PlayerbowDraw");
-        bowAnimations.Play(GlobalCurrentBowStatsManager.currentBowDrawNameAnim);
+        bowAnimations.Play("bowDraw");
         bowTimer.Start();
       }
       
@@ -81,7 +82,7 @@ public class Player : Spatial
     {
       playingBackwards = true;
       playerAnimations.PlayBackwards("PlayerbowDraw");
-      bowAnimations.PlayBackwards(GlobalCurrentBowStatsManager.currentBowDrawNameAnim);
+      bowAnimations.PlayBackwards("bowDraw");
       bowTimer.Stop();
     }
     
@@ -93,8 +94,8 @@ public class Player : Spatial
       playerAnimations.Stop(false);
       playerAnimations.Queue("PlayerbowRelease");
       bowAnimations.Stop(false);
-      bowAnimations.Queue(GlobalCurrentBowStatsManager.currentBowRelNameAnim);
-      
+      bowAnimations.Queue("bowRelease");
+
       arrow = (PackedScene) ResourceLoader.Load("res://IsoArcher/Arrows/WoodArrow/WoodArrow.tscn");
       var arrowInstance = (Area)arrow.Instance();
       arrowInstance.Transform = (GetNode<Position3D>("CurrentBow/" + GlobalCurrentBowStatsManager.currentBowName + "/ArrowPosition").Transform);

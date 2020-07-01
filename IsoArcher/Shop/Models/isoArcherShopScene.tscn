@@ -726,12 +726,6 @@ material/5 = SubResource( 6 )
 [node name="isoArcherShopMenu" parent="." index="24" instance=ExtResource( 2 )]
 transform = Transform( 0.993586, 0.0134658, 0.112277, 0, 0.992884, -0.11908, -0.113082, 0.118316, 0.986515, 5.49914, -1.30636, -9.457 )
 
-[node name="Menu" parent="isoArcherShopMenu" index="0"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.55, 11, 0 )
-
-[node name="Panel3" parent="isoArcherShopMenu/Menu" index="0"]
-transform = Transform( 1, 0, 0, 0, 0.999391, 0.0348995, 0, -0.0348995, 0.999391, 0.05, -6.5, 0.2 )
-
 [node name="bc6fe405-7288-06a0-fe38-fac56fb758c9" parent="isoArcherShopMenu/Menu/Panel3" index="0"]
 transform = Transform( 0.999391, 0.0348942, 0.000609078, -0.0348995, 0.999238, 0.0174418, 0, -0.0174524, 0.999848, 0.5, -0.5, 0.175 )
 material/0 = SubResource( 14 )
@@ -776,7 +770,7 @@ material/4 = SubResource( 6 )
 material/5 = SubResource( 6 )
 
 [node name="Panel2" parent="isoArcherShopMenu/Menu" index="1"]
-transform = Transform( 1, 0, 0, 0, 0.999391, 0.0348995, 0, -0.0348995, 0.999391, 0.05, -3.85, 0.1 )
+transform = Transform( 1, 3.72529e-09, -2.23517e-08, 0, 1, 4.47035e-08, 0, 0, 1, 0.0499997, -3.85001, 0.0999985 )
 
 [node name="f48cb22d-5e48-34f0-4fc4-2ee573f49f9d" parent="isoArcherShopMenu/Menu/Panel2" index="0"]
 material/0 = SubResource( 15 )
@@ -795,6 +789,7 @@ material/4 = SubResource( 15 )
 material/5 = SubResource( 15 )
 
 [node name="86e2cb04-5db3-89bb-b928-76d24eda122e" parent="isoArcherShopMenu/Menu/Panel2" index="2"]
+transform = Transform( 0.999391, -0.0348995, -1.49012e-08, 0.0348995, 0.999391, 2.98023e-08, 2.98023e-08, 0, 1, -0.0500002, 0.300003, 0.150001 )
 material/0 = SubResource( 14 )
 material/1 = SubResource( 14 )
 material/2 = SubResource( 14 )
@@ -862,9 +857,6 @@ material/2 = SubResource( 6 )
 material/3 = SubResource( 6 )
 material/4 = SubResource( 6 )
 material/5 = SubResource( 6 )
-
-[node name="LINKEMUP" parent="isoArcherShopMenu/Menu" index="3"]
-transform = Transform( 1, 0, 0, 0, 0.999391, -0.0348995, 0, 0.0348995, 0.999391, -2.125, -6.025, 0.725 )
 
 [node name="a4eba471-2ffb-630e-1d85-c41f8a79a2ff" parent="isoArcherShopMenu/Menu/LINKEMUP/DoubleChainLink/ChainLink/Chain2" index="0"]
 material/0 = SubResource( 16 )
@@ -1200,9 +1192,6 @@ material/2 = SubResource( 16 )
 material/3 = SubResource( 16 )
 material/4 = SubResource( 16 )
 material/5 = SubResource( 16 )
-
-[node name="LINKEMUP2" parent="isoArcherShopMenu/Menu" index="4"]
-transform = Transform( 1, 0, 0, 0, 0.999848, 0.0174524, 0, -0.0174524, 0.999848, 2.225, -3.525, 0.625 )
 
 [node name="35022900-a6cc-8cc8-a42e-244cf4c34f2d" parent="isoArcherShopMenu/Menu/LINKEMUP2/DoubleChainLink3/ChainLink5/Chain15" index="0"]
 material/0 = SubResource( 16 )

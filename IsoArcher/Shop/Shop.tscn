@@ -8,14 +8,14 @@
 [ext_resource path="res://IsoArcher/UI/ShopUI/BowROFHudIn3D.tscn" type="PackedScene" id=6]
 [ext_resource path="res://IsoArcher/Fonts/Adventurer.ttf" type="DynamicFontData" id=7]
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=1]
 resource_local_to_scene = true
 size = 64
 outline_size = 3
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 7 )
 
-[sub_resource type="DynamicFont" id=1]
+[sub_resource type="DynamicFont" id=2]
 resource_local_to_scene = true
 size = 64
 outline_size = 3
@@ -26,6 +26,21 @@ font_data = ExtResource( 7 )
 script = ExtResource( 1 )
 
 [node name="isoArcherShopScene" parent="." instance=ExtResource( 2 )]
+
+[node name="Menu" parent="isoArcherShopScene/bone" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.3, 1, -8 )
+
+[node name="ArrowVelocityHudIn3D" parent="isoArcherShopScene/isoArcherShopMenu/Menu/Panel3/b832e5c1-4bdd-975c-63fe-b90ede206dfa" index="0" instance=ExtResource( 5 )]
+transform = Transform( -1.52619, 0.0829775, -0.0337244, 0.083288, 1.52649, -0.0133194, 0.0329497, -0.0151339, -1.52839, -0.257176, 1.6284, -0.262724 )
+
+[node name="BowROFHudIn3D" parent="isoArcherShopScene/isoArcherShopMenu/Menu/Panel2/86e2cb04-5db3-89bb-b928-76d24eda122e" index="0" instance=ExtResource( 6 )]
+transform = Transform( -1.52741, 0.0562207, -0.0336598, 0.0566395, 1.52766, -0.0185984, 0.0329499, -0.0198284, -1.52834, -0.0392733, -0.38562, -0.343623 )
+
+[node name="c00e574f-6a66-1921-5a1a-b340c78e7fbd" parent="isoArcherShopScene/isoArcherShopMenu/Menu/Panel2" index="4"]
+transform = Transform( 1, 1.86265e-09, 1.49012e-08, 0, 1, 4.47035e-08, 0, 0, 1, 0.5, -0.949999, -0.550001 )
+
+[node name="BowDamageHudIn3D" parent="isoArcherShopScene/isoArcherShopMenu/Menu/Panel4/1d7c79ae-8f31-608d-802d-585f347b82d7" index="0" instance=ExtResource( 3 )]
+transform = Transform( -1.52764, 0.0290487, -0.0524929, 0.0301894, 1.52816, -0.0329072, 0.051845, -0.033918, -1.52756, -0.628585, 0.827414, -0.306232 )
 
 [node name="GoldUI" type="Control" parent="."]
 anchor_right = 1.0
@@ -60,7 +75,7 @@ alignment = 2
 margin_left = 1652.0
 margin_right = 1796.0
 margin_bottom = 64.0
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0.980392, 0.741176, 0.054902, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 text = "Gold:"
@@ -69,7 +84,7 @@ text = "Gold:"
 margin_left = 1816.0
 margin_right = 1860.0
 margin_bottom = 64.0
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 1, 0.890196, 0, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 text = "0"
@@ -109,7 +124,7 @@ margin_left = 1500.0
 margin_right = 1860.0
 margin_bottom = 70.0
 focus_mode = 0
-custom_fonts/font = SubResource( 1 )
+custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_colors/font_color_hover = Color( 1, 0, 0, 1 )
 enabled_focus_mode = 0
@@ -123,17 +138,10 @@ autostart = true
 [node name="RandomAnimationSlap" type="Timer" parent="."]
 wait_time = 10.0
 autostart = true
-
-[node name="3DHuds" type="Spatial" parent="."]
-
-[node name="BowROFHudIn3D" parent="3DHuds" instance=ExtResource( 6 )]
-transform = Transform( -1.51511, 0.0329598, -0.201578, 0.0107148, 1.51953, 0.167923, 0.203973, 0.165005, -1.50614, 5.01307, 5.64403, -8.41883 )
-
-[node name="ArrowVelocityHudIn3D" parent="3DHuds" instance=ExtResource( 5 )]
-transform = Transform( -1.51511, 0.0329598, -0.201578, 0.0107148, 1.51953, 0.167923, 0.203973, 0.165005, -1.50614, 5.41395, 2.90173, -8.77823 )
-
-[node name="BowDamageHudIn3D" parent="3DHuds" instance=ExtResource( 3 )]
-transform = Transform( -1.51284, 0.0892227, -0.201578, 0.0671571, 1.51808, 0.167923, 0.209962, 0.157314, -1.50614, 5.10131, 8.29416, -8.13517 )
 [connection signal="pressed" from="HudUI/LeaveShop/HBoxContainer/LeaveShop" to="." method="_on_LeaveShop_pressed"]
 [connection signal="timeout" from="AnimationTimer" to="." method="_on_AnimationTimer_timeout"]
 [connection signal="timeout" from="RandomAnimationSlap" to="." method="_on_RandomAnimationSlap_timeout"]
+
+[editable path="isoArcherShopScene"]
+
+[editable path="isoArcherShopScene/isoArcherShopMenu"]

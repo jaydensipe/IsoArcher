@@ -1,8 +1,9 @@
 [gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://IsoArcher/PlayerController/Scripts/Player.cs" type="Script" id=1]
-[ext_resource path="res://IsoArcher/Bows/StandardBow/StandardBow.tscn" type="PackedScene" id=2]
-[ext_resource path="res://IsoArcher/PlayerController/Player/isoArcherPlayer.tscn" type="PackedScene" id=3]
+[ext_resource path="res://IsoArcher/Bows/BowBaseClass.cs" type="Script" id=2]
+[ext_resource path="res://IsoArcher/PlayerController/Models/isoAcherPlayerNEW.tscn" type="PackedScene" id=3]
+
 
 [sub_resource type="BoxShape" id=1]
 
@@ -16,8 +17,18 @@ script = ExtResource( 1 )
 [node name="CurrentBow" type="Spatial" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -11, -1, 5.96046e-08 )
 
-[node name="Standard Bow" parent="CurrentBow" instance=ExtResource( 2 )]
+[node name="Standard Bow" type="Spatial" parent="CurrentBow"]
 transform = Transform( -0.42, 0, -6.34182e-08, 0, 0.42, 0, 6.34182e-08, 0, -0.42, 14, 0, -2.26494e-06 )
+script = ExtResource( 2 )
+bowDamage = 50
+bowName = "Standard Bow"
+bowDrawNameAnim = "standardBowDraw"
+bowRelNameAnim = "standardBowRelease"
+bowModelName = "StandardBowModel"
+bowRofSpeed = 1.25
+
+[node name="ArrowPosition" type="Position3D" parent="CurrentBow/Standard Bow"]
+transform = Transform( -4.37113e-08, 0, -1, 0, 1, 0, 1, 0, -4.37113e-08, -2, 2.93334, -8.74227e-08 )
 
 [node name="CurrentPlayerModel" type="Spatial" parent="."]
 transform = Transform( 1.57089, 0, 0, 0, 3.14178, 0, 0, 0, 1.57089, 4.3798, 0.905089, 0.670293 )
