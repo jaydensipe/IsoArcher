@@ -19,11 +19,15 @@ public class GameController : Node
     // Variable for global player gold
     public static int globalGold = 0;
 
-    // UI Elements
+    // UI element variables
     private Control shopUI;
     private Control spawnEnemyUI;
 
 
+    public override void _Process(float delta)
+    {
+        UpdateUI();
+    }
     
     public override void _Ready()
     {
@@ -42,13 +46,6 @@ public class GameController : Node
         spawnEnemyUI = GetNode<Control>("UI/HudUI/StartWave/HBoxContainer/StartWave");
         
     }
-    
-    
-    public override void _Process(float delta)
-    {
-        UpdateUI();
-    }
-    
 
     // Controls the waves and how the enemies spawn, and spawns an enemy every x seconds
     private async void WaveSystem()

@@ -114,8 +114,10 @@ public class Player : Spatial
   {
     if (area.IsInGroup("Enemy"))
     {
+      // Damages player and kills the enemy that hits the player
       playerHealth -= 30;
       EnemyBaseClass.globalEnemiesRemaining -= 1;
+      
       if (playerHealth <= 0)
       {
         // Resets static variables
@@ -123,6 +125,9 @@ public class Player : Spatial
         GameController.globalEnemiesAmount = 0;
         GameController.globalGold = 0;
         EnemyBaseClass.globalEnemiesRemaining = 0;
+        Shop.arrowVelocityCount = 0;
+        Shop.bowDamageCount = 0;
+        Shop.bowRofCount = 0;
         GlobalCurrentBowStatsManager.Reset();
         
         // Reloads game

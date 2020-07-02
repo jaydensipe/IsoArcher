@@ -21,18 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3001d631-6566-4ee0-b3f9-500bef3efcfe" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Bows/BowBaseClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Bows/BowBaseClass.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Bows/GlobalCurrentBowStatsManager/GlobalCurrentBowStatsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Bows/GlobalCurrentBowStatsManager/GlobalCurrentBowStatsManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/GameController/GameController.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/GameController/GameController.tscn" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Shop/Models/isoArcherShopScene.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Shop/Models/isoArcherShopScene.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Shop/Scripts/Shop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Shop/Scripts/Shop.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Shop/Shop.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Shop/Shop.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/UI/ShopUI/ArrowVelocityHudIn3D.tscn" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/UI/ShopUI/BowDamageHudIn3D.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/UI/ShopUI/BowDamageHudIn3D.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/UI/ShopUI/BowROFHudIn3D.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/UI/ShopUI/BowROFHudIn3D.tscn" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,13 +59,13 @@
         <option value="$PROJECT_DIR$/IsoArcher/Enemies/GlobalEnemyBaseRemaining.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/GoldManager/GlobalGoldManager/GlobalGoldManager.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Enemies/GlobalEnemyStatsManager.cs" />
-        <option value="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/UI/HudUI/Scripts/HudUI.cs" />
-        <option value="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Bows/BowBaseClass.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Bows/GlobalCurrentBowStatsManager/GlobalCurrentBowStatsManager.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Shop/Scripts/Shop.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" />
       </list>
     </option>
@@ -220,6 +211,8 @@
       <workItem from="1593592530088" duration="15000" />
       <workItem from="1593592556081" duration="539000" />
       <workItem from="1593597954912" duration="3919000" />
+      <workItem from="1593654428231" duration="29000" />
+      <workItem from="1593697539822" duration="774000" />
     </task>
     <servers />
   </component>
@@ -322,5 +315,24 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1592747163724" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs</url>
+          <line>43</line>
+          <properties documentPath="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" initialLine="43">
+            <startOffsets>
+              <option value="997" />
+            </startOffsets>
+            <endOffsets>
+              <option value="998" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
