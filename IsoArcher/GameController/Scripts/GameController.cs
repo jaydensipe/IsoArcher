@@ -17,7 +17,7 @@ public class GameController : Node
     private bool waveEnded = false;
     
     // Variable for global player gold
-    public static int globalGold = 0;
+    public static int globalGold = 1500;
 
     // UI element variables
     private Control shopUI;

@@ -18,15 +18,7 @@ public class Shop : Spatial
     private Label bowROFUpgradeLabel;
     private Control arrowVelocityUpgrade;
     private Label arrowVelocityUpgradeLabel;
-
-    private void UpdateBowStats()
-    {
-       
-        // GlobalCurrentBowStatsManager.currentBowRofSpeed += bowRofUpdateCount * 0.25f;
-        // GlobalCurrentBowStatsManager.currentBowArrowVelocity += arrowVelocityUpdateCount * 10;
-        // GD.Print(GlobalCurrentBowStatsManager.currentBowArrowVelocity);
-    }
-
+    
     public override void _Ready()
     {
         // Connects the button for upgrading bow damage, and updates the bow damage stats number
@@ -53,6 +45,40 @@ public class Shop : Spatial
     private void UpdateGold()
     {
         var goldUpdate = GetNode<Label>("GoldUI/Gold/HBoxContainer/GoldAmount");
+        var bowArrowVelcityPriceUpdate =
+            GetNode<Label>(
+                "isoArcherShopScene/isoArcherShopMenu/Menu/Panel3/b832e5c1-4bdd-975c-63fe-b90ede206dfa/BowArrowVelocityHudIn3D/Viewport/GUI/Label/BowArrowVelocityUpdatePrice");
+        var bowROFPriceUpdate =
+            GetNode<Label>(
+                "isoArcherShopScene/isoArcherShopMenu/Menu/Panel2/86e2cb04-5db3-89bb-b928-76d24eda122e/BowROFHudIn3DNew/Viewport/GUI/Label/Button2");
+        var bowDamagePriceUpdate = GetNode<Label>("isoArcherShopScene/isoArcherShopMenu/Menu/Panel4/1d7c79ae-8f31-608d-802d-585f347b82d7/BowDamageHudIn3D/Viewport/GUI/Label/Button2");
+        // Great code :)
+        if (bowDamageCount == 0)
+        {
+            bowDamagePriceUpdate.Text = "-($200)";
+        }
+        else
+        {
+            bowDamagePriceUpdate.Text = "-($" + (bowDamageCount * 500) + ")";
+        }
+        if (bowRofCount == 0)
+        {
+            bowROFPriceUpdate.Text = "-($200)";
+        }
+        else
+        {
+            bowROFPriceUpdate.Text = "-($" + (bowRofCount * 500) + ")";
+        }
+        
+        if (arrowVelocityCount == 0)
+        {
+            bowArrowVelcityPriceUpdate.Text = "-($200)";
+        }
+        else
+        {
+            bowArrowVelcityPriceUpdate.Text = "-($" + (arrowVelocityCount * 500) + ")";
+        }
+            
         goldUpdate.Text = GameController.globalGold.ToString();
     }
 

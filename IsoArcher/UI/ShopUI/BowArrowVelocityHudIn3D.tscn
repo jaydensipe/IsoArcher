@@ -63,9 +63,9 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="Viewport/GUI/Label"]
-margin_left = 166.06
+margin_left = 108.914
 margin_top = 151.971
-margin_right = 697.06
+margin_right = 639.914
 margin_bottom = 315.971
 focus_mode = 0
 custom_fonts/font = SubResource( 2 )
@@ -85,6 +85,19 @@ margin_bottom = 128.0
 custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 1, 0.560784, 0, 1 )
 text = "0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BowArrowVelocityUpdatePrice" type="Label" parent="Viewport/GUI/Label"]
+margin_left = 511.822
+margin_top = 201.302
+margin_right = 1407.82
+margin_bottom = 329.302
+rect_scale = Vector2( 0.569333, 0.569333 )
+custom_fonts/font = SubResource( 1 )
+custom_colors/font_color = Color( 0.239216, 0.780392, 0.0901961, 1 )
+text = "(-500)"
 __meta__ = {
 "_edit_use_anchors_": false
 }

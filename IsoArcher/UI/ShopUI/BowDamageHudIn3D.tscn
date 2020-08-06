@@ -18,16 +18,16 @@ font_data = ExtResource( 1 )
 [sub_resource type="QuadMesh" id=3]
 size = Vector2( 2, 2 )
 
-[sub_resource type="ViewportTexture" id=7]
+[sub_resource type="ViewportTexture" id=4]
 viewport_path = NodePath("Viewport")
 
 [sub_resource type="SpatialMaterial" id=5]
 resource_local_to_scene = true
 flags_transparent = true
 flags_unshaded = true
-albedo_texture = SubResource( 7 )
+albedo_texture = SubResource( 4 )
 
-[sub_resource type="BoxShape" id=8]
+[sub_resource type="BoxShape" id=6]
 extents = Vector3( 0.425813, 0.398896, 0.0615006 )
 
 [node name="BowDamageHudIn3D" type="Spatial"]
@@ -63,9 +63,9 @@ __meta__ = {
 }
 
 [node name="Button" type="Button" parent="Viewport/GUI/Label"]
-margin_left = 166.06
+margin_left = 60.6108
 margin_top = 151.971
-margin_right = 697.06
+margin_right = 591.611
 margin_bottom = 315.971
 focus_mode = 0
 custom_fonts/font = SubResource( 2 )
@@ -74,6 +74,18 @@ custom_colors/font_color_hover = Color( 0.45098, 0, 0, 1 )
 enabled_focus_mode = 0
 text = "Upgrade"
 flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button2" type="Label" parent="Viewport/GUI/Label"]
+margin_left = 465.308
+margin_top = 202.321
+margin_right = 996.308
+margin_bottom = 366.321
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0.239216, 0.780392, 0.0901961, 1 )
+text = "(-200)"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -97,4 +109,4 @@ material/0 = SubResource( 5 )
 
 [node name="CollisionShape" type="CollisionShape" parent="MeshInstance/Area"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.498709, 0.0788838, 0 )
-shape = SubResource( 8 )
+shape = SubResource( 6 )

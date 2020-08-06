@@ -1,6 +1,7 @@
 using Godot;
 using System;
 
+[Tool]
 public class Player : Spatial
 {
   
