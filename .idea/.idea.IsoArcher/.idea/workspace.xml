@@ -20,16 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3001d631-6566-4ee0-b3f9-500bef3efcfe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoArcher/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher.sln" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Shop/Scripts/Shop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Shop/Scripts/Shop.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/Shop/Shop.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/Shop/Shop.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/UI/ShopUI/BowArrowVelocityHudIn3D.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/UI/ShopUI/BowArrowVelocityHudIn3D.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/UI/ShopUI/BowDamageHudIn3D.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/UI/ShopUI/BowDamageHudIn3D.tscn" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IsoArcher/UI/ShopUI/BowROFHudIn3D.tscn" beforeDir="false" afterPath="$PROJECT_DIR$/IsoArcher/UI/ShopUI/BowROFHudIn3D.tscn" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,14 +33,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/IsoArcher/Bows/BowBaseClass.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/IsoArcher/Bows/GlobalCurrentBowStatsManager/GlobalCurrentBowStatsManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IsoArcher/Arrows/WoodArrow/WoodArrow.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IsoArcher/Bows/BowBaseClass.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IsoArcher/Shop/Scripts/Shop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/IsoArcher/UI/HudUI/Scripts/HudUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/IsoArcher/GameController/Scripts/MainCamera.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/IsoArcher/Shop/Scripts/Shop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -71,8 +64,8 @@
         <option value="$PROJECT_DIR$/IsoArcher/Bows/GlobalCurrentBowStatsManager/GlobalCurrentBowStatsManager.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Enemies/EnemyBaseClass.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/PlayerController/Scripts/Player.cs" />
-        <option value="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" />
         <option value="$PROJECT_DIR$/IsoArcher/Shop/Scripts/Shop.cs" />
+        <option value="$PROJECT_DIR$/IsoArcher/GameController/Scripts/GameController.cs" />
       </list>
     </option>
   </component>
@@ -89,34 +82,29 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="RiderNuGetOptionsPageId" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager" selected="Start and Debug.Start and Debug">
     <configuration name="Attach to Player" type="ConnectRemote" factoryName="Mono Remote" show_console_on_std_err="false" show_console_on_std_out="false" port="23685" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
+      <option name="selectedOptions">
+        <set />
+      </option>
       <method v="2" />
     </configuration>
-    <configuration name="Start and Debug" type="GODOT_DEBUG_RUN_CONFIGURATION" factoryName="Start and Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
-      <option name="allowRunningInParallel" value="false" />
-      <option name="godotPath" value="J:\Games &amp; Stuff\Godot\Godot.exe" />
-      <option name="listenPortForConnections" value="true" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Profile Player" type="RunExe" factoryName=".NET Executable">
-      <option name="EXE_PATH" value="J:\Games &amp; Stuff\Godot\Godot.exe" />
-      <option name="PROGRAM_PARAMETERS" value="--path &quot;$PROJECT_DIR$&quot;" />
+    <configuration name="Editor" type="GODOT_DEBUG_RUN_CONFIGURATION" factoryName="Start and Debug">
+      <option name="EXE_PATH" value="J:\\Games &amp; Stuff\\Godot\\Godot_v3.2.2-stable_mono_win64.exe" />
+      <option name="PROGRAM_PARAMETERS" value="--path &quot;$PROJECT_DIR$&quot; --editor" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <option name="USE_MONO" value="1" />
-      <option name="RUNTIME_ARGUMENTS" value="" />
       <method v="2">
         <option name="Build Solution" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run Player" type="RunNativeExe" factoryName="Native Executable">
-      <option name="EXE_PATH" value="J:\Games &amp; Stuff\Godot\Godot.exe" />
+    <configuration name="Player" type="GODOT_DEBUG_RUN_CONFIGURATION" factoryName="Start and Debug">
+      <option name="EXE_PATH" value="J:\\Games &amp; Stuff\\Godot\\Godot_v3.2.2-stable_mono_win64.exe" />
       <option name="PROGRAM_PARAMETERS" value="--path &quot;$PROJECT_DIR$&quot;" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -124,8 +112,17 @@
       <method v="2">
         <option name="Build Solution" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="Start and Debug" type="GODOT_DEBUG_RUN_CONFIGURATION" factoryName="Start and Debug">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -230,6 +227,8 @@
       <workItem from="1596365978821" duration="123000" />
       <workItem from="1596748949282" duration="449000" />
       <workItem from="1596750057654" duration="562000" />
+      <workItem from="1596811261655" duration="13000" />
+      <workItem from="1599475929792" duration="22000" />
     </task>
     <servers />
   </component>
@@ -316,10 +315,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state width="1224" height="281" key="GridCell.Tab.3.right/0.0.2560.1400@0.0.2560.1400" timestamp="1592608324205" />
-    <state x="1250" y="258" key="SettingsEditor" timestamp="1593888211891">
+    <state x="1250" y="258" key="SettingsEditor" timestamp="1596811273740">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1250" y="258" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1593888211891" />
+    <state x="1250" y="258" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1596811273740" />
     <state x="92" y="92" width="2376" height="1216" key="VCS.FileHistoryDialog" timestamp="1592793896826">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -328,6 +327,10 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1389" y="533" key="cloudConfig.SelfSettingsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1591902140510" />
+    <state x="887" y="202" width="785" height="996" key="find.popup" timestamp="1599475950531">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="887" y="202" width="785" height="996" key="find.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1599475950531" />
     <state x="859" y="308" width="840" height="1034" key="search.everywhere.popup" timestamp="1596749145741">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://IsoArcher/Shop/Scripts/Shop.cs" type="Script" id=1]
 [ext_resource path="res://IsoArcher/Shop/Models/isoArcherShopScene.tscn" type="PackedScene" id=2]
 [ext_resource path="res://IsoArcher/UI/ShopUI/BowDamageHudIn3D.tscn" type="PackedScene" id=3]
+[ext_resource path="res://IsoArcher/Worlds/shopmusic.wav" type="AudioStream" id=4]
 [ext_resource path="res://IsoArcher/UI/ShopUI/BowArrowVelocityHudIn3D.tscn" type="PackedScene" id=5]
 [ext_resource path="res://IsoArcher/UI/ShopUI/BowROFHudIn3D.tscn" type="PackedScene" id=6]
 [ext_resource path="res://IsoArcher/Fonts/Adventurer.ttf" type="DynamicFontData" id=7]
@@ -139,6 +140,10 @@ autostart = true
 [node name="RandomAnimationSlap" type="Timer" parent="."]
 wait_time = 10.0
 autostart = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+autoplay = true
 [connection signal="pressed" from="HudUI/LeaveShop/HBoxContainer/LeaveShop" to="." method="_on_LeaveShop_pressed"]
 [connection signal="timeout" from="AnimationTimer" to="." method="_on_AnimationTimer_timeout"]
 [connection signal="timeout" from="RandomAnimationSlap" to="." method="_on_RandomAnimationSlap_timeout"]
