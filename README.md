@@ -4,5 +4,5 @@ IsoArcher is a collaborative game I made with my best-friend Stephen Schaefer. H
 
 Released on: https://jaydensippy.itch.io/isoarcher
 
-![IsoArcher photo](https://jaydensipe.github.io/images/isoarcherpic2.jpg)
+![IsoArcher photo](https://jaydensipe.github.io/images/isoarcherpic2.webp)
 
